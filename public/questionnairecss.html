@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionnaire visuel</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      max-width: 800px;
+      margin-inline: auto;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      margin-top: 2rem;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .choices {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .choice {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+
+    .preview {
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      border: 1px solid #eee;
+    }
+
+    .serif {
+      font-family: Georgia, serif;
+    }
+
+    .sans {
+      font-family: Arial, sans-serif;
+    }
+
+    .color-box {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .color {
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Définir l’univers visuel de votre site</h1>
+
+<p>Ce questionnaire rapide permet de définir le style graphique de votre site.</p>
+
+<!-- AMBIANCE -->
+<div class="section">
+  <h2>1. Ambiance</h2>
+
+  <div class="choices">
+    <div class="choice">Sobre / minimaliste</div>
+    <div class="choice">Chaleureux / artisanal</div>
+    <div class="choice">Moderne</div>
+    <div class="choice">Haut de gamme</div>
+  </div>
+</div>
+
+<!-- TYPO -->
+<div class="section">
+  <h2>2. Typographie</h2>
+
+  <div class="choices">
+    <div class="choice">
+      Classique (serif)
+      <div class="preview serif">
+        Atelier d’archèterie – Travail du bois et précision
+      </div>
+    </div>
+
+    <div class="choice">
+      Moderne (sans-serif)
+      <div class="preview sans">
+        Atelier d’archèterie – Travail du bois et précision
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COULEURS -->
+<div class="section">
+  <h2>3. Couleurs</h2>
+
+  <div class="choices">
+
+    <div class="choice">
+      Noir / blanc (sobre)
+      <div class="color-box">
+        <div class="color" style="background:#000;"></div>
+        <div class="color" style="background:#fff;"></div>
+      </div>
+    </div>
+
+    <div class="choice">
+      Tons naturels
+      <div class="color-box">
+        <div class="color" style="background:#5a3e2b;"></div>
+        <div class="color" style="background:#d6c2a1;"></div>
+      </div>
+    </div>
+
+    <div class="choice">
+      Couleur marquée
+      <div class="color-box">
+        <div class="color" style="background:#1a73e8;"></div>
+        <div class="color" style="background:#111;"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- RYTHME -->
+<div class="section">
+  <h2>4. Style de mise en page</h2>
+
+  <div class="choices">
+    <div class="choice">Très aéré (beaucoup d’espace)</div>
+    <div class="choice">Équilibré</div>
+    <div class="choice">Dense (beaucoup d’informations)</div>
+  </div>
+</div>
+
+<!-- IMAGES -->
+<div class="section">
+  <h2>5. Importance des images</h2>
+
+  <div class="choices">
+    <div class="choice">Très important (grandes photos)</div>
+    <div class="choice">Équilibré texte / images</div>
+    <div class="choice">Plutôt texte</div>
+  </div>
+</div>
+
+<!-- FIN -->
+<div class="section">
+  <h2>Remarque libre</h2>
+  <p>Vous pouvez préciser ici des éléments importants : inspirations, contraintes, préférences particulières…</p>
+</div>
+
+</body>
+</html>

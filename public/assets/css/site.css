@@ -1,0 +1,395 @@
+/* =========================
+1. VARIABLES
+========================= */
+
+:root {
+  --color-bg: #fbfaf7;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-border: #e5e2dc;
+
+  --color-accent: #c6a96b;
+  --color-accent-soft: #e8dcc2;
+
+  --font-main: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2.5rem;
+
+  --radius: 6px;
+}
+
+/* =========================
+2. BASE
+========================= */
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-m);
+}
+
+.container--header {
+  max-width: 90%;
+  padding: var(--space-xs);
+}
+/* =========================
+3. TYPOGRAPHIE
+========================= */
+
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-s);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: var(--space-l);
+}
+
+p {
+  margin-bottom: var(--space-s);
+}
+
+.small {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+/* =========================
+4. HEADER
+========================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-bg);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header.is-scrolled {
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+/* Logo */
+
+.brand-logo {
+  height: 128px;
+  display: block;
+}
+
+/* Nav desktop */
+
+.nav-list {
+  display: flex;
+  gap: var(--space-m);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+/* Lien actif (très subtil) */
+
+.nav-link.is-active {
+  color: var(--color-accent);
+}
+.nav-mobile {
+  display: none;
+}
+/*burger*/
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+  margin: 5px 0;
+}
+/* =========================
+5. STRUCTURE
+========================= */
+
+.section {
+  padding: var(--space-l) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-approach {
+  background: var(--color-bg);
+}
+
+.divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-l) 0;
+}
+
+/* =========================
+6. COMPOSANTS (CARDS, TABLE, BUTTON)
+========================= */
+/*grid*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-m);
+  align-items: stretch;
+}
+
+/*cards*/
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--color-border);
+  padding: var(--space-m);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  transition: all 0.2s ease;
+}
+
+/* le texte prend l’espace dispo */
+.card p {
+  flex-grow: 1;
+}
+
+.card .btn {
+  margin-top: auto;       /* ← clé : pousse en bas */
+  text-align: center;     /* optionnel mais propre */
+}
+
+.card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+
+.grid-approach {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card-approach {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.card-approach:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+
+.card-approach h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card-approach p,
+.card-approach li {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-approach ul {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.card-approach.highlight {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+}
+
+.approach-summary {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.approach-summary p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+/*table*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-m);
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+th {
+  background: var(--color-surface);
+  font-weight: 500;
+}
+
+/*buttons*/
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-accent);
+}
+
+.btn:hover {
+  background: var(--color-accent-soft);
+}
+
+/* =========================
+7. PROJETS (sans images)
+========================= */
+
+.projects {
+  display: grid;
+  gap: var(--space-m);
+}
+
+.project {
+  padding: var(--space-m);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.project-title {
+  font-weight: 500;
+}
+
+.project-link {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
+/* =========================
+8. MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .nav-primary {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Menu mobile */
+
+  .nav-mobile {
+    display: none;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .nav-mobile.is-open {
+    display: block;
+  }
+
+  .nav-mobile-list {
+    list-style: none;
+    margin: 0;
+    padding: var(--space-s);
+  }
+
+  .nav-mobile-list li {
+    margin-bottom: var(--space-s);
+  }
+
+  .nav-mobile a {
+    color: var(--color-text);
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+}
