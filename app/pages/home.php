@@ -81,8 +81,8 @@ $title = "Accueil";
         <i data-lucide="target" class="card-icon"></i>
         <h3>Valeurs</h3>
         <p>
-          Je conçois des solutions utiles, pratiques et durables, au service des personnes.
-          Guidé par la simplicité et par la beauté, je cherche l’équilibre entre le beau et l'utile.
+          Je conçois des solutions utiles, pratiques et durables, au service des personnes.<br>
+          Guidé par la simplicité et par la beauté, je cherche l’équilibre entre le beau et l'utile.<br>
           Mon approche navigue dans un univers artisanal et musical, fait de précision, d’écoute et de soin du détail.
         </p>
       </div>
@@ -92,7 +92,7 @@ $title = "Accueil";
         <h3>Expérience</h3>
         <p>
           Dans le numérique depuis 2009, développeur puis chef de projet depuis 2013,
-          j’interviens principalement sur des projets complexes et stratégiques.
+          j’interviens principalement sur des projets complexes et stratégiques.<br>
           Mon rôle est de formaliser les besoins, structurer les processus et garder l’utilisateur au centre.
         </p>
       </div>
