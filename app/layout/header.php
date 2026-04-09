@@ -13,7 +13,6 @@ $currentUri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? '/', '/')
 
 <header class="site-header">
   <div class="container container--header header-inner">
-
     <!-- Logo -->
     <div class="header-brand">
       <a href="<?= route('home') ?>">

@@ -1,4 +1,14 @@
 <?php
+echo "<pre>";
+var_dump([
+  'REQUEST_URI' => $_SERVER['REQUEST_URI'] ?? null,
+  'SCRIPT_NAME' => $_SERVER['SCRIPT_NAME'] ?? null,
+  'PHP_SELF' => $_SERVER['PHP_SELF'] ?? null,
+  'base' => $base ?? null,
+  'uri_initial' => $uri ?? null,
+]);
+echo "</pre>";
+exit;
 require_once dirname(__DIR__) . '/core/bootstrap.php';
 /**
  * BASE

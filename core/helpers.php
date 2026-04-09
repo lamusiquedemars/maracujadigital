@@ -34,7 +34,7 @@ function url(string $path = ''): string
  */
 function asset(string $path): string
 {
-    return url('public/assets/' . ltrim($path, '/'));
+    return url('assets/' . ltrim($path, '/'));
 }
 
 /**
