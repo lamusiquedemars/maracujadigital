@@ -61,9 +61,9 @@ $SITE = [
     'items' => [
       [
         'type' => 'site',
-        'title' => 'Site vitrine – violoniste',
-        'text' => 'Structuration de l’offre + UX',
-        'image' => '/img/projet1.jpg'
+        'title' => 'Site vitrine – luthier à Lyon',
+        'text' => 'Création d’un site vitrine pour un luthier à Lyon, avec un travail de structuration du contenu et de mise en valeur des réalisations.',
+        'image' => '/img/contempoluthiers.png'
       ],
       [
         'type' => 'deliverable',
