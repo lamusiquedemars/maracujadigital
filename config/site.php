@@ -31,11 +31,12 @@ $SITE = [
 
   // NAVIGATION ← AJOUT
   'navigation' => [
-    ['label' => 'Accueil', 'url' => '/'],
-    ['label' => 'Services', 'url' => '/services'],
-    ['label' => 'Réalisations', 'url' => '/realisations'],
-    ['label' => 'À propos', 'url' => '/a-propos'],
-    ['label' => 'Contact', 'url' => '/contact'],
+    ['label' => 'Accueil', 'route' => 'home'],
+    ['label' => 'Site web', 'route' => 'site-web'],
+    ['label' => 'AMOA & Pilotage', 'route' => 'pilotage'],
+    ['label' => 'Réalisations', 'route' => 'realisations'],
+    ['label' => 'À propos', 'route' => 'a-propos'],
+    ['label' => 'Contact', 'route' => 'contact'],
   ],
 
   // FOOTER ← AJOUT
@@ -44,9 +45,9 @@ $SITE = [
     'baseline' => 'Création de sites web et pilotage de projets digitaux.',
     // liens internes
     'links' => [
-      [ 'label' => 'Mentions légales', 'url' => '/mentions-legales.php' ],
-      [ 'label' => 'CGV', 'url' => '/cgv.php' ],
-      [ 'label' => 'Contact', 'url' => '/contact.php' ],
+      [ 'label' => 'Mentions légales', 'route' => 'mentions-legales' ],
+      [ 'label' => 'CGV', 'route' => 'cgv' ],
+      [ 'label' => 'Contact', 'route' => 'contact' ],
     ],
     // réseaux / externes (optionnel)
     'socials' => [

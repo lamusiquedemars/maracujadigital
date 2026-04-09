@@ -1,12 +1,13 @@
 <?php
-
 // ROOT global (toujours base projet)
 define('ROOT', dirname(__DIR__));
 
-// ======================
+$ROUTES = require ROOT . '/config/routes.php';
 // CONFIG
 // ======================
 require_once ROOT . '/config/site.php';
+
+$ROUTES = require ROOT . '/app/config/routes.php';
 
 // ======================
 // CORE

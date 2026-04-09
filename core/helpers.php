@@ -74,3 +74,17 @@ function render(string $block, array $data = []): void
 
     require $file;
 }
+
+// ======================
+// ROUTING HELPER
+// ======================
+function route(string $name): string
+{
+    global $ROUTES;
+
+    if (!isset($ROUTES[$name])) {
+        return '#';
+    }
+
+    return url($ROUTES[$name]);
+}

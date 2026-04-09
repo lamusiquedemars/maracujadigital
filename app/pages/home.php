@@ -96,14 +96,6 @@ $title = "Accueil";
           <li><strong>Déployer</strong> — garantir valeur et usage</li>
         </ul>
       </div>
-
-      <!-- SYNTHÈSE -->
-      <div class="approach-summary">
-        <p>
-          Un profil hybride, entre rigueur de l’ingénierie et créativité artistique.
-        </p>
-      </div>
-
     </div>
 
   </div>
