@@ -41,7 +41,7 @@ body {
   padding: var(--space-m);
 }
 
-.container--header {
+.container--header, .container--realisations {
   max-width: 90%;
   padding: var(--space-xs);
 }
@@ -322,25 +322,24 @@ th {
 }
 
 .carousel-item {
-  flex: 0 0 85%;
+  height: 450px;
+  flex: 0 0 95%;
   scroll-snap-align: start;
-
-  border: 1px solid #e5e2dc;
+  border: none;
   border-radius: 12px;
   background: #fff;
-
   overflow: hidden;
 }
 
 .carousel-item img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 330px;
+  object-fit: contain;
   display: block;
 }
 
 .card-content {
-  padding: 16px;
+  padding: 0;
 }
 
 .carousel::-webkit-scrollbar {

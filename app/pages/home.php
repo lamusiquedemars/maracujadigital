@@ -19,7 +19,7 @@ $title = "Accueil";
 
   <!-- ORIENTATION -->
   <section class="section">
-      <div class="container">
+      <div class="container container--realisations">
           <h2>Donner forme à vos idées</h2>
           <p class="section-intro">
               Vous avez un projet digital, la volonté d’affirmer votre présence en ligne.
