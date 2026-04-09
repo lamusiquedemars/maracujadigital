@@ -12,7 +12,7 @@ require_once ROOT . '/config/site.php';
 /**
  * BASE ACTIVE (auto adaptée au dossier où tourne le site)
  */
-$SITE['base'] = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+//$SITE['base'] = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 
 // ======================
 // CORE

@@ -2,21 +2,44 @@
 
 require_once dirname(__DIR__) . '/core/bootstrap.php';
 
+/**
+ * BASE
+ */
 $base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 
+/**
+ * URI brute
+ */
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// enlève le base path
-$uri = substr($uri, strlen($base));
+/**
+ * enlève la base (/maracujadigital/public)
+ */
+if ($base !== '' && strpos($uri, $base) === 0) {
+    $uri = substr($uri, strlen($base));
+}
 
-// nettoie
+/**
+ * normalisation
+ */
 $uri = trim($uri, '/');
 
-// HOME
-if ($uri === 'public') {
-    $uri = '';
-}
-if ($uri === '') {
+/**
+ * debug (optionnel)
+ */
+echo '<pre>';
+var_dump([
+    'REQUEST_URI' => $_SERVER['REQUEST_URI'],
+    'SCRIPT_NAME' => $_SERVER['SCRIPT_NAME'],
+    'base' => $base,
+    'uri' => $uri,
+]);
+echo '</pre>';
+
+/**
+ * ROUTING HOME
+ */
+if ($uri === '' || $uri === 'index.php') {
     $view = dirname(__DIR__) . '/app/pages/home.php';
     $title = 'Accueil';
 } else {
@@ -33,4 +56,7 @@ if ($uri === '') {
     }
 }
 
+/**
+ * LAYOUT
+ */
 require dirname(__DIR__) . '/app/layout/layout.php';
