@@ -1,4 +1,11 @@
 <?php
+/**
+ * Configuration du site
+ * Toutes les données globales du site sont définies ici
+ * (identité, SEO, navigation, etc.)
+ *
+ * Note : les données spécifiques à une page (ex: titre) sont définies dans le controller de la page
+ */
 $SITE = [
 
   // IDENTITÉ
@@ -48,7 +55,24 @@ $SITE = [
       // [ 'label' => 'LinkedIn', 'url' => 'https://linkedin.com/in/xxx' ],
     ],
   ],
-
+  /*carousel réalisations*/
+  'realisations' => [
+    'title' => 'Exemples concrets',
+    'items' => [
+      [
+        'type' => 'site',
+        'title' => 'Site vitrine – violoniste',
+        'text' => 'Structuration de l’offre + UX',
+        'image' => '/img/projet1.jpg'
+      ],
+      [
+        'type' => 'deliverable',
+        'title' => 'Roadmap projet',
+        'text' => 'Cadrage fonctionnel + priorisation',
+        'image' => '/img/roadmap.jpg'
+      ]
+    ]
+  ],
   'tracking' => [
     'ga_id' => null,
   ],

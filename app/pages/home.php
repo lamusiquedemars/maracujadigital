@@ -53,26 +53,12 @@ $title = "Accueil";
   </section>
 
   <!-- REALISATIONS -->
-  <section class="section">
-    <div class="container">
-
-      <h2>Réalisations</h2>
-
-      <div class="grid">
-
-        <article class="card">
-          <h3>Projet 1</h3>
-        </article>
-
-        <article class="card">
-          <h3>Projet 2</h3>
-        </article>
-
-      </div>
-
-    </div>
-  </section>
-
+  <?php
+    render('realisations', [
+      'title' => $SITE['realisations']['title'],
+      'items' => $SITE['realisations']['items']
+    ]);
+  ?>
 <!-- APPROCHE / POSITIONNEMENT -->
   <section class="section section-approach">
   <div class="container">

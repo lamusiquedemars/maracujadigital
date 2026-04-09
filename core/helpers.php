@@ -59,12 +59,18 @@ function is_dev(): bool
     return ($SITE['env'] ?? null) === 'dev';
 }
 // ======================
-// RENDER POUR LES BLOCS
+// RENDER POUR LES COMPONENTS
 // ======================
 
-function render($block, $data = [])
+function render(string $block, array $data = []): void
 {
-    extract($data);
+    $file = ROOT . '/app/components/' . basename($block) . '.php';
 
-    require ROOT . '/app/components/' . $block . '.php';
+    if (!file_exists($file)) {
+        throw new Exception("Component not found: " . $block);
+    }
+
+    extract($data, EXTR_SKIP);
+
+    require $file;
 }
