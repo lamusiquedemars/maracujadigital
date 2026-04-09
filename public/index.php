@@ -1,17 +1,13 @@
 <?php
-
 require_once dirname(__DIR__) . '/core/bootstrap.php';
-
 /**
  * BASE
  */
 $base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
-
 /**
  * URI brute
  */
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
 /**
  * enlève la base (/maracujadigital/public)
  */
@@ -25,16 +21,13 @@ if ($base !== '' && strpos($uri, $base) === 0) {
 $uri = trim($uri, '/');
 
 /**
- * debug (optionnel)
+ * enlève index.php proprement
  */
-echo '<pre>';
-var_dump([
-    'REQUEST_URI' => $_SERVER['REQUEST_URI'],
-    'SCRIPT_NAME' => $_SERVER['SCRIPT_NAME'],
-    'base' => $base,
-    'uri' => $uri,
-]);
-echo '</pre>';
+if (str_starts_with($uri, 'index.php')) {
+    $uri = substr($uri, strlen('index.php'));
+}
+
+$uri = trim($uri, '/');
 
 /**
  * ROUTING HOME
@@ -43,9 +36,7 @@ if ($uri === '' || $uri === 'index.php') {
     $view = dirname(__DIR__) . '/app/pages/home.php';
     $title = 'Accueil';
 } else {
-
     $file = dirname(__DIR__) . '/app/pages/' . $uri . '.php';
-
     if (file_exists($file)) {
         $view = $file;
         $title = ucwords(str_replace(['/', '-'], [' › ', ' '], $uri));
