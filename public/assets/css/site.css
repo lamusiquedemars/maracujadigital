@@ -323,7 +323,7 @@ th {
 
 .carousel-item {
   height: 450px;
-  flex: 0 0 70%;
+  flex: 0 0 55%;
   scroll-snap-align: start;
   border: none;
   border-radius: 12px;

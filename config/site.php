@@ -67,8 +67,8 @@ $SITE = [
       ],
       [
         'type' => 'deliverable',
-        'title' => 'Modélisation de processus - statut client',
-        'text' => 'Modélisation d’un workflow de statut clients dans une application de type CMS.',
+        'title' => 'Modélisation de processus métier',
+        'text' => 'Exemple de modélisation d’un workflow de statut clients.',
         'image' => 'process-workflow.png'
       ]
     ]
