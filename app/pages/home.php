@@ -80,7 +80,7 @@ $title = "Accueil";
     <div class="grid-approach">
       <!-- VALEURS -->
       <div class="card-approach">
-        <i data-lucide="target" class="card-icon"></i>
+        <i data-lucide="star" class="card-icon"></i>
         <h3>Valeurs</h3>
         <p>
           Je conçois des solutions utiles, pratiques et durables, au service des personnes.<br>
@@ -90,7 +90,7 @@ $title = "Accueil";
       </div>
       <!-- EXPÉRIENCE -->
       <div class="card-approach">
-        <i data-lucide="compass" class="card-icon"></i>
+        <i data-lucide="footprints" class="card-icon"></i>
         <h3>Expérience</h3>
         <p>
           Dans le numérique depuis 2009, développeur puis chef de projet depuis 2013,
