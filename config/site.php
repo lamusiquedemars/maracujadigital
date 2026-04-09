@@ -34,7 +34,7 @@ $SITE = [
   // FOOTER ← AJOUT
   'footer' => [
     // baseline courte (optionnelle)
-    'baseline' => 'Conception de sites web sobres et efficaces',
+    'baseline' => 'Création de sites web et pilotage de projets digitaux.',
     // liens internes
     'links' => [
       [ 'label' => 'Mentions légales', 'url' => '/mentions-legales.php' ],
