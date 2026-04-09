@@ -70,6 +70,12 @@ $SITE = [
         'title' => 'Modélisation de processus métier',
         'text' => 'Exemple de modélisation d’un workflow de statut clients.',
         'image' => 'process-workflow.png'
+      ],
+      [
+        'type' => 'site',
+        'title' => 'Site vitrine – archetier à Lyon',
+        'text' => 'création de mon site vitrine d\'artisan, structuration du contenu.',
+        'image' => 'atelierivoincidit.png'
       ]
     ]
   ],
