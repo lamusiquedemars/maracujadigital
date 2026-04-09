@@ -27,7 +27,7 @@ require_once ROOT . '/core/helpers.php';
 $SEO = $SITE['seo'];
 $ASSETS = $SITE['assets'];
 /*url de base pour les liens internes (ex: si le site est dans un sous-dossier, elle est définie dans $SITE['base'])*/
-$BASE_URL = 'https://atelierivoincidit.fr/maracujadigital/';
+$BASE_URL = 'https://atelierivoincidit.fr/maracujadigital';
 // ======================
 // ENV MODE
 // ======================

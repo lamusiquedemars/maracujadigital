@@ -19,9 +19,10 @@ function e($value): string
 function url(string $path = ''): string
 {
     global $BASE_URL;
-    return $BASE_URL . ($path ? '/' . ltrim($path, '/') : '');
+    $base = rtrim($BASE_URL, '/');
+    $path = trim($path, '/');
+    return $base . ($path ? '/' . $path : '');
 }
-
 
 // ======================
 // ASSETS HELPERS
