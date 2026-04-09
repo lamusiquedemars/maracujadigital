@@ -56,6 +56,7 @@ $SITE = [
       // [ 'label' => 'LinkedIn', 'url' => 'https://linkedin.com/in/xxx' ],
     ],
   ],
+  
   /*carousel réalisations*/
   'realisations' => [
     'title' => 'Réalisations',
