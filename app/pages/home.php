@@ -11,9 +11,10 @@ $title = "Accueil";
       <p>
         Je vous aide à structurer, clarifier et exprimer votre activité sur le web.
       </p>
-      <a class="btn btn-primary" href="/contact.php">
-        Parlons de votre projet
-      </a>
+      <?php render('btn', [
+        'route' => 'contact',
+        'label' => 'Parlons de votre projet !'
+      ]); ?>
     </div>
   </section>
 
@@ -28,7 +29,7 @@ $title = "Accueil";
           
           <div class="grid">
               <!-- Carte 1 : Site Web -->
-              <a class="card" href="/services/site-web.php">
+              <a class="card" href="<?= route('site_web') ?>">
                 <i data-lucide="layout-template" class="card-icon"></i>
                   <h3>Création de site internet</h3>
                   <p>
@@ -39,7 +40,7 @@ $title = "Accueil";
               </a>
 
               <!-- Carte 2 : Structuration / Accompagnement -->
-              <a class="card" href="/services/accompagnement.php">
+              <a class="card" href="<?= route('pilotage') ?>">
                 <i data-lucide="milestone" class="card-icon"></i>
                   <h3>Cadrage & pilotage de projet digital</h3>
                   <p>
@@ -70,8 +71,8 @@ $title = "Accueil";
         <h3>Valeurs</h3>
         <p>
           Je conçois des solutions utiles, pratiques et durables, au service des personnes.</p>
-        <p>Guidé par la simplicité et par la beauté, je cherche l’équilibre entre le beau et l'utile.</p>
-        <p>Mon approche navigue dans un univers artisanal et musical, fait de précision, d’écoute et de soin du détail.
+        <p>Guidé par la simplicité, je cherche l’équilibre entre le beau et l'utile.</p>
+        <p>Mon approche navigue dans un univers fait de précision, d’écoute et de soin du détail.
         </p>
       </div>
       <!-- EXPÉRIENCE -->
@@ -105,9 +106,10 @@ $title = "Accueil";
   <section class="section">
     <div class="container">
       <h2>Un projet en tête ?</h2>
-      <a class="btn btn-primary" href="/contact.php">
-        Parlons-en !
-      </a>
+    <?php render('btn', [
+      'route' => 'contact',
+      'label' => 'Parlons-en !'
+    ]); ?>
 
     </div>
   </section>

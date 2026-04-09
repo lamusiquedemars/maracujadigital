@@ -4,13 +4,12 @@
 // =======================
 $siteName = $SITE['name'] ?? 'Site';
 $logoPath = $SITE['assets']['logo'] ?? '/public/assets/img/logo.svg';
-$base = $SITE['base'] ?? '';
 
 // Navigation
 $navItems = $SITE['navigation'] ?? [];
 
-// URI courante
-$currentUri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+// URI courante (propre)
+$currentUri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? '/', '/');
 ?>
 
 <header class="site-header">
@@ -18,30 +17,39 @@ $currentUri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 
     <!-- Logo -->
     <div class="header-brand">
-      <a href="<?= $base ?>/">
-        <img src="<?= $base . $logoPath ?>" alt="<?= $siteName ?>" class="brand-logo">
+      <a href="<?= route('home') ?>">
+        <img src="<?= e($logoPath) ?>" alt="<?= e($siteName) ?>" class="brand-logo">
       </a>
     </div>
 
     <!-- Navigation desktop -->
     <nav class="nav-primary">
       <ul class="nav-list">
-        <?php foreach ($navItems as $item): 
-          $href = isset($item['route'])
-            ? route($item['route'])
-            : url($item['url'] ?? '/');
-          $itemUri = trim(parse_url($href, PHP_URL_PATH), '/');
-          $isActive = ($itemUri === $currentUri);
-        ?>
+
+        <?php foreach ($navItems as $item): ?>
+
+          <?php
+            // 1. URL
+            $href = isset($item['route'])
+              ? route($item['route'])
+              : url($item['url'] ?? '/');
+
+            // 2. ROUTE CLEAN (source de vérité)
+            $itemPath = trim(parse_url($href, PHP_URL_PATH) ?? '/', '/');
+
+            // 3. ACTIVE SIMPLE & STABLE
+            $isActive = ($itemPath === $currentUri);
+          ?>
+
           <li class="nav-item">
-            <a 
-              href="<?= e($href) ?>" 
-              class="nav-link <?= $isActive ? 'is-active' : '' ?>"
-            >
+            <a href="<?= e($href) ?>"
+               class="nav-link <?= $isActive ? 'is-active' : '' ?>">
               <?= e($item['label']) ?>
             </a>
           </li>
+
         <?php endforeach; ?>
+
       </ul>
     </nav>
 
@@ -57,17 +65,23 @@ $currentUri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
   <!-- Mobile -->
   <nav class="nav-mobile">
     <ul class="nav-mobile-list">
-      <?php foreach ($navItems as $item): 
-        $href = isset($item['route'])
-          ? route($item['route'])
-          : url($item['url'] ?? '/');
-      ?>
+
+      <?php foreach ($navItems as $item): ?>
+
+        <?php
+          $href = isset($item['route'])
+            ? route($item['route'])
+            : url($item['url'] ?? '/');
+        ?>
+
         <li>
           <a href="<?= e($href) ?>">
             <?= e($item['label']) ?>
           </a>
         </li>
+
       <?php endforeach; ?>
+
     </ul>
   </nav>
 </header>

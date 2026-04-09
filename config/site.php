@@ -7,7 +7,6 @@
  * Note : les données spécifiques à une page (ex: titre) sont définies dans le controller de la page
  */
 $SITE = [
-
   // IDENTITÉ
   'name' => 'Maracuja Digital',
   'url' => 'https://maracujadigital.fr',
@@ -49,7 +48,8 @@ $SITE = [
       [ 'label' => 'CGV', 'route' => 'cgv' ],
       [ 'label' => 'Contact', 'route' => 'contact' ],
     ],
-    // réseaux / externes (optionnel)
+    
+    /*réseaux / externes (optionnel)*/
     'socials' => [
       // exemple client
       // [ 'label' => 'Instagram', 'url' => 'https://instagram.com/xxx' ],
@@ -63,23 +63,24 @@ $SITE = [
       [
         'type' => 'site',
         'title' => 'Site vitrine – luthier à Lyon',
-        'text' => 'Réalisation d’un site vitrine pour un luthier à Lyon, conseil et structuration du contenu.',
+        'text' => 'Réalisation d’un site vitrine, conseil et structuration du contenu.',
         'image' => 'contempoluthiers.png'
       ],
       [
         'type' => 'deliverable',
         'title' => 'Modélisation de processus métier',
-        'text' => 'Exemple de modélisation d’un workflow de statut clients.',
+        'text' => 'Exemple de modélisation d’un workflow de changement de statut.',
         'image' => 'process-workflow.png'
       ],
       [
         'type' => 'site',
         'title' => 'Site vitrine – archetier à Lyon',
-        'text' => 'création de mon site vitrine d\'artisan, structuration du contenu.',
+        'text' => 'création de mon site vitrine d\'artisan.',
         'image' => 'atelierivoincidit.png'
       ]
     ]
   ],
+  /*tracking (ex: Google Analytics)*/
   'tracking' => [
     'ga_id' => null,
   ],

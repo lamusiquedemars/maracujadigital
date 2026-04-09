@@ -1,9 +1,6 @@
 <?php
 $footer = $SITE['footer'] ?? [];
-
 $siteName = $SITE['name'] ?? '';
-$base = $SITE['base'] ?? '';
-
 $links = $footer['links'] ?? [];
 $socials = $footer['socials'] ?? [];
 $baseline = $footer['baseline'] ?? null;
@@ -11,25 +8,27 @@ $baseline = $footer['baseline'] ?? null;
 
 <footer class="site-footer">
   <div class="container footer-inner">
-
     <!-- identité -->
     <div class="footer-brand">
       <p class="footer-name">
         &copy; <?= date('Y') ?> <?= e($siteName) ?>
       </p>
-
       <?php if ($baseline): ?>
         <p class="footer-baseline">
           <?= e($baseline) ?>
         </p>
       <?php endif; ?>
     </div>
-
     <!-- navigation -->
     <?php if (!empty($links)): ?>
       <nav class="footer-nav small" aria-label="Footer navigation">
         <?php foreach ($links as $i => $item): ?>
-          <a href="<?= $base . $item['url'] ?>">
+          <?php
+            $href = isset($item['route'])
+              ? route($item['route'])
+              : url($item['url'] ?? '/');
+          ?>
+          <a href="<?= e($href) ?>">
             <?= e($item['label']) ?>
           </a>
           <?php if ($i < count($links) - 1): ?>
@@ -43,12 +42,13 @@ $baseline = $footer['baseline'] ?? null;
     <?php if (!empty($socials)): ?>
       <nav class="footer-socials" aria-label="Réseaux sociaux">
         <?php foreach ($socials as $item): ?>
-          <a href="<?= $item['url'] ?>" target="_blank" rel="noopener noreferrer">
+          <a href="<?= e($item['url']) ?>"
+             target="_blank"
+             rel="noopener noreferrer">
             <?= e($item['label']) ?>
           </a>
         <?php endforeach; ?>
       </nav>
     <?php endif; ?>
-
   </div>
 </footer>
