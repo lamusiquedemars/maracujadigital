@@ -27,7 +27,7 @@ $baseline = $footer['baseline'] ?? null;
 
     <!-- navigation -->
     <?php if (!empty($links)): ?>
-      <nav class="footer-nav" aria-label="Footer navigation">
+      <nav class="footer-nav small" aria-label="Footer navigation">
         <?php foreach ($links as $i => $item): ?>
           <a href="<?= $base . $item['url'] ?>">
             <?= e($item['label']) ?>
