@@ -63,13 +63,13 @@ $SITE = [
         'type' => 'site',
         'title' => 'Site vitrine – luthier à Lyon',
         'text' => 'Création d’un site vitrine pour un luthier à Lyon, avec un travail de structuration du contenu et de mise en valeur des réalisations.',
-        'image' => '/public/assets/img/contempoluthiers.png'
+        'image' => 'contempoluthiers.png'
       ],
       [
         'type' => 'deliverable',
         'title' => 'Roadmap projet',
         'text' => 'Cadrage fonctionnel + priorisation',
-        'image' => '/public/assets/img/roadmap.jpg'
+        'image' => 'roadmap.jpg'
       ]
     ]
   ],
