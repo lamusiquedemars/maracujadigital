@@ -16,8 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- Favicon -->
-<link rel="icon" href="<?= url($ASSETS['favicon_path'] . 'favicon.ico') ?>">
-
+<link rel="icon" href="<?= asset('img/favicon.ico') ?>">
 <!-- CSS  -->
 <link rel="stylesheet" href="<?= asset('css/site.css') ?>">
 <link rel="stylesheet" href="<?= asset('css/fonts.css') ?>">
