@@ -29,6 +29,7 @@ $title = "Accueil";
           <div class="grid">
               <!-- Carte 1 : Site Web -->
               <a class="card" href="/services/site-web.php">
+                <i data-lucide="layout-template" class="card-icon"></i>
                   <h3>Création de site internet</h3>
                   <p>
                       Un site web qui vous ressemble, pensé pour être pratique, fluide, un véritable outil.  
@@ -39,6 +40,7 @@ $title = "Accueil";
 
               <!-- Carte 2 : Structuration / Accompagnement -->
               <a class="card" href="/services/accompagnement.php">
+                <i data-lucide="milestone" class="card-icon"></i>
                   <h3>Cadrage & pilotage de projet digital</h3>
                   <p>
                       Un travail d'accompagnement, de l'expression des besoins à la réalisation.
