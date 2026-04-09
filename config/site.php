@@ -12,8 +12,8 @@ $SITE = [
   'url' => 'https://maracujadigital.fr',
   'author' => 'Ivo Correia de Melo',
 
-  // IMPORTANT
-  'base' => '/maracujadigital',
+  // IMPORTANT base pour les URL (ex: si le site est dans un sous-dossier, mettre '/mon-sous-dossier')
+  'base' => '/maracujadigital/public',
 
   // SEO
   'seo' => [

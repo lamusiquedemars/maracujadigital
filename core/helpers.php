@@ -10,26 +10,41 @@ function e($value): string
 // ======================
 // URL HELPERS
 // ======================
-// retourne l'URL absolue du site
+
+/**
+ * Construit une URL absolue propre
+ * - évite les double slash
+ * - fonctionne en sous-dossier
+ */
 function url(string $path = ''): string
 {
     global $BASE_URL;
 
-    return rtrim($BASE_URL, '/') . '/' . ltrim($path, '/');
+    return $BASE_URL . ($path ? '/' . ltrim($path, '/') : '');
 }
+
 
 // ======================
 // ASSETS HELPERS
 // ======================
+
+/**
+ * Génère une URL d'asset (CSS, JS, images…)
+ * ex: /public/assets/...
+ */
 function asset(string $path): string
 {
-    return 'assets/' . ltrim($path, '/');
+    return url('public/assets/' . ltrim($path, '/'));
 }
 
+/**
+ * Raccourci pour les images
+ */
 function img(string $path): string
 {
-    return asset('img/' . $path);
+    return asset('img/' . ltrim($path, '/'));
 }
+
 
 // ======================
 // DEBUG (dev only)
@@ -42,13 +57,15 @@ function dd($data): void
     exit;
 }
 
+
 // ======================
-// SAFE OUTPUT (optionnel)
+// SAFE OUTPUT
 // ======================
 function esc_attr($value): string
 {
     return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
 }
+
 
 // ======================
 // ENV CHECK
@@ -58,10 +75,11 @@ function is_dev(): bool
     global $SITE;
     return ($SITE['env'] ?? null) === 'dev';
 }
-// ======================
-// RENDER POUR LES COMPONENTS
-// ======================
 
+
+// ======================
+// RENDER COMPONENT
+// ======================
 function render(string $block, array $data = []): void
 {
     $file = ROOT . '/app/components/' . basename($block) . '.php';
@@ -75,9 +93,14 @@ function render(string $block, array $data = []): void
     require $file;
 }
 
+
 // ======================
 // ROUTING HELPER
 // ======================
+
+/**
+ * Génère une URL à partir d'une route nommée
+ */
 function route(string $name): string
 {
     global $ROUTES;
