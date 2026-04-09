@@ -57,7 +57,7 @@ $SITE = [
   ],
   /*carousel réalisations*/
   'realisations' => [
-    'title' => 'Exemples concrets',
+    'title' => 'Réalisations',
     'items' => [
       [
         'type' => 'site',
