@@ -3,15 +3,37 @@ $title = "Création de sites web";
 ?>
 
 <!-- HERO -->
-<section class="hero section">
+<section class="section">
   <div class="container">
-    <h1>Création de sites web</h1>
-    <p>
-      Je conçois des sites vitrine élégants et professionnels. 
-      Avec plus de 13 ans d’expérience en gestion de projets, j’accompagne chaque client avec une méthode rigoureuse et adaptée à ses besoins.
+
+    <h1></h1>
+
+    <p class="hero__subtitle">
     </p>
+
   </div>
 </section>
+
+  <!-- HERO -->
+  <section class="hero section hero--page hero--center">
+    <div class="container">
+      
+      <div class="hero__content">
+        
+        <h1 class="hero__title">
+          Création de sites web
+        </h1>
+
+        <p class="hero__subtitle">
+          Je conçois des sites vitrine élégants et professionnels pour artisans d’art, luthiers, musiciens et créateurs haut de gamme. 
+        </p>
+        <p>
+          Avec plus de 13 ans d’expérience en AMOA et développement, j’accompagne chaque projet avec une méthode rigoureuse et un développement interne (sites sur-mesure légers ou WordPress selon les besoins), dans une approche sensible à l’univers artisanal et musical.
+        </p>
+      </div>
+
+    </div>
+  </section>
 
 <!-- FORMULES -->
 <section class="section">

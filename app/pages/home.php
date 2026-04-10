@@ -39,7 +39,7 @@ $title = "Accueil";
           
           <div class="grid grid--2">
               <!-- Carte 1 : Site Web -->
-              <a class="card" href="<?= route('site_web') ?>">
+              <a class="card" href="<?= route('site-web') ?>">
                 <i data-lucide="layout-template" class="card-icon"></i>
                   <h3>Création de site internet</h3>
                   <p>
@@ -80,14 +80,14 @@ $title = "Accueil";
     <h2>Approche & positionnement</h2>
     <div class="grid grid--3">
       <!-- VALEURS -->
-      <div class="card-approach">
+      <div class="card card--featured">
         <i data-lucide="star" class="card-icon"></i>
         <h3>Valeurs</h3>
         <p>Guidé par la simplicité et le service des personnes, je cherche l’équilibre entre le beau et l’utile.</p>
         <p>Mon travail repose sur l’écoute, la précision et le soin du détail.</p>
       </div>
       <!-- EXPÉRIENCE -->
-      <div class="card-approach">
+      <div class="card card--featured">
         <i data-lucide="footprints" class="card-icon"></i>
         <h3>Expérience</h3>
         <p>
@@ -98,7 +98,7 @@ $title = "Accueil";
       </div>
 
       <!-- MÉTHODE -->
-      <div class="card-approach">
+      <div class="card card--featured">
         <i data-lucide="settings" class="card-icon"></i>
         <h3>Méthode</h3>
           <p>

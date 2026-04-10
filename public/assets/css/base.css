@@ -473,21 +473,6 @@ p {
   margin-bottom: 0.75rem;
   stroke-width: 1.5;
 }
-/* variantes card (comme tu veux) */
-
-.card--highlight {
-  background: var(--color-accent-soft);
-  border-color: var(--color-accent);
-}
-
-.card--featured {
-  border-color: var(--color-accent);
-}
-
-.card--ghost {
-  background: transparent;
-  border: none;
-}
 
 /* TABLE (ton style conservé) */
 
