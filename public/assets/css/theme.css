@@ -25,8 +25,7 @@ Surcharge de styles pour le thème de base
 
 /*grids*/
 .grid--2 {
-  gap: var(--space-l);
-  align-items: start;
+  gap: 0;
 }
 
 /* =========================
@@ -256,14 +255,11 @@ Surcharge de styles pour le thème de base
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   padding: 1.5rem;
-  border-radius: 12px;
-  transition: all 0.25s ease;
-}
-.card--featured:hover {
-  transform: translateY(-4px);
+  border-radius: 5px;
 }
 
 .card--featured p {
+  padding-top: var(--space-m);
   color: var(--color-muted);
 }
 
@@ -277,6 +273,11 @@ Surcharge de styles pour le thème de base
   border: none;
 }
 
+.card--maracuja {
+  background:
+    url('../img/maracuja-fruit.jpg') no-repeat right 1rem center / 120px,
+    var(--color-surface);
+}
 /*carousel*/
 /* usage : visuels, porfolios, produits, projets, fiches, réalisations */
 .carousel--cards {
