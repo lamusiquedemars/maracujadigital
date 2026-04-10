@@ -157,12 +157,32 @@ p {
   min-height: 70px;
 }
 
+/* Logo */
+
+.brand-logo {
+  height: 128px;
+  display: block;
+}
 /* NAV (simple, comme ton code) */
+
+.nav-primary {
+    display: block;
+  }
 
 .nav-list {
   display: flex;
   gap: var(--space-m);
 }
+
+.nav-link {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  position: relative;
+}
+
+.nav-link.is-active {
+  color: var(--color-accent);
+}   
 
 .nav-link:hover {
   color: var(--color-accent);
@@ -357,3 +377,74 @@ th, td {
 
 .is-open { display: block; }
 .is-disabled { opacity: 0.4; pointer-events: none; }
+
+/* =========================
+9. MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .nav-primary {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Menu mobile */
+
+  .nav-mobile {
+    display: none;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .nav-mobile.is-open {
+    display: block;
+  }
+
+  .nav-mobile-list {
+    list-style: none;
+    margin: 0;
+    padding: var(--space-s);
+  }
+
+  .nav-mobile-list li {
+    margin-bottom: var(--space-s);
+  }
+
+  .nav-mobile a {
+    color: var(--color-text);
+    font-size: 1rem;
+  }
+/*grid*/
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .included-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+/*footer*/
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-socials {
+    justify-content: flex-end;
+  }
+}

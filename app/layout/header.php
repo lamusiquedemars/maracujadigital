@@ -12,9 +12,9 @@ $currentUri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? '/', '/')
 ?>
 
 <header class="site-header">
-  <div class="container container--header header-inner">
+  <div class="container container--wide header-inner">
     <!-- Logo -->
-    <div class="header-brand">
+    <div>
       <a href="<?= route('home') ?>">
         <img src="<?= asset('img/logo.png') ?>" alt="<?= e($siteName) ?>" class="brand-logo">
       </a>
