@@ -1,0 +1,299 @@
+/* =========================
+1. VARIABLES
+========================= */
+
+:root {
+
+  --color-bg: #fbfaf7;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-border: #e5e2dc;
+
+  --color-accent: #6b6b6b;
+  --color-accent-soft: #e8dcc2;
+
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+
+  --space-xs: 0.2rem;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2.5rem;
+
+  --radius: 8px;
+
+  /* containers (comme ton système actuel implicite) */
+  --container: 1060px;
+  --container-wide: 90%;
+}
+
+/* =========================
+2. BASE
+========================= */
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* =========================
+3. TYPOGRAPHIE
+========================= */
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0 0 var(--space-s);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.1rem; }
+
+p {
+  margin: 0 0 var(--space-s);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+/* =========================
+4. LAYOUT
+========================= */
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-m);
+}
+
+.container--wide {
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  padding: var(--space-xs);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-l) 0;
+}
+
+/* GRID (ton approche implicite conservée) */
+
+.grid {
+  display: grid;
+  gap: var(--space-m);
+}
+
+.grid--2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid--2,
+  .grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+5. HEADER
+========================= */
+
+.site-header {
+  position: relative;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* option sticky (comme tu voulais) */
+.site-header.is-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+/* NAV (simple, comme ton code) */
+
+.nav-list {
+  display: flex;
+  gap: var(--space-m);
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+/* toggle — correction minimale (ton point important) */
+
+.nav-toggle {
+  display: none; /* desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle-bar {
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+  margin: 4px 0;
+}
+
+/* mobile nav */
+.nav-mobile {
+  display: none;
+  border-top: 1px solid var(--color-border);
+}
+
+.nav-mobile.is-open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .container--wide {
+    padding: var(--space-s);
+  }
+}
+
+/* =========================
+6. COMPONENTS
+========================= */
+
+/* BUTTON (ton style conservé) */
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-accent);
+}
+
+.btn:hover {
+  background: var(--color-accent-soft);
+}
+
+/* CARD (structure fidèle à ton système) */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  padding: var(--space-m);
+}
+
+.card p {
+  flex-grow: 1;
+}
+
+.card .card-footer {
+  margin-top: auto;
+}
+
+/* variantes card (comme tu veux) */
+
+.card--highlight {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+}
+
+.card--featured {
+  border-color: var(--color-accent);
+}
+
+.card--ghost {
+  background: transparent;
+  border: none;
+}
+
+/* TABLE (ton style conservé) */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+th, td {
+  padding: var(--space-s);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* CAROUSEL */
+
+.carousel {
+  display: flex;
+  gap: var(--space-m);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+  flex: 0 0 50%;
+  scroll-snap-align: start;
+}
+
+/* =========================
+7. STATES (minimal, propre)
+========================= */
+
+.is-active { }
+.is-open { display: block; }
+.is-disabled { opacity: 0.4; pointer-events: none; }
