@@ -1,0 +1,16 @@
+/* =========================
+Surcharge de styles pour le thème de base
+========================= */
+/* =========================
+1. VARIABLES
+========================= */
+:root {
+--color-bg: #fbfaf7;
+--color-surface: #ffffff;
+--color-text: #1a1a1a;
+--color-muted: #6b6b6b;
+--color-border: #e5e2dc;
+
+--color-accent: #d96b4a;
+--color-accent-soft: #f3ddd6;
+}

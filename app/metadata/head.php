@@ -18,5 +18,6 @@
 <!-- Favicon -->
 <link rel="icon" href="<?= asset('img/favicon.ico') ?>">
 <!-- CSS  -->
-<link rel="stylesheet" href="<?= asset('css/site.css') ?>">
+<link rel="stylesheet" href="<?= asset('css/base.css') ?>">
+<link rel="stylesheet" href="<?= asset('css/theme.css') ?>">
 <link rel="stylesheet" href="<?= asset('css/fonts.css') ?>">
