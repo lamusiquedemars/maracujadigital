@@ -78,7 +78,7 @@ $title = "Accueil";
   <section class="section">
   <div class="container">
     <h2>Approche & positionnement</h2>
-    <div class="grid-approach">
+    <div class="grid grid--3">
       <!-- VALEURS -->
       <div class="card-approach">
         <i data-lucide="star" class="card-icon"></i>
