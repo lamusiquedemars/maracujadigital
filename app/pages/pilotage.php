@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Maracuja Consulting - Ivo Correia de Melo">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/maracuja-favicon-32.png">
-  <link href="./css/fonts.css" rel="stylesheet">
-  <link href="./css/site.css" rel="stylesheet">
-  <script src="./js/site.js" defer></script>
-  <title>Offres d'accompagnement</title>
-</head>
-
-<body>
 <section class="section">
   <div class="container">
 
@@ -134,5 +120,3 @@
     </div>
   </div>
 </section>
-</body>
-</html>

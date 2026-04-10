@@ -275,7 +275,7 @@ Surcharge de styles pour le thème de base
 
 .card--maracuja {
   background:
-    url('../img/maracuja-fruit.jpg') no-repeat right 1rem center / 120px,
+    url('../img/passiflora-rameau.png') no-repeat right 1rem center / 200px,
     var(--color-surface);
 }
 /*carousel*/
