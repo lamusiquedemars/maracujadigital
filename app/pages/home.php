@@ -3,28 +3,38 @@ $title = "Accueil";
 ?>
 
   <!-- HERO -->
-  <section class="hero section">
+  <section class="hero section hero--home hero--image hero--center hero--full hero--maracuja">
     <div class="container">
-      <h1>
-        Rendre visible ce qui compte vraiment.
-      </h1>
-      <p>
-        Je vous aide à structurer, clarifier et exprimer votre activité sur le web.
-      </p>
-      <?php render('btn', [
-        'route' => 'contact',
-        'label' => 'Parlons de votre projet !'
-      ]); ?>
+      
+      <div class="hero__content">
+        
+        <h1 class="hero__title">
+          Donner vie à ses idées.
+        </h1>
+
+        <p class="hero__subtitle">
+          Je vous aide à structurer, clarifier et transformer votre activité sur le web.
+        </p>
+
+        <div class="hero__actions">
+          <?php render('btn', [
+            'route' => 'contact',
+            'label' => 'Parlons de votre projet'
+          ]); ?>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
   <!-- ORIENTATION -->
   <section class="section">
       <div class="container">
-          <h2>Donner forme à vos idées</h2>
+          <h2>Orientation</h2>
           <p class="section-intro">
-              Vous avez un projet digital, la volonté d’affirmer votre présence en ligne.
-              Je vous accompagne avec méthode et exigence pour un résultat clair, utile et fonctionnel.
+              Vous avez un projet digital.
+              Je propose la création de sites et le pilotage de projet, avec méthode et exigence, pour un résultat clair et utile.
           </p>
           
           <div class="grid">
@@ -33,8 +43,10 @@ $title = "Accueil";
                 <i data-lucide="layout-template" class="card-icon"></i>
                   <h3>Création de site internet</h3>
                   <p>
-                      Un site web qui vous ressemble, pensé pour être pratique, fluide, un véritable outil.  
-                      L’idée n’est pas d’en faire trop, mais de faire juste — et bien.
+                      Un site web qui vous ressemble, pensé pour être pratique, fluide, un véritable outil.
+                  </p>
+                  <p>
+                      Il permet de présenter clairement votre activité et de donner à vos visiteurs un moyen simple d'intéragir.
                   </p>
                   <span class="btn btn-secondary">Voir le service</span>
               </a>
@@ -45,7 +57,8 @@ $title = "Accueil";
                   <h3>Cadrage & pilotage de projet digital</h3>
                   <p>
                       Un travail d'accompagnement, de l'expression des besoins à la réalisation.
-                      Deux objectifs : garantir les résultats et la satisfaction du client.
+                  </p>
+                    Deux objectifs : garantir les résultats et la satisfaction du client.
                   </p>
                   <span class="btn btn-secondary">Découvrir le service</span>
               </a>
@@ -69,11 +82,8 @@ $title = "Accueil";
       <div class="card-approach">
         <i data-lucide="star" class="card-icon"></i>
         <h3>Valeurs</h3>
-        <p>
-          Je conçois des solutions utiles, pratiques et durables, au service des personnes.</p>
-        <p>Guidé par la simplicité, je cherche l’équilibre entre le beau et l'utile.</p>
-        <p>Mon approche navigue dans un univers fait de précision, d’écoute et de soin du détail.
-        </p>
+        <p>Guidé par la simplicité et le service des personnes, je cherche l’équilibre entre le beau et l’utile.</p>
+        <p>Mon travail repose sur l’écoute, la précision et le soin du détail.</p>
       </div>
       <!-- EXPÉRIENCE -->
       <div class="card-approach">
@@ -90,6 +100,9 @@ $title = "Accueil";
       <div class="card-approach">
         <i data-lucide="settings" class="card-icon"></i>
         <h3>Méthode</h3>
+          <p>
+            J’applique une méthode de travail en 4 étapes, issue de la gestion de projets.
+          </p>
         <ul>
           <li><strong>Cadrer</strong> — besoins et objectifs</li>
           <li><strong>Structurer</strong> — processus et fonctionnalités</li>

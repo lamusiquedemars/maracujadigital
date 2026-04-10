@@ -332,8 +332,105 @@ p {
     justify-content: flex-end;
   }
 }
+
+/* =========================================================
+7. HERO - structure commune à tous les hero (home + pages)
+========================================================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* container interne du hero */
+.hero__grid {
+  display: grid;
+  gap: var(--space-m);
+  align-items: center;
+}
+
+/* bloc texte principal */
+.hero__content {
+  display: grid;
+  gap: var(--space-m);
+}
+
+/* titre principal */
+.hero__title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* sous-titre / description */
+.hero__subtitle {
+  color: var(--color-muted);
+  max-width: 60ch;
+  margin: 0;
+}
+
+/* zone d’actions (boutons, liens) */
+.hero__actions {
+  display: flex;
+  gap: var(--space-s);
+  flex-wrap: wrap;
+}
+
+/*variantes de hero */
+/* 1. layout 2 colonnes (texte + média) */
+.hero--split .hero__grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .hero--split .hero__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 2.  centrage du contenu (home impact ou landing) */
+.hero--center .hero__content {
+  text-align: center;
+  justify-items: center;
+}
+
+/* 3. limitation largeur texte (home éditoriale) */
+.hero--narrow .hero__content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* 4. hero avec background-image */
+.hero--image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* overlay (lisibilité texte sur image) */
+.hero--image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+/* assure que le contenu passe au-dessus de l’overlay */
+.hero--image .hero__grid {
+  position: relative;
+  z-index: 1;
+}
+
+/* 5. hero plein écran (landing / home forte) */
+.hero--full {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
 /* =========================
-7. COMPONENTS
+8. COMPONENTS
 ========================= */
 
 /* BUTTON (ton style conservé) */
@@ -420,7 +517,7 @@ th, td {
 }
 
 /* =========================
-8. STATES (minimal, propre)
+9. STATES (minimal, propre)
 ========================= */
 
 .is-open { display: block; }

@@ -59,8 +59,122 @@ Surcharge de styles pour le thème de base
 }
 
 /* =========================
-7. COMPONENTS - SKIN (thème)
+7. HERO — SKIN (thème)
 ========================= */
+/* 1. HERO HOME (impact éditorial, sans image)
+    usage : accueil simple, message fort*/
+.hero--home {
+  padding: calc(var(--space-xl) * 1.2) 0;
+}
+
+.hero--home .hero__content {
+  max-width: 760px;
+}
+
+.hero--home .hero__title {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+}
+/* 2. HERO HOME IMAGE + PARALLAX (version signature)
+    usage : home principale “maracuja” */
+.hero--image {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.hero--image::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.55)
+  );
+}
+.hero--home.hero--image {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero--home.hero--image .hero__content {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.hero--home.hero--image .hero__title {
+  color: white;
+}
+
+/*3. HERO PAGE (secondaire propre)
+👉 usage : services / contact / articles*/
+.hero--page {
+  padding: var(--space-l) 0;
+}
+
+.hero--page .hero__content {
+  max-width: 640px;
+}
+
+.hero--page .hero__title {
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+}
+/* 4. HERO SOFT (secondaire doux)*/
+.hero--soft {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* =========================================================
+   HERO MARACUJA — HOME SIGNATURE
+   ========================================================= */
+
+/* image de fond */
+.hero--maracuja {
+  background-image: url('../img/passiflora-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* overlay doux (lisibilité + identité) */
+.hero--maracuja::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.6)
+  );
+}
+
+/* centrage + lecture premium */
+.hero--maracuja.hero--center .hero__content {
+  text-align: center;
+  color: white;
+}
+
+/* titre */
+.hero--maracuja .hero__title {
+  color: white;
+}
+
+/* texte secondaire */
+.hero--maracuja .hero__subtitle {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* option : bouton plus visible */
+.hero--maracuja .btn {
+  border-color: white;
+  color: white;
+}
+
+.hero--maracuja .btn:hover {
+  background: white;
+  color: #1a1a1a;
+}
+
+/* =========================
+8. COMPONENTS - SKIN (thème)
+========================= */
+/* boutons */
 /* primaire : action principale */
 .btn-primary {
   background: var(--color-accent);
@@ -81,4 +195,46 @@ Surcharge de styles pour le thème de base
 .btn-ghost:hover {
   border-color: var(--color-accent);
   color: var(--color-accent);
+}
+
+/*carousel*/
+/* usage : visuels, porfolios, produits, projets, fiches, réalisations */
+.carousel--cards {
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.carousel--cards .carousel-item {
+  height: 420px;
+  background: var(--color-surface);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.carousel--cards .carousel-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.carousel--cards .carousel-item .content {
+  padding: 12px;
+}
+
+/* navigation fluide / storytelling. effet “on voit la carte suivante” → donne envie de scroller
+usage : témoignages, étapes d’un processus, storytelling */
+.carousel--peek {
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.carousel--peek .carousel-item {
+  flex: 0 0 80%;
+}
+
+@media (min-width: 768px) {
+  .carousel--peek .carousel-item {
+    flex: 0 0 60%;
+  }
 }
