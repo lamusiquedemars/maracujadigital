@@ -3,8 +3,8 @@ $title = $title ?? 'Réalisations';
 $items = $items ?? [];
 ?>
 
-<section class="section section-realisations">
-  <div class="container container--realisations">
+<section class="section">
+  <div class="container container--wide">
     <h2><?= e($title) ?></h2>
     <div class="carousel">
       <?php foreach ($items as $item): ?>
@@ -16,7 +16,7 @@ $items = $items ?? [];
               loading="lazy"
             >
           <?php endif; ?>
-          <div class="card-content">
+          <div>
             <h3><?= e($item['title']) ?></h3>
             <?php if (!empty($item['text'])): ?>
               <p><?= e($item['text']) ?></p>
