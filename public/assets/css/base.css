@@ -294,6 +294,5 @@ th, td {
 7. STATES (minimal, propre)
 ========================= */
 
-.is-active { }
 .is-open { display: block; }
 .is-disabled { opacity: 0.4; pointer-events: none; }
