@@ -210,7 +210,68 @@ p {
 }
 
 /* =========================
-6. COMPONENTS
+6. FOOTER 
+========================= */
+
+.site-footer {
+  margin-top: var(--space-l);
+  padding: var(--space-l) 0;
+  border-top: 1px solid;
+  font-size: 0.9rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+/* bloc marque */
+
+.footer-brand {
+  max-width: 420px;
+}
+
+.footer-name {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.footer-baseline {
+  line-height: 1.5;
+}
+
+/* navigation */
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer-nav span {
+  opacity: 0.5;
+}
+
+/* socials */
+
+.footer-socials {
+  display: flex;
+  gap: var(--space-s);
+}
+
+/* responsive léger */
+
+@media (min-width: 768px) {
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+/* =========================
+7. COMPONENTS
 ========================= */
 
 /* BUTTON (ton style conservé) */
@@ -291,7 +352,7 @@ th, td {
 }
 
 /* =========================
-7. STATES (minimal, propre)
+8. STATES (minimal, propre)
 ========================= */
 
 .is-open { display: block; }

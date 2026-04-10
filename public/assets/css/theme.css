@@ -14,3 +14,49 @@ Surcharge de styles pour le thème de base
 --color-accent: #d96b4a;
 --color-accent-soft: #f3ddd6;
 }
+
+/* =========================
+2. FOOTER
+========================= */
+/* =========================
+FOOTER — SKIN (thème)
+========================= */
+
+.site-footer {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.footer-name {
+  color: var(--color-text);
+}
+
+.footer-baseline {
+  color: var(--color-muted);
+}
+
+/* navigation */
+
+.footer-nav a {
+  color: var(--color-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--color-accent);
+}
+
+.footer-nav span {
+  color: var(--color-border);
+}
+
+/* socials */
+
+.footer-socials a {
+  color: var(--color-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--color-accent);
+}
