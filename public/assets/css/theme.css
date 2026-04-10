@@ -16,6 +16,14 @@ Surcharge de styles pour le thème de base
 }
 
 /* =========================
+4. LAYOUT
+========================= */
+
+.section {
+  background: var(--color-bg);
+}
+
+/* =========================
 6. FOOTER — SKIN (thème)
 ========================= */
 
@@ -129,6 +137,8 @@ Surcharge de styles pour le thème de base
 
 /* image de fond */
 .hero--maracuja {
+  position: relative;
+  overflow: hidden;
   background-image: url('../img/passiflora-background.png');
   background-size: cover;
   background-position: center;
@@ -137,17 +147,23 @@ Surcharge de styles pour le thème de base
 
 /* overlay doux (lisibilité + identité) */
 .hero--maracuja::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,0.35),
     rgba(0,0,0,0.6)
   );
+  z-index: 1;
 }
 
 /* centrage + lecture premium */
 .hero--maracuja.hero--center .hero__content {
   text-align: center;
   color: white;
+  position: relative;
+  z-index: 2;
 }
 
 /* titre */
@@ -196,7 +212,29 @@ Surcharge de styles pour le thème de base
   border-color: var(--color-accent);
   color: var(--color-accent);
 }
+/* cartes */
+.card-icon {
+  stroke: var(--color-accent);
+}
 
+.card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card--highlight {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+}
+
+.card--featured {
+  border-color: var(--color-accent);
+}
+
+.card--ghost {
+  background: transparent;
+  border: none;
+}
 /*carousel*/
 /* usage : visuels, porfolios, produits, projets, fiches, réalisations */
 .carousel--cards {

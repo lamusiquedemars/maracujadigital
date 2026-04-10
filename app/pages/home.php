@@ -34,10 +34,10 @@ $title = "Accueil";
           <h2>Orientation</h2>
           <p class="section-intro">
               Vous avez un projet digital.
-              Je propose la création de sites et le pilotage de projet, avec méthode et exigence, pour un résultat clair et utile.
+              Je vous propose la création de sites et le pilotage de projet, avec méthode et exigence, pour un résultat clair et utile.
           </p>
           
-          <div class="grid">
+          <div class="grid grid--2">
               <!-- Carte 1 : Site Web -->
               <a class="card" href="<?= route('site_web') ?>">
                 <i data-lucide="layout-template" class="card-icon"></i>
@@ -48,7 +48,7 @@ $title = "Accueil";
                   <p>
                       Il permet de présenter clairement votre activité et de donner à vos visiteurs un moyen simple d'intéragir.
                   </p>
-                  <span class="btn btn-secondary">Voir le service</span>
+                  <span class="btn btn-ghost">Voir le service</span>
               </a>
 
               <!-- Carte 2 : Structuration / Accompagnement -->
@@ -58,9 +58,10 @@ $title = "Accueil";
                   <p>
                       Un travail d'accompagnement, de l'expression des besoins à la réalisation.
                   </p>
+                  <p>
                     Deux objectifs : garantir les résultats et la satisfaction du client.
                   </p>
-                  <span class="btn btn-secondary">Découvrir le service</span>
+                  <span class="btn btn-ghost">Découvrir le service</span>
               </a>
           </div>
       </div>
@@ -74,7 +75,7 @@ $title = "Accueil";
     ]);
   ?>
 <!-- APPROCHE / POSITIONNEMENT -->
-  <section class="section section-approach">
+  <section class="section">
   <div class="container">
     <h2>Approche & positionnement</h2>
     <div class="grid-approach">

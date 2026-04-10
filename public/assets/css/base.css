@@ -466,6 +466,13 @@ p {
   margin-top: auto;
 }
 
+.card-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  stroke-width: 1.5;
+}
 /* variantes card (comme tu veux) */
 
 .card--highlight {
