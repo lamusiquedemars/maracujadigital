@@ -18,9 +18,15 @@ Surcharge de styles pour le thème de base
 /* =========================
 4. LAYOUT
 ========================= */
-
+/*sections*/
 .section {
   background: var(--color-bg);
+}
+
+/*grids*/
+.grid--2 {
+  gap: var(--space-l);
+  align-items: start;
 }
 
 /* =========================
@@ -123,9 +129,22 @@ Surcharge de styles pour le thème de base
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.hero--page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.7)
+  );
+  z-index: 1;
+}
 .hero--page .hero__content {
   max-width: 640px;
+  color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .hero--page .hero__title {
@@ -244,10 +263,20 @@ Surcharge de styles pour le thème de base
   transform: translateY(-4px);
 }
 
+.card--featured p {
+  color: var(--color-muted);
+}
+
+.card--featured ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
 .card--ghost {
   background: transparent;
   border: none;
 }
+
 /*carousel*/
 /* usage : visuels, porfolios, produits, projets, fiches, réalisations */
 .carousel--cards {
@@ -288,4 +317,20 @@ usage : témoignages, étapes d’un processus, storytelling */
   .carousel--peek .carousel-item {
     flex: 0 0 60%;
   }
+}
+
+/*tableaux*/
+.table--featured {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.table--featured tr {
+  transition: background 0.2s ease;
+}
+
+.table--featured tr:hover td {
+  background: rgba(198, 169, 107, 0.08);
 }

@@ -2,46 +2,26 @@
 $title = "Création de sites web";
 ?>
 
-<!-- HERO -->
-<section class="section">
-  <div class="container">
-
-    <h1></h1>
-
-    <p class="hero__subtitle">
-    </p>
-
-  </div>
-</section>
-
   <!-- HERO -->
   <section class="hero section hero--page hero--center">
-    <div class="container">
-      
+    <div class="container">    
       <div class="hero__content">
-        
         <h1 class="hero__title">
           Création de sites web
         </h1>
-
-        <p class="hero__subtitle">
-          Je conçois des sites vitrine élégants et professionnels pour artisans d’art, luthiers, musiciens et créateurs haut de gamme. 
-        </p>
         <p>
-          Avec plus de 13 ans d’expérience en AMOA et développement, j’accompagne chaque projet avec une méthode rigoureuse et un développement interne (sites sur-mesure légers ou WordPress selon les besoins), dans une approche sensible à l’univers artisanal et musical.
+          Ce sont plus de 13 ans d’expérience en gestion de projets informatiques et développement. 
+          Je conçois des sites sur-mesure légers (code maison) ou sous WordPress, selon les besoins du projet.
         </p>
       </div>
-
     </div>
   </section>
 
 <!-- FORMULES -->
 <section class="section">
   <div class="container">
-
     <h2>Nos trois formules</h2>
-
-    <table>
+    <table class="table--featured">
       <thead>
         <tr>
           <th>Critère</th>
@@ -50,7 +30,6 @@ $title = "Création de sites web";
           <th><strong>Univers</strong><br>3 000 – 3 800 €</th>
         </tr>
       </thead>
-
       <tbody>
         <tr>
           <td><strong>Objectif</strong></td>
@@ -88,24 +67,19 @@ $title = "Création de sites web";
         </tr>
       </tbody>
     </table>
-
     <p><strong>Délais :</strong> 3 à 6 semaines selon la formule.</p>
-
   </div>
 </section>
 
 <!-- INCLUS -->
 <section class="section">
   <div class="container">
-
-    <div class="included-grid">
-
-      <div class="included-box">
+    <div class="grid grid--2">
+      <div class="card card--featured">
         <h2>Inclus dans toutes les offres</h2>
         <p>Un socle complet pour assurer qualité, cohérence et performance.</p>
       </div>
-
-      <div class="included-box">
+      <div class="card card--featured">
         <ul>
           <li>Cadrage du projet avec méthode AMOA</li>
           <li>Design sur mesure avec vos visuels</li>
@@ -115,74 +89,53 @@ $title = "Création de sites web";
           <li>Mise en ligne complète</li>
         </ul>
       </div>
-
     </div>
-
   </div>
 </section>
 
 <!-- OPTIONS -->
 <section class="section">
   <div class="container">
-
     <h2>Options et accompagnement</h2>
-
     <div class="options-grid">
-
       <div class="option-card">
         <h3>SEO & visibilité</h3>
         <p>Optimisation locale et structurelle du site.</p>
       </div>
-
       <div class="option-card">
         <h3>Graphisme</h3>
         <p>Travail avancé sur identité visuelle et cohérence.</p>
       </div>
-
       <div class="option-card">
         <h3>Suivi & analytics</h3>
         <p>Installation et lecture des performances.</p>
       </div>
-
     </div>
-
     <p>Hébergement à votre charge, avec guide fourni. Support annuel disponible.</p>
-
   </div>
 </section>
 
 <!-- VALEUR -->
 <section class="section">
   <div class="container">
-
     <div class="value-box">
-
       <h2>Pourquoi travailler avec moi</h2>
-
       <p>
         Vous bénéficiez d’un cadrage rigoureux, d’un site léger et durable, et d’une approche sensible aux univers artisanaux et musicaux. Chaque projet est conçu en interne pour garantir cohérence, rapidité et maîtrise totale.
       </p>
-
     </div>
-
   </div>
 </section>
 
 <!-- PROCESS -->
 <section class="section">
   <div class="container">
-
     <h2>Prochaine étape</h2>
-
     <div class="process">
-
       <p>
         Chaque projet commence par un échange pour comprendre vos besoins. Un questionnaire simple permet ensuite de cadrer rapidement la bonne formule et d’avancer efficacement.
       </p>
-
       <p><strong>Vous souhaitez avancer ?</strong> Contactez-moi pour un premier échange.</p>
-
     </div>
-
   </div>
 </section>

@@ -479,15 +479,26 @@ p {
 table {
   width: 100%;
   border-collapse: collapse;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  margin-top: var(--space-m);
+  font-size: 0.95rem;
+  overflow: hidden;
 }
 
 th, td {
-  padding: var(--space-s);
+  padding: 0.9rem;
   border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
 }
 
+th {
+  background: var(--color-bg);
+  font-weight: 500;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
 /* CAROUSEL */
 
 .carousel {
