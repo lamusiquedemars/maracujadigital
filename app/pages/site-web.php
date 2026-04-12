@@ -100,14 +100,17 @@ $title = "Création de sites web";
     <h2>Options et accompagnement</h2>
     <div class="grid grid--3">
       <div class="card">
+        <i data-lucide="search" class="card-icon"></i>
         <h3>SEO & visibilité</h3>
         <p>Optimisation locale et structurelle du site.</p>
       </div>
       <div class="card">
+        <i data-lucide="palette" class="card-icon"></i>
         <h3>Graphisme</h3>
         <p>Travail avancé sur identité visuelle et cohérence.</p>
       </div>
       <div class="card">
+        <i data-lucide="bar-chart-2" class="card-icon"></i>
         <h3>Suivi & analytics</h3>
         <p>Installation et lecture des performances.</p>
       </div>
