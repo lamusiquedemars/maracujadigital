@@ -343,3 +343,8 @@ usage : témoignages, étapes d’un processus, storytelling */
 .table--featured tr:hover td {
   background: rgba(198, 169, 107, 0.08);
 }
+
+.table--featured svg {
+  padding-right: 1.5rem;
+  color: var(--color-accent);
+}
