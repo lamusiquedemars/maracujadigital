@@ -25,9 +25,9 @@ $title = "Création de sites web";
       <thead>
         <tr>
           <th>Critère</th>
-          <th><i data-lucide="leaf" class="card-icon"></i><strong>Essence</strong><br>1 500 – 2 000 €</th>
-          <th><i data-lucide="star" class="card-icon"></i><strong>Signature</strong><br>2 200 – 2 800 €</th>
-          <th><i data-lucide="globe" class="card-icon"></i><strong>Univers</strong><br>3 000 – 3 800 €</th>
+          <th><i data-lucide="leaf"></i><strong>Essence</strong><br>1 500 – 2 000 €</th>
+          <th><i data-lucide="star"></i><strong>Signature</strong><br>2 200 – 2 800 €</th>
+          <th><i data-lucide="globe"></i><strong>Univers</strong><br>3 000 – 3 800 €</th>
         </tr>
       </thead>
       <tbody>
