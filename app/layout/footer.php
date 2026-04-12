@@ -8,18 +8,19 @@ $baseline = $footer['baseline'] ?? null;
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <!-- identité -->
+
     <div class="footer-brand">
       <p class="footer-name">
         &copy; <?= date('Y') ?> <?= e($siteName) ?>
       </p>
+
       <?php if ($baseline): ?>
         <p class="footer-baseline">
           <?= e($baseline) ?>
         </p>
       <?php endif; ?>
     </div>
-    <!-- navigation -->
+
     <?php if (!empty($links)): ?>
       <nav class="footer-nav small" aria-label="Footer navigation">
         <?php foreach ($links as $i => $item): ?>
@@ -38,17 +39,19 @@ $baseline = $footer['baseline'] ?? null;
       </nav>
     <?php endif; ?>
 
-    <!-- réseaux -->
     <?php if (!empty($socials)): ?>
       <nav class="footer-socials" aria-label="Réseaux sociaux">
         <?php foreach ($socials as $item): ?>
-          <a href="<?= e($item['url']) ?>"
-             target="_blank"
-             rel="noopener noreferrer">
-            <?= e($item['label']) ?>
-          </a>
+          <?php if (!empty($item['url'])): ?>
+            <a href="<?= e($item['url']) ?>"
+               target="_blank"
+               rel="noopener noreferrer">
+              <?= e($item['label'] ?? '') ?>
+            </a>
+          <?php endif; ?>
         <?php endforeach; ?>
       </nav>
     <?php endif; ?>
+
   </div>
 </footer>

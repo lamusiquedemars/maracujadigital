@@ -1,34 +1,33 @@
 <?php
-/**
- * Configuration du site
- * Toutes les données globales du site sont définies ici
- * (identité, SEO, navigation, etc.)
- *
- * Note : les données spécifiques à une page (ex: titre) sont définies dans le controller de la page
- */
+
 $SITE = [
+
+  // ======================
   // IDENTITÉ
+  // ======================
   'name' => 'Maracuja Digital',
-  'url' => 'https://maracujadigital.fr',
   'author' => 'Ivo Correia de Melo',
 
-  // IMPORTANT base pour les URL (ex: si le site est dans un sous-dossier, mettre '/mon-sous-dossier')
-  'base' => '/maracujadigital/public',
-
+  // ======================
   // SEO
+  // ======================
   'seo' => [
     'default_title' => 'Maracuja Digital',
     'default_description' => 'Artisan de sites web modernes',
   ],
 
-  // ASSETS
+  // ======================
+  // ASSETS (RELATIF UNIQUEMENT)
+  // ======================
   'assets' => [
-    'logo' => '/public/assets/img/logo.png', // ← AJOUT
-    'default_image' => '/public/assets/img/og-default.jpg',
-    'favicon_path' => '/public/assets/img/',
+    'logo' => 'img/logo.png',
+    'default_image' => 'img/og-default.jpg',
+    'favicon_path' => 'img/',
   ],
 
-  // NAVIGATION ← AJOUT
+  // ======================
+  // NAVIGATION
+  // ======================
   'navigation' => [
     ['label' => 'Accueil', 'route' => 'home'],
     ['label' => 'Site web', 'route' => 'site-web'],
@@ -38,26 +37,22 @@ $SITE = [
     ['label' => 'Contact', 'route' => 'contact'],
   ],
 
-  // FOOTER ← AJOUT
+  // ======================
+  // FOOTER
+  // ======================
   'footer' => [
-    // baseline courte (optionnelle)
     'baseline' => 'Création de sites web et pilotage de projets digitaux.',
-    // liens internes
     'links' => [
-      [ 'label' => 'Mentions légales', 'route' => 'mentions-legales' ],
-      [ 'label' => 'CGV', 'route' => 'cgv' ],
-      [ 'label' => 'Contact', 'route' => 'contact' ],
+      ['label' => 'Mentions légales', 'route' => 'mentions-legales'],
+      ['label' => 'CGV', 'route' => 'cgv'],
+      ['label' => 'Contact', 'route' => 'contact'],
     ],
-    
-    /*réseaux / externes (optionnel)*/
-    'socials' => [
-      // exemple client
-      // [ 'label' => 'Instagram', 'url' => 'https://instagram.com/xxx' ],
-      // [ 'label' => 'LinkedIn', 'url' => 'https://linkedin.com/in/xxx' ],
-    ],
+    'socials' => [],
   ],
-  
-  /*carousel réalisations*/
+
+  // ======================
+  // REALISATIONS
+  // ======================
   'realisations' => [
     'title' => 'Réalisations',
     'items' => [
@@ -81,10 +76,12 @@ $SITE = [
       ]
     ]
   ],
-  /*tracking (ex: Google Analytics)*/
+
+  // ======================
+  // TRACKING
+  // ======================
   'tracking' => [
     'ga_id' => null,
   ],
 
-  'env' => 'dev',
 ];

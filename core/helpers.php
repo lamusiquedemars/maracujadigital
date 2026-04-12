@@ -10,16 +10,13 @@ function e($value): string
 // ======================
 // URL HELPERS
 // ======================
-
-/**
- * Construit une URL absolue propre
- * - évite les double slash
- * - fonctionne en sous-dossier
- */
+/*
+    * Génère une URL complète à partir d'un chemin relatif
+    * ex: url('contact') => https://mon-site.com/contact
+    */
 function url(string $path = ''): string
 {
-    global $BASE_URL;
-    $base = rtrim($BASE_URL, '/');
+    $base = rtrim(BASE_URL, '/');
     $path = trim($path, '/');
     return $base . ($path ? '/' . $path : '');
 }
@@ -27,26 +24,23 @@ function url(string $path = ''): string
 // ======================
 // ASSETS HELPERS
 // ======================
-
-/**
- * Génère une URL d'asset (CSS, JS, images…)
- * ex: /public/assets/...
- */
+/* Génère une URL d'asset à partir d'un chemin relatif
+   ex: asset('css/style.css') => https://mon-site.com/assets/css/style.css
+*/
 function asset(string $path): string
 {
     return url('assets/' . ltrim($path, '/'));
 }
-
-/**
- * Raccourci pour les images
- */
+/* Génère une URL d'image à partir d'un chemin relatif
+   ex: img('logo.png') => https://mon-site.com/assets/img/logo.png
+*/
 function img(string $path): string
 {
     return asset('img/' . ltrim($path, '/'));
 }
 
 // ======================
-// DEBUG (dev only)
+// DEBUG
 // ======================
 function dd($data): void
 {
@@ -69,29 +63,37 @@ function esc_attr($value): string
 // ======================
 function is_dev(): bool
 {
-    global $SITE;
-    return ($SITE['env'] ?? null) === 'dev';
+    return APP_ENV === 'dev';
 }
 
 // ======================
 // RENDER COMPONENT
 // ======================
+/* Génère le code HTML d'un composant à partir de son nom et de ses données
+   ex: render('card', ['title' => 'Hello']) => inclut app/components/card.php avec $title = 'Hello'
+*/
 function render(string $block, array $data = []): void
 {
     $file = ROOT . '/app/components/' . basename($block) . '.php';
     if (!file_exists($file)) {
         throw new Exception("Component not found: " . $block);
     }
-    extract($data, EXTR_SKIP);
+    extract($data, EXTR_SKIP | EXTR_PREFIX_SAME, 'data');
     require $file;
+}
+
+function slot_add(string $type, string $value): void
+{
+    global $slots;
+    $slots[$type][] = $value;
 }
 
 // ======================
 // ROUTING HELPER
 // ======================
-/**
- * Génère une URL à partir d'une route nommée
- */
+/* Génère une URL à partir du nom d'une route
+   ex: route('contact') => https://mon-site.com/contact (si la route 'contact' est définie dans config/routes.php)
+*/
 function route(string $name): string
 {
     global $ROUTES;

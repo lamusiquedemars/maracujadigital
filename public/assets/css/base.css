@@ -518,6 +518,18 @@ th {
 tr:last-child td {
   border-bottom: none;
 }
+
+/*responsive table*/
+@media (max-width: 768px) {
+  table {
+    font-size: 0.85rem;
+  }
+  .container table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
 /* CAROUSEL */
 
 .carousel {
@@ -530,12 +542,6 @@ tr:last-child td {
 .carousel-item {
   flex: 0 0 50%;
   scroll-snap-align: start;
-}
-/* responsive components */
-@media (max-width: 768px) {
-  table {
-    font-size: 0.85rem;
-  }
 }
 
 /* =========================

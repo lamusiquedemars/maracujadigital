@@ -1,4 +1,3 @@
-<?php require_once ROOT . '/core/bootstrap.php'; ?>
 <!doctype html>
 <html lang="fr">
 
@@ -8,9 +7,9 @@
 
 <body>
 
+  <?php require ROOT . '/app/layout/header.php'; ?>
+
   <?php
-  require 'header.php';
-  // capture de la page
   ob_start();
   require $view;
   $pageContent = ob_get_clean();
@@ -20,7 +19,7 @@
     <?= $pageContent ?>
   </main>
 
-  <?php require 'footer.php'; ?>
+  <?php require ROOT . '/app/layout/footer.php'; ?>
   <?php require ROOT . '/app/metadata/scripts.php'; ?>
 
 </body>
