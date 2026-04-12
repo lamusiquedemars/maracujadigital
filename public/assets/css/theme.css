@@ -16,6 +16,14 @@ Surcharge de styles pour le thème de base
 }
 
 /* =========================
+2. BASE
+========================= */
+
+.ul-icon svg {
+  color: var(--color-accent);
+}
+
+/* =========================
 4. LAYOUT
 ========================= */
 /*sections*/

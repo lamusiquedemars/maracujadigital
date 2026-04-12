@@ -58,6 +58,16 @@ ul, ol {
   list-style: none;
 }
 
+.ul-icon li {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ul-icon svg {
+  width: 1em;
+  height: 1em;
+}
+
 /* =========================
 3. TYPOGRAPHIE
 ========================= */

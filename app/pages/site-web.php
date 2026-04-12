@@ -82,13 +82,13 @@ $title = "Création de sites web";
   <div class="container no-padding">
     <div class="card card--featured card--maracuja">
       <h2>Éléments inclus dans toutes les offres</h2>
-      <ul>
-        <li>Cadrage du projet avec ma méthode AMOA</li>
-        <li>Design sobre et élégant réalisé sur mesure avec vos photos et votre univers</li>
-        <li>Galerie photos avec agrandissement au clic et légendes</li>
-        <li>Formulaire de contact + carte de localisation + liens vers vos réseaux sociaux</li>
-        <li>Développement complet, tests sur tous les appareils et optimisation pour un chargement rapide</li>
-        <li>Mise en ligne sur votre nom de domaine</li>
+      <ul class="ul-icon">
+        <li><i data-lucide="leaf"></i>Cadrage du projet avec ma méthode AMOA</li>
+        <li><i data-lucide="leaf"></i>Design sobre et élégant réalisé sur mesure avec vos photos et votre univers</li>
+        <li><i data-lucide="leaf"></i>Galerie photos avec agrandissement au clic et légendes</li>
+        <li><i data-lucide="leaf"></i>Formulaire de contact + carte de localisation + liens vers vos réseaux sociaux</li>
+        <li><i data-lucide="leaf"></i>Développement complet, tests sur tous les appareils et optimisation pour un chargement rapide</li>
+        <li><i data-lucide="leaf"></i>Mise en ligne sur votre nom de domaine</li>
       </ul>
     </div>
   </div>
