@@ -1,4 +1,5 @@
 <?php
+file_put_contents(ROOT . '/home_hit.log', 'HOME LOADED'); file_put_contents(ROOT . '/home_hit.log', 'HOME OK');
 $title = "Accueil";
 ?>
 

@@ -10,8 +10,11 @@ function resolveRoute(string $uri, array $routes): array
     foreach ($routes as $route) {
         if ($route['path'] === $uri) {
             // controller
+            $data = [];
+
             if (!empty($route['controller'])) {
                 $controllerFile = ROOT . '/app/controllers/' . $route['controller'] . '.php';
+
                 if (file_exists($controllerFile)) {
                     $data = require $controllerFile;
                 }

@@ -33,6 +33,7 @@ $slots = [
     'js' => [],
     'head' => []
 ];
+
 $route = resolveRoute($uri, $ROUTES);
 $view = $route['view'];
 $title = $route['title'];

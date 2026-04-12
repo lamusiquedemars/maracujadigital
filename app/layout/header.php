@@ -4,6 +4,7 @@ $navItems = $SITE['navigation'] ?? [];
 
 // URI courante fiable (vient de index.php)
 $currentUri = $currentUri ?? '';
+
 ?>
 
 <header class="site-header">

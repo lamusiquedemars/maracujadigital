@@ -46,7 +46,7 @@ require_once ROOT . '/core/helpers.php';
 // ======================
 // DERIVED GLOBALS
 // ======================
-$BASE_URL = rtrim($APP_URL, '/');
+$BASE_URL = rtrim($APP_URL, '/') . $APP_BASE;
 $SEO = $SITE['seo'] ?? [];
 $ASSETS = $SITE['assets'] ?? [];
 
