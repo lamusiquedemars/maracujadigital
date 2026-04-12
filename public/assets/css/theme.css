@@ -286,6 +286,15 @@ Surcharge de styles pour le thème de base
     url('../img/passiflora-rameau.png') no-repeat right 1rem center / 200px,
     var(--color-surface);
 }
+
+@media (max-width: 768px) {
+  .card--maracuja {
+    background:
+      linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+      url('../img/passiflora-rameau.png') no-repeat right 1rem center / 200px,
+      var(--color-surface);
+  }
+}
 /*carousel*/
 /* usage : visuels, porfolios, produits, projets, fiches, réalisations */
 .carousel--cards {
