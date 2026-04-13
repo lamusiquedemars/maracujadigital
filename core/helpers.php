@@ -74,16 +74,17 @@ function is_dev(): bool
 // ======================
 // RENDER COMPONENT
 // ======================
-/* Génère le code HTML d'un composant à partir de son nom et de ses données
-   ex: render('card', ['title' => 'Hello']) => inclut app/components/card.php avec $title = 'Hello'
+/* Permet de rendre un composant réutilisable avec des propriétés
+   ex: render('btn', ['label' => 'Contactez-moi', 'route' => 'contact']) rend un bouton avec le label "Contactez-moi" qui pointe vers la route "contact"
 */
-function render(string $block, array $data = []): void
+function render(string $block, array $props = []): void
 {
     $file = ROOT . '/app/components/' . basename($block) . '.php';
+
     if (!file_exists($file)) {
         throw new Exception("Component not found: " . $block);
     }
-    extract($data, EXTR_SKIP | EXTR_PREFIX_SAME, 'data');
+
     require $file;
 }
 

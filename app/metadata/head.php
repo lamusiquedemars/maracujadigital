@@ -8,8 +8,8 @@
 <!-- Open Graph -->
 <meta property="og:title" content="<?= e($page_title ?? $SEO['default_title']) ?>">
 <meta property="og:description" content="<?= e($page_description ?? $SEO['default_description']) ?>">
-<meta property="og:image" content="<?= url($ASSETS['default_image']) ?>">
-<meta property="og:url" content="<?= url($_SERVER['REQUEST_URI'] ?? '') ?>">
+<meta property="og:image" content="<?= url($page_image ?? $ASSETS['default_image']) ?>">
+<meta property="og:url" content="<?= url($uri ?? '') ?>">
 <meta property="og:type" content="website">
 
 <!-- Twitter -->

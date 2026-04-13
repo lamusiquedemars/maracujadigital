@@ -1,6 +1,6 @@
 <?php
-$title = $title ?? 'Réalisations';
-$items = $items ?? [];
+$title = $props['title'] ?? 'Réalisations';
+$items = $props['items'] ?? [];
 ?>
 
 <section class="section">
