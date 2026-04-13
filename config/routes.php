@@ -30,7 +30,7 @@ return [
     'controller' => 'pilotage'
   ],
   'realisations' => [
-    'path' => 'realisations',
+    'path' => 'components/realisations',
     'view' => 'realisations',
     'title' => 'Réalisations',
     'controller' => 'realisations'

@@ -14,10 +14,15 @@ function e($value): string
     * Génère une URL complète à partir d'un chemin relatif
     * ex: url('contact') => https://mon-site.com/contact
     */
-function url(string $path = ''): string
+function url($path = ''): string
 {
+    if (is_array($path)) {
+        return '';
+    }
+
     $base = rtrim(BASE_URL, '/');
-    $path = trim($path, '/');
+    $path = trim((string)$path, '/');
+
     return $base . ($path ? '/' . $path : '');
 }
 
@@ -82,6 +87,13 @@ function render(string $block, array $data = []): void
     require $file;
 }
 
+// ======================
+// SLOTS
+// ======================
+/*
+    * Permet d'ajouter du contenu à un "slot" qui peut être affiché dans le layout
+    * ex: slot_add('meta', '<meta name="description" content="...">') ajoute une meta description qui peut être affichée dans le <head> du layout
+*/
 function slot_add(string $type, string $value): void
 {
     global $slots;
@@ -91,14 +103,16 @@ function slot_add(string $type, string $value): void
 // ======================
 // ROUTING HELPER
 // ======================
-/* Génère une URL à partir du nom d'une route
-   ex: route('contact') => https://mon-site.com/contact (si la route 'contact' est définie dans config/routes.php)
+/* Génère une URL à partir du nom d'une route définie dans config/routes.php
+   ex: route('contact') => https://mon-site.com/contact
 */
 function route(string $name): string
 {
     global $ROUTES;
+
     if (!isset($ROUTES[$name])) {
         return '#';
     }
-    return url($ROUTES[$name]);
+
+    return url($ROUTES[$name]['path'] ?? '');
 }
