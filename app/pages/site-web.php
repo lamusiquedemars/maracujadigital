@@ -3,24 +3,19 @@ $title = "Création de sites web";
 ?>
 
 <!-- HERO -->
-<section class="hero section hero--page hero--center">
-  <div class="container">
-    <div class="hero__content">
-      <h1 class="hero__title">
-        Création de sites web
-      </h1>
-      <p>
-        Ce sont plus de 13 ans d’expérience en gestion de projets informatiques et développement.
-        Je conçois des sites sur-mesure légers (code maison) ou sous WordPress, selon les besoins du projet.
-      </p>
-    </div>
-  </div>
-</section>
+ <?php
+  render('hero', [
+  'title' => 'Création de sites web',
+  'subtitle' => 'Je conçois des sites sur-mesure (code ou WordPress), 
+  avec la même exigence de structure et de méthode que dans mes projets digitaux.',
+  'class' => ['hero--page', 'hero--center']
+]);
+?>
 
 <!-- FORMULES -->
 <section class="section">
   <div class="container">
-    <h2>Nos trois formules</h2>
+    <h2 class="h2--moderne">Nos trois formules</h2>
     <table class="table--featured">
       <thead>
         <tr>
@@ -81,7 +76,7 @@ $title = "Création de sites web";
 <section class="section">
   <div class="container no-padding">
     <div class="card card--featured card--maracuja">
-      <h2>Éléments inclus dans toutes les offres</h2>
+      <h2 class="h2--moderne">Éléments inclus dans toutes les offres</h2>
       <ul class="ul-icon">
         <li><i data-lucide="leaf"></i>Cadrage du projet avec ma méthode AMOA</li>
         <li><i data-lucide="leaf"></i>Design sobre et élégant réalisé sur mesure avec vos photos et votre univers</li>
@@ -97,7 +92,7 @@ $title = "Création de sites web";
 <!-- OPTIONS -->
 <section class="section">
   <div class="container no-padding ">
-    <h2>Options et accompagnement</h2>
+    <h2 class="h2--moderne">Options et accompagnement</h2>
     <div class="grid grid--3">
       <div class="card">
         <i data-lucide="search" class="card-icon"></i>
@@ -121,7 +116,7 @@ $title = "Création de sites web";
 <!-- PROCESS -->
 <section class="section">
   <div class="container">
-    <h2>Prochaine étape</h2>
+    <h2 class="h2--moderne">Prochaine étape</h2>
     <div class="card card--ghost">
       <p><strong>Vous souhaitez avancer ?</strong> Contactez-moi pour un premier échange.</p>
     </div>

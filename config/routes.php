@@ -29,12 +29,6 @@ return [
     'title' => 'Pilotage',
     'controller' => 'pilotage'
   ],
-  'realisations' => [
-    'path' => 'components/realisations',
-    'view' => 'realisations',
-    'title' => 'Réalisations',
-    'controller' => 'realisations'
-  ],
   'a_propos' => [
     'path' => 'a-propos',
     'view' => 'a-propos',

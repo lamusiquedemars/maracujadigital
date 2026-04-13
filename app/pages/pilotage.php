@@ -1,17 +1,24 @@
+<?php
+$title = "Pilotage de projets digitaux";
+?>
+<!-- HERO -->
+<?php
+render('hero', [
+  'title' => 'Accompagnement projet digital',
+  'subtitle' => 'J’interviens sur des projets pour clarifier les décisions, structurer les idées 
+  ou rétablir un cadre de pilotage afin de les faire avancer.
+  Ce sont plus de 13 ans d’expérience en gestion de projets informatiques et développement.',
+  'class' => ['hero--page', 'hero--center']
+]);
+?>
 <section class="section">
   <div class="container">
-
-    <h2 class="section__title">Accompagnement projet</h2>
-
-    <p style="text-align:center; max-width:700px; margin:0 auto 2rem;">
-      J’interviens sur des projets en phase de flou, de structuration ou de reprise de contrôle.
-      L’objectif est toujours le même : clarifier, structurer et permettre d’avancer.
-    </p>
-
-    <div class="grid grid--2">
+    <h2 class="h2--moderne">Mes trois offres d’accompagnement</h2>
+    <div class="grid grid--3">
 
       <!-- OFFRE 1 -->
       <div class="card">
+        <i data-lucide="lightbulb" class="card-icon"></i>
         <h3>Clarifier pour décider</h3>
         <p class="service-duration">2 à 3 jours</p>
 
@@ -41,12 +48,11 @@
           <strong>Résultat :</strong> décisions claires<br>
           <strong>Prix :</strong> 1 200 € – 1 800 €
         </p>
-
-        <a href="#contact" class="btn btn--ghost">Discuter</a>
       </div>
 
       <!-- OFFRE 2 -->
       <div class="card">
+        <i data-lucide="compass" class="card-icon"></i>
         <h3>Structurer pour lancer</h3>
         <p class="service-duration">1 à 2 jours</p>
 
@@ -77,12 +83,11 @@
           <strong>Résultat :</strong> projet structuré<br>
           <strong>Prix :</strong> 900 € – 1 500 €
         </p>
-
-        <a href="#contact" class="btn btn--ghost">Discuter</a>
       </div>
 
       <!-- OFFRE 3 -->
       <div class="card">
+        <i data-lucide="anchor" class="card-icon"></i>
         <h3>Recadrer pour piloter</h3>
         <p class="service-duration">3 à 6 semaines</p>
 
@@ -113,10 +118,31 @@
           <strong>Résultat :</strong> projet stabilisé et piloté<br>
           <strong>Prix :</strong> 3 000 € – 7 000 €
         </p>
-
-        <a href="#contact" class="btn btn--ghost">Discuter</a>
       </div>
 
     </div>
   </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card card--ghost card--maracuja">
+      <h2 class="h2--moderne">Pourquoi ces trois offres ?</h2>
+      <p>
+        Ces trois offres couvrent les besoins de pilotage que j’ai le plus souvent rencontrés sur des projets digitaux,
+        et dans lesquels j’apporte le plus de valeur. Elles traduisent mon expertise et mon mode d’intervention.
+        Je peux aussi intervenir en régie sur des projets plus longs, en m’adaptant au projet et à son fonctionnement,
+        en restant toujours à l’écoute des personnes impliquées.
+      </p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container no-padding">
+      <?php render('btn', [
+        'route' => 'contact',
+        'label' => 'Parlons-en !'
+      ]); ?>
+    </div>
+  </section>
+
 </section>

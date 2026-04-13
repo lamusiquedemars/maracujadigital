@@ -24,6 +24,52 @@ Surcharge de styles pour le thème de base
 }
 
 /* =========================
+3. TYPOGRAPHIE
+========================= */
+/*style minimal*/
+h2.h2--minimal::after {
+  width: 60px;
+  height: 4px;
+  background: var(--color-accent);
+}
+/*style luxe*/
+h2.h2--luxe::after {
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 1px;
+  background: var(--color-accent-soft, currentColor);
+  opacity: 0.6;
+}
+
+h2.h2--luxe::before {
+  left: 0;
+  bottom: -3px;
+  width: 25px;
+  height: 2px;
+  background: var(--color-accent-soft, currentColor);
+  opacity: 0.9;
+}
+/*style moderne*/
+h2.h2--moderne::after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, var(--color-accent, currentColor) 40%, transparent);
+  opacity: 0.6;
+}
+
+h2.h2--moderne::before {
+  left: 0;
+  bottom: -2px;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent, currentColor);
+  border-radius: 50%;
+  opacity: 0.9;
+}
+/* =========================
 4. LAYOUT
 ========================= */
 /*sections*/
@@ -31,10 +77,10 @@ Surcharge de styles pour le thème de base
   background: var(--color-bg);
 }
 
-/*grids*/
+/*grids*
 .grid--2 {
   gap: 0;
-}
+}*/
 
 /* =========================
 6. FOOTER — SKIN (thème)
@@ -282,6 +328,7 @@ Surcharge de styles pour le thème de base
 }
 
 .card--maracuja {
+  padding-right: 200px;
   background:
     url('../img/passiflora-rameau.png') no-repeat right 1rem center / 200px,
     var(--color-surface);
@@ -289,6 +336,7 @@ Surcharge de styles pour le thème de base
 
 @media (max-width: 768px) {
   .card--maracuja {
+    padding-right: var(--space-m);
     background:
       linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
       url('../img/passiflora-rameau.png') no-repeat right 1rem center / 200px,
@@ -308,11 +356,17 @@ Surcharge de styles pour le thème de base
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--color-border);
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.carousel--cards .carousel-item p {
+  padding-left: 12px;
 }
 
 .carousel--cards .carousel-item img {
   width: 100%;
-  height: 70%;
+  height: 80%;
   object-fit: cover;
 }
 

@@ -5,7 +5,7 @@ $items = $props['items'] ?? [];
 
 <section class="section">
   <div class="container container--wide">
-    <h2><?= e($title) ?></h2>
+    <h2 class="h2--moderne"><?= e($title) ?></h2>
     <div class="carousel carousel--cards">
       <?php foreach ($items as $item): ?>
         <article class="card carousel-item">

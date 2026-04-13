@@ -79,11 +79,29 @@ h1, h2, h3 {
   font-weight: 500;
   letter-spacing: 0.02em;
   margin: 0 0 var(--space-s);
+  position: relative;
 }
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.1rem; }
+
+/*Variante 1 — Minimal (simple soulignement)*/
+h2.h2--minimal {
+  display: inline-block;
+}
+h2.h2--minimal::after {
+  content: "";
+  display: block;
+  margin-top: 6px;
+}
+/*Variante 2 et 3 — Luxe et moderne*/
+h2.h2--luxe::before,
+h2.h2--luxe::after, h2.h2--moderne::before,
+h2.h2--moderne::after {
+  content: "";
+  position: absolute;
+}
 
 p {
   margin: 0 0 var(--space-s);
@@ -527,7 +545,11 @@ tr:last-child td {
   .container table {
     display: block;
     overflow-x: auto;
-    white-space: nowrap;
+  } 
+  .container table td, .container table th {
+    white-space: normal;
+    word-break: normal;
+    min-width: 115px;
   }
 }
 /* CAROUSEL */

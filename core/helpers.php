@@ -74,20 +74,35 @@ function is_dev(): bool
 // ======================
 // RENDER COMPONENT
 // ======================
-/* Permet de rendre un composant réutilisable avec des propriétés
-   ex: render('btn', ['label' => 'Contactez-moi', 'route' => 'contact']) rend un bouton avec le label "Contactez-moi" qui pointe vers la route "contact"
-*/
+ /* Charge un fichier de composant PHP et lui passe des données ($props).
+ * Objectif : composants simples + réutilisables.
+ */
 function render(string $block, array $props = []): void
 {
+    // Chemin du composant
     $file = ROOT . '/app/components/' . basename($block) . '.php';
-
+    // Sécurité : vérifie que le fichier existe
     if (!file_exists($file)) {
         throw new Exception("Component not found: " . $block);
     }
-
+    /**
+     * NORMALISATION GÉNÉRIQUE DES PROPS
+     * But : éviter les formats multiples côté composants.
+     * Exemple traité ici :
+     * - class peut être string OU array
+     * - si array => transformé en string CSS
+     * On garde le reste intact (items, etc.).
+     */
+    foreach ($props as $key => $value) {
+        // Cas spécifique mais générique : listes simples
+        // ex: ['hero--page', 'hero--center']
+        if ($key === 'class' && is_array($value)) {
+            $props[$key] = implode(' ', $value);
+        }
+    }
+    // Injection des props dans le scope du composant
     require $file;
 }
-
 // ======================
 // SLOTS
 // ======================

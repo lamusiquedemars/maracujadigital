@@ -1,5 +1,8 @@
 <?php
-
+/*  Fichier de configuration du site
+  Contient les informations globales du site, comme le nom, l'auteur, les liens de navigation, etc.
+  Ces données sont accessibles dans les vues via la variable $SITE
+*/
 $SITE = [
 
   // ======================
@@ -32,8 +35,8 @@ $SITE = [
     ['label' => 'Accueil', 'route' => 'home'],
     ['label' => 'Site web', 'route' => 'site-web'],
     ['label' => 'AMOA & Pilotage', 'route' => 'pilotage'],
-    ['label' => 'Réalisations', 'route' => 'realisations'],
-    ['label' => 'À propos', 'route' => 'a-propos'],
+    /*['label' => 'Réalisations', 'route' => 'realisations'],
+    ['label' => 'À propos', 'route' => 'a-propos'],*/
     ['label' => 'Contact', 'route' => 'contact'],
   ],
 
