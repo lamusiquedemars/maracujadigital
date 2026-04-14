@@ -32,7 +32,7 @@ $SITE = [
   // NAVIGATION
   // ======================
   'navigation' => [
-    ['label' => 'Accueil', 'route' => 'home'],
+    ['label' => 'Accueil', 'route' => 'home', 'show_mobile' => false],
     ['label' => 'Site web', 'route' => 'site-web'],
     ['label' => 'AMOA & Pilotage', 'route' => 'pilotage'],
     /*['label' => 'Réalisations', 'route' => 'realisations'],

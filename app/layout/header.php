@@ -1,4 +1,8 @@
 <?php
+/*  Header du site
+  Affiché sur toutes les pages, contient le logo et la navigation principale
+  Les données de navigation sont issues de la configuration du site ($SITE['navigation'])
+*/
 $siteName = $SITE['name'] ?? 'Site';
 $navItems = $SITE['navigation'] ?? [];
 
@@ -50,6 +54,8 @@ $currentUri = $currentUri ?? '';
     <ul class="nav-mobile-list">
       <?php foreach ($navItems as $item): ?>
         <?php
+          /* Si la clé 'show_mobile' est définie et vaut false, on n'affiche pas cet item dans le menu mobile */
+          if (isset($item['show_mobile']) && $item['show_mobile'] === false) continue;
           $href = isset($item['route'])
             ? route($item['route'])
             : url($item['url'] ?? '/');

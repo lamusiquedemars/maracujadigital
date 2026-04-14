@@ -1,34 +1,32 @@
-// site.js — Menu burger + accessibilité
 document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".site-nav");
+  const burger = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".nav-mobile");
+  const header = document.querySelector(".site-header");
 
   if (!burger || !nav) return;
 
-  // Initialisation ARIA
-  burger.setAttribute("aria-controls", "main-navigation");
+  burger.setAttribute("aria-controls", "mobile-navigation");
   burger.setAttribute("aria-expanded", "false");
-  nav.setAttribute("id", "main-navigation");
+  nav.setAttribute("id", "mobile-navigation");
 
-  // Toggle menu
   burger.addEventListener("click", () => {
     const expanded = burger.getAttribute("aria-expanded") === "true";
+
     burger.setAttribute("aria-expanded", String(!expanded));
-    burger.classList.toggle("active");
-    nav.classList.toggle("active");
+    burger.classList.toggle("active"); // optionnel visuel burger
+    nav.classList.toggle("is-open");   // <-- IMPORTANT
   });
 
-  // Ferme le menu si on clique sur un lien
   nav.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
       burger.setAttribute("aria-expanded", "false");
       burger.classList.remove("active");
-      nav.classList.remove("active");
+      nav.classList.remove("is-open");
     });
   });
 
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('.site-header');
-    header.classList.toggle('is-scrolled', window.scrollY > 10);
+  window.addEventListener("scroll", () => {
+    if (!header) return;
+    header.classList.toggle("is-scrolled", window.scrollY > 10);
   });
 });
