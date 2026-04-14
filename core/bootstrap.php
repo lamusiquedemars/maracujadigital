@@ -8,7 +8,11 @@ define('ROOT', dirname(__DIR__));
 // ENV DETECTION
 // ======================
 $APP_ENV = $_SERVER['APP_ENV'] ?? 'dev';
-
+/*
+  On choisit le fichier .env à charger en fonction de l'environnement :
+  - En production, on charge le fichier .env (qui doit être présent et configuré)
+  - En développement, on charge le fichier .env.dev (qui contient des valeurs par défaut adaptées au dev)
+*/
 $envFile = ROOT . ($APP_ENV === 'prod'
     ? '/.env'
     : '/.env.dev'
@@ -41,7 +45,7 @@ loadEnv($envFile);
 $APP_ENV  = $_ENV['APP_ENV'] ?? $APP_ENV;
 $APP_URL  = $_ENV['APP_URL'] ?? '';
 $APP_BASE = $_ENV['APP_BASE'] ?? '';
-
+var_dump($APP_ENV);
 // ======================
 // ROUTES
 // ======================
