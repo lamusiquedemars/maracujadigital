@@ -5,26 +5,40 @@
 define('ROOT', dirname(__DIR__));
 
 // ======================
+// ENV DETECTION
+// ======================
+$APP_ENV = $_SERVER['APP_ENV'] ?? 'dev';
+
+$envFile = ROOT . ($APP_ENV === 'prod'
+    ? '/.env'
+    : '/.env.dev'
+);
+
+// ======================
 // ENV LOADER
 // ======================
 function loadEnv(string $path): void
 {
     if (!file_exists($path)) return;
-    $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    foreach ($lines as $line) {
+
+    foreach (file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
         $line = trim($line);
-        if ($line === '' || str_starts_with($line, '#')) continue;
+
+        if ($line === '' || $line[0] === '#') continue;
         if (!str_contains($line, '=')) continue;
+
         [$key, $value] = explode('=', $line, 2);
+
         $_ENV[trim($key)] = trim($value);
     }
 }
-loadEnv(ROOT . '/.env');
+
+loadEnv($envFile);
 
 // ======================
 // ENV VARS
 // ======================
-$APP_ENV  = $_ENV['APP_ENV'] ?? 'prod';
+$APP_ENV  = $_ENV['APP_ENV'] ?? $APP_ENV;
 $APP_URL  = $_ENV['APP_URL'] ?? '';
 $APP_BASE = $_ENV['APP_BASE'] ?? '';
 
