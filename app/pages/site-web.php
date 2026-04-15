@@ -118,7 +118,7 @@ $title = "Création de sites web";
   <div class="container">
     <h2 class="h2--moderne">Prochaine étape</h2>
     <div class="card card--ghost">
-      <p><strong>Vous souhaitez avancer ?</strong> Contactez-moi pour un premier échange.</p>
+      <span class="btn btn-ghost"><strong>Vous souhaitez avancer ?</strong> <a href="<?= route('contact') ?>">Contactez-moi</a> pour un premier échange.</span>
     </div>
   </div>
 </section>

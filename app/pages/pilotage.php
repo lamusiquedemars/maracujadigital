@@ -24,7 +24,7 @@ render('hero', [
 
         <p>
           <strong>Situation :</strong> projet flou, décisions difficiles, équipes non alignées<br>
-          <strong>Objectif :</strong> clarifier la situation et permettre une prise de décision rapide
+          <strong>Objectif :</strong> clarifier la situation et faciliter la prise de décision
         </p>
 
         <p><strong>Actions</strong></p>
@@ -36,8 +36,7 @@ render('hero', [
         </ul>
 
         <p>
-          <strong>Exemple :</strong> Une entreprise lance un projet interne, mais les objectifs changent constamment.
-          Les équipes ne savent plus quoi prioriser.
+          <strong>Exemple :</strong> une organisation lance un projet interne sans direction stable, les priorités changent régulièrement.
         </p>
 
         <p class="service-deliverable">
@@ -45,7 +44,6 @@ render('hero', [
         </p>
 
         <p>
-          <strong>Résultat :</strong> décisions claires<br>
           <strong>Prix :</strong> 1 200 € – 1 800 €
         </p>
       </div>
@@ -57,8 +55,8 @@ render('hero', [
         <p class="service-duration">1 à 2 jours</p>
 
         <p>
-          <strong>Situation :</strong> une idée existe mais rien n’est structuré<br>
-          <strong>Objectif :</strong> transformer une idée en projet structuré et prêt à être lancé
+          <strong>Situation :</strong> idée existante mais non structurée<br>
+          <strong>Objectif :</strong> transformer une idée en projet cadré et actionnable
         </p>
 
         <p><strong>Actions</strong></p>
@@ -71,8 +69,7 @@ render('hero', [
         </ul>
 
         <p>
-          <strong>Exemple :</strong> Une organisation veut créer un site web mais n’a ni périmètre,
-          ni priorités, ni vision claire du projet.
+          <strong>Exemple :</strong> création d’un site web sans vision claire du périmètre ni des priorités.
         </p>
 
         <p class="service-deliverable">
@@ -80,7 +77,6 @@ render('hero', [
         </p>
 
         <p>
-          <strong>Résultat :</strong> projet structuré<br>
           <strong>Prix :</strong> 900 € – 1 500 €
         </p>
       </div>
@@ -92,30 +88,28 @@ render('hero', [
         <p class="service-duration">3 à 6 semaines</p>
 
         <p>
-          <strong>Situation :</strong> projet lancé mais dérive, rôles flous, suivi insuffisant<br>
-          <strong>Objectif :</strong> recréer un cadre de pilotage stable et efficace
+          <strong>Situation :</strong> projet en cours avec dérives ou manque de pilotage<br>
+          <strong>Objectif :</strong> remettre en place un cadre de pilotage clair et stable
         </p>
 
         <p><strong>Actions</strong></p>
         <ul>
-          <li>Reprise du projet existant</li>
+          <li>Analyse du projet existant</li>
           <li>Clarification des rôles</li>
-          <li>Analyse des dérives</li>
+          <li>Identification des dérives</li>
           <li>Mise en place du pilotage</li>
-          <li>Réalignement des équipes</li>
+          <li>Réalignement des parties prenantes</li>
         </ul>
 
         <p>
-          <strong>Exemple :</strong> Un projet en cours accumule les retards, les responsabilités sont floues
-          et aucune vision claire de l’avancement n’existe.
+          <strong>Exemple :</strong> projet en retard, responsabilités floues, absence de suivi structuré.
         </p>
 
         <p class="service-deliverable">
-          Cadre de pilotage avec organisation et plan de contrôle
+          Cadre de pilotage avec organisation et suivi
         </p>
 
         <p>
-          <strong>Résultat :</strong> projet stabilisé et piloté<br>
           <strong>Prix :</strong> 3 000 € – 7 000 €
         </p>
       </div>
@@ -129,20 +123,18 @@ render('hero', [
     <div class="card card--ghost card--maracuja">
       <h2 class="h2--moderne">Pourquoi ces trois offres ?</h2>
       <p>
-        Ces trois offres couvrent les besoins de pilotage que j’ai le plus souvent rencontrés sur des projets digitaux,
-        et dans lesquels j’apporte le plus de valeur. Elles traduisent mon expertise et mon mode d’intervention.
-        Je peux aussi intervenir en régie sur des projets plus longs, en m’adaptant au projet et à son fonctionnement,
-        en restant toujours à l’écoute des personnes impliquées.
+        Ces offres couvrent les principaux besoins d’accompagnement sur des projets digitaux :
+        clarification, structuration et pilotage. Elles correspondent aux situations dans lesquelles j’interviens le plus souvent.
       </p>
     </div>
   </div>
-  <section class="section">
-    <div class="container no-padding">
-      <?php render('btn', [
-        'route' => 'contact',
-        'label' => 'Parlons-en !'
-      ]); ?>
-    </div>
-  </section>
+</section>
 
+<section class="section">
+  <div class="container no-padding">
+    <?php render('btn', [
+      'route' => 'contact',
+      'label' => 'Parlons-en !'
+    ]); ?>
+  </div>
 </section>

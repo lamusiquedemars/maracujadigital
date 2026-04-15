@@ -162,6 +162,10 @@ p {
 .grid--3 {
   grid-template-columns: repeat(3, 1fr);
 }
+
+.grid--2-3 {
+  grid-template-columns: 2fr 1fr;
+}
 /* responsive layout */
 @media (max-width: 768px) {
   .grid--2,

@@ -41,7 +41,7 @@ return [
     'title' => 'Contact',
     'controller' => 'contact'
   ],
-  'mentions_legales' => [
+  'mentions-legales' => [
     'path' => 'mentions-legales',
     'view' => 'mentions-legales',
     'title' => 'Mentions légales',
