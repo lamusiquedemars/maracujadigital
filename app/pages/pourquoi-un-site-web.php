@@ -53,7 +53,7 @@ $title = "Pourquoi un site web ?";
           <th>Situation actuelle</th>
           <th>Ce qui est en jeu</th>
           <th>Ce qui est perdu</th>
-          <th>Site web professionnel</th>
+          <th><strong>Site web professionnel</strong></th>
         </tr>
       </thead>
 
@@ -62,28 +62,28 @@ $title = "Pourquoi un site web ?";
           <td>Activité dépendante d’Instagram / Etsy</td>
           <td>Visibilité contrôlée par une plateforme externe</td>
           <td>Dépendance à l’algorithme et instabilité du trafic</td>
-          <td>Canal indépendant et stable</td>
+          <td><strong>Canal indépendant et stable</strong></td>
         </tr>
 
         <tr>
           <td>Communication via DM</td>
           <td>Échanges individuels avant conversion</td>
           <td>Forte friction et perte de prospects</td>
-          <td>Parcours clair vers contact ou achat</td>
+          <td><strong>Parcours clair vers contact ou achat</strong></td>
         </tr>
 
         <tr>
           <td>Découverte par feed</td>
           <td>Visibilité aléatoire</td>
           <td>Manque de trafic qualifié constant</td>
-          <td>Acquisition via Google (intention forte)</td>
+          <td><strong>Acquisition via Google (intention forte)</strong></td>
         </tr>
 
         <tr>
           <td>Pas de structure d’offre</td>
           <td>Informations dispersées</td>
           <td>Compréhension lente</td>
-          <td>Offre claire et lisible immédiatement</td>
+          <td><strong>Offre claire et lisible immédiatement</strong></td>
         </tr>
       </tbody>
     </table>
@@ -107,7 +107,7 @@ $title = "Pourquoi un site web ?";
           <th>Situation actuelle</th>
           <th>Ce qui est en jeu</th>
           <th>Ce qui est perdu</th>
-          <th>Site web professionnel</th>
+          <th><strong>Site web professionnel</strong></th>
         </tr>
       </thead>
 
@@ -116,28 +116,28 @@ $title = "Pourquoi un site web ?";
           <td>Design daté</td>
           <td>Première impression visuelle</td>
           <td>Baisse immédiate de crédibilité</td>
-          <td>Image moderne et premium</td>
+          <td><strong>Image moderne et premium</strong></td>
         </tr>
 
         <tr>
           <td>Non adapté mobile</td>
           <td>Expérience utilisateur principale sur smartphone</td>
           <td>Perte importante de visiteurs</td>
-          <td>Expérience mobile-first optimisée</td>
+          <td><strong>Expérience mobile-first optimisée</strong></td>
         </tr>
 
         <tr>
           <td>SEO obsolète</td>
           <td>Visibilité sur Google</td>
           <td>Acquisition gratuite perdue</td>
-          <td>Trafic organique continu</td>
+          <td><strong>Trafic organique continu</strong></td>
         </tr>
 
         <tr>
           <td>Contenu figé</td>
           <td>Perception de l’activité</td>
           <td>Image d’activité inactive</td>
-          <td>Image actuelle et vivante</td>
+          <td><strong>Image actuelle et vivante</strong></td>
         </tr>
       </tbody>
     </table>
@@ -161,7 +161,7 @@ $title = "Pourquoi un site web ?";
           <th>Situation actuelle</th>
           <th>Ce qui est en jeu</th>
           <th>Ce qui est perdu</th>
-          <th>Site web professionnel</th>
+          <th><strong>Site web professionnel</strong></th>
         </tr>
       </thead>
 
@@ -170,28 +170,28 @@ $title = "Pourquoi un site web ?";
           <td>Templates automatiques</td>
           <td>Rapidité de création</td>
           <td>Absence d’identité forte</td>
-          <td>Différenciation réelle</td>
+          <td><strong>Différenciation réelle</strong></td>
         </tr>
 
         <tr>
           <td>Design générique</td>
           <td>Présence en ligne</td>
           <td>Manque de mémorisation</td>
-          <td>Marque reconnaissable</td>
+          <td><strong>Marque reconnaissable</strong></td>
         </tr>
 
         <tr>
           <td>Contenu standard</td>
           <td>Facilité de mise en place</td>
           <td>Faible impact émotionnel</td>
-          <td>Narration sur mesure</td>
+          <td><strong>Narration sur mesure</strong></td>
         </tr>
 
         <tr>
           <td>SEO basique</td>
           <td>Visibilité initiale</td>
           <td>Faible acquisition long terme</td>
-          <td>Acquisition durable</td>
+          <td><strong>Acquisition durable</strong></td>
         </tr>
       </tbody>
     </table>
@@ -215,7 +215,7 @@ $title = "Pourquoi un site web ?";
           <th>Situation actuelle</th>
           <th>Ce qui est en jeu</th>
           <th>Ce qui est perdu</th>
-          <th>Site web professionnel</th>
+          <th><strong>Site web professionnel</strong></th>
         </tr>
       </thead>
 
@@ -224,28 +224,28 @@ $title = "Pourquoi un site web ?";
           <td>Création autonome</td>
           <td>Économie de coût initial</td>
           <td>Manque de vision globale</td>
-          <td>Structure stratégique</td>
+          <td><strong>Structure stratégique</strong></td>
         </tr>
 
         <tr>
           <td>Design variable</td>
           <td>Liberté de construction</td>
           <td>Perte de cohérence</td>
-          <td>Identité visuelle forte</td>
+          <td><strong>Identité visuelle forte</strong></td>
         </tr>
 
         <tr>
           <td>WordPress/plugins empilés</td>
           <td>Puissance technique</td>
           <td>Complexité et lenteur</td>
-          <td>Système optimisé et stable</td>
+          <td><strong>Système optimisé et stable</strong></td>
         </tr>
 
         <tr>
           <td>Site informatif</td>
           <td>Présence digitale</td>
           <td>Faible conversion</td>
-          <td>Site orienté business</td>
+          <td><strong>Site orienté business</strong></td>
         </tr>
       </tbody>
     </table>
@@ -268,7 +268,7 @@ $title = "Pourquoi un site web ?";
           <th>Situation actuelle</th>
           <th>Ce qui est en jeu</th>
           <th>Ce qui est perdu</th>
-          <th>Site web professionnel</th>
+          <th><strong>Site web professionnel</strong></th>
         </tr>
       </thead>
 
@@ -277,28 +277,28 @@ $title = "Pourquoi un site web ?";
           <td>Site en ligne mais inactif</td>
           <td>Présence digitale passive</td>
           <td>Potentiel totalement inutilisé</td>
-          <td>Actif d’acquisition</td>
+          <td><strong>Actif d’acquisition</strong></td>
         </tr>
 
         <tr>
           <td>Pas de trafic</td>
           <td>Visibilité sur le web</td>
           <td>Opportunités perdues</td>
-          <td>Trafic qualifié Google</td>
+          <td><strong>Trafic qualifié Google</strong></td>
         </tr>
 
         <tr>
           <td>Non intégré au parcours client</td>
           <td>Décision d’achat</td>
           <td>Aucun impact commercial</td>
-          <td>Rôle central dans la conversion</td>
+          <td><strong>Rôle central dans la conversion</strong></td>
         </tr>
 
         <tr>
           <td>Contenu faible</td>
           <td>Image perçue</td>
           <td>Manque de crédibilité</td>
-          <td>Contenu structuré et convaincant</td>
+          <td><strong>Contenu structuré et convaincant</strong></td>
         </tr>
       </tbody>
     </table>
@@ -317,7 +317,7 @@ $title = "Pourquoi un site web ?";
           <th>Situation globale</th>
           <th>Constat</th>
           <th>Impact business</th>
-          <th>Rôle du site pro</th>
+          <th><strong>Rôle du site pro</strong></th>
         </tr>
       </thead>
 
@@ -326,41 +326,40 @@ $title = "Pourquoi un site web ?";
           <td>Instagram seul</td>
           <td>Dépendance plateforme + friction</td>
           <td>Conversion instable</td>
-          <td>Structure + indépendance</td>
+          <td><strong>Structure + indépendance</strong></td>
         </tr>
 
         <tr>
           <td>Site ancien</td>
           <td>Crédibilité dégradée</td>
           <td>Perte de clients premium</td>
-          <td>Image modernisée</td>
+          <td><strong>Modernisée</strong></td>
         </tr>
 
         <tr>
           <td>Site builder IA</td>
           <td>Présence générique</td>
           <td>Faible différenciation</td>
-          <td>Positionnement fort</td>
+          <td><strong>Positionnement fort</strong></td>
         </tr>
 
         <tr>
           <td>DIY Wix / WordPress</td>
           <td>Structure non optimisée</td>
           <td>Conversion faible</td>
-          <td>Optimisation business</td>
+          <td><strong>Optimisation business</strong></td>
         </tr>
 
         <tr>
           <td>Site invisible</td>
           <td>Actif sous-exploité</td>
           <td>Opportunités perdues</td>
-          <td>Acquisition continue</td>
+          <td><strong>Acquisition continue</strong></td>
         </tr>
       </tbody>
     </table>
   </div>
 </section>
-
 
 <!-- INCLUS -->
 <section class="section">
@@ -421,9 +420,12 @@ $title = "Pourquoi un site web ?";
     <h2 class="h2--moderne">Conclusion</h2>
 
     <div class="card card--ghost">
-      <span class="btn btn-ghost">
+      <p>
         La différence entre une présence digitale classique et un site web professionnel ne se joue pas sur la visibilité, mais sur la capacité à transformer une attention en décision.
-      </span>
+      </p>
+      <span class="btn btn-ghost"><a href="<?= route('contact') ?>"><strong>Vous souhaitez avancer ?</strong> Contactez-moi pour un premier échange.</a></span>
+
     </div>
+
   </div>
 </section>
