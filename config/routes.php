@@ -53,4 +53,10 @@ return [
     'title' => 'CGV',
     'controller' => 'cgv'
   ],
+  'pourquoi-un-site-web' => [
+    'path' => 'pourquoi-un-site-web',
+    'view' => 'pourquoi-un-site-web',
+    'title' => 'Pourquoi un site web ?',
+    'controller' => 'pourquoi-un-site-web'
+  ],
 ];

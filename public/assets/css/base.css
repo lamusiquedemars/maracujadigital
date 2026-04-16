@@ -115,6 +115,10 @@ p {
   color: var(--color-muted);
 }
 
+.text-accent {
+  color: var(--color-accent);
+}
+
 .text-small {
   font-size: 0.9rem;
 }
