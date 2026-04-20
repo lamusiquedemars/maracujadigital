@@ -59,4 +59,10 @@ return [
     'title' => 'Pourquoi un site web ?',
     'controller' => 'pourquoi-site-web'
   ],
+  'valeur-site-web' => [
+    'path' => 'valeur-site-web',
+    'view' => 'valeur-site-web',
+    'title' => "Quelle est la valeur d'un site web ?",
+    'controller' => 'valeur-site-web'
+  ]
 ];
