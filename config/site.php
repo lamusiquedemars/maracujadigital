@@ -48,6 +48,7 @@ $SITE = [
     'links' => [
       ['label' => 'Mentions légales', 'route' => 'mentions-legales'],
       ['label' => 'CGV', 'route' => 'cgv'],
+      ['label' => 'Pourquoi avoir un site web', 'route' => 'pourquoi-site-web'],
       ['label' => 'Contact', 'route' => 'contact'],
     ],
     'socials' => [],

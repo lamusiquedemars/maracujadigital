@@ -76,7 +76,12 @@ $title = "Création de sites web";
 <section class="section">
   <div class="container no-padding">
     <div class="card card--featured card--maracuja">
-      <h2 class="h2--moderne">Éléments inclus dans toutes les offres</h2>
+      <h2 class="h2--moderne">Un site conçu comme un vrai projet</h2>
+      <p>
+        Chaque site est cadré comme un projet à part entière : analyse des besoins, structuration des contenus, définition précise des fonctionnalités.
+        Cette approche issue des environnements grands comptes permet d’éviter l’approximation et de construire un site cohérent, pensé dans sa globalité.
+      </p>
+      <h3>Éléments inclus dans toutes les offres</h3>
       <ul class="ul-icon">
         <li><i data-lucide="leaf"></i>Cadrage du projet avec ma méthode AMOA</li>
         <li><i data-lucide="leaf"></i>Design sobre et élégant réalisé sur mesure avec vos photos et votre univers</li>

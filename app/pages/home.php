@@ -41,10 +41,8 @@ render('hero', [
         <i data-lucide="milestone" class="card-icon"></i>
         <h3>Cadrage & pilotage de projet digital</h3>
         <p>
-          Un travail d'accompagnement, de l'expression des besoins à la réalisation.
-        </p>
-        <p>
-          Un objectif : garantir la satisfaction du client.
+          J’interviens sur des projets pour clarifier les besoins, organiser les idées et poser une structure solide avant ou pendant la réalisation.</p>
+        <p> L’objectif : garder une vision claire et des choix cohérents à chaque étape.
         </p>
         <span class="btn btn-ghost">Découvrir le service</span>
       </a>
@@ -68,17 +66,24 @@ render('realisations', [
       <div class="card card--featured">
         <i data-lucide="star" class="card-icon"></i>
         <h3>Valeurs</h3>
-        <p>Guidé par la simplicité et le service des personnes, je cherche l’équilibre entre le beau et l’utile.</p>
-        <p>Mon travail repose sur l’écoute, la précision et le soin du détail.</p>
+        <p>Je travaille avec la même exigence que sur un projet stratégique : décisions posées, choix argumentés, cadre clair.
+          Un site engage votre image et votre activité. Il mérite plus qu’une exécution rapide.
+        </p>
+        <p>Mon approche repose sur la précision, la cohérence et le respect du travail de mes clients.
+        </p>
       </div>
       <!-- EXPÉRIENCE -->
       <div class="card card--featured">
         <i data-lucide="footprints" class="card-icon"></i>
         <h3>Expérience</h3>
+        <p>Développeur depuis 2009, chef de projet depuis 2013, j’ai piloté des projets où chaque besoin devait être analysé,
+          reformulé et validé avant production.
+        </p>
+        <p>Mon rôle ne consiste pas à “exécuter”, mais à comprendre, structurer et sécuriser.
+          C’est cette compétence de formalisation que j’applique aujourd’hui à la création de sites.
+        </p>
         <p>
-          Dans le numérique depuis 2009, développeur puis chef de projet depuis 2013,
-          j’interviens principalement sur des projets complexes et stratégiques.</p>
-        <p>Mon rôle est de formaliser les besoins, structurer les processus et garder l’utilisateur au centre.
+          Je ne découvre pas la méthode : je l’ai pratiquée pendant des années dans des environnements exigeants.
         </p>
       </div>
 
@@ -90,10 +95,12 @@ render('realisations', [
           J’applique une méthode de travail en 4 étapes, issue de la gestion de projets.
         </p>
         <ul>
-          <li><strong>Cadrer</strong> — besoins et objectifs</li>
-          <li><strong>Structurer</strong> — processus et fonctionnalités</li>
-          <li><strong>Réaliser</strong> — construire et ajuster</li>
-          <li><strong>Déployer</strong> — garantir valeur et usage</li>
+          <li><strong>Cadrer</strong> — analyser et formaliser précisément vos besoins, 
+          vos objectifs et vos priorités pour poser un cadre clair avant toute décision</li>
+          <li><strong>Structurer</strong> — transformer ces éléments en architecture cohérente : contenus, parcours, 
+          fonctionnalités et logique d’ensemble</li>
+          <li><strong>Réaliser</strong> — concevoir et développer avec rigueur, en respectant les choix validés et l’intention initiale</li>
+          <li><strong>Déployer</strong> — mettre en ligne un outil maîtrisé, aligné avec votre activité et pensé pour durer</li>
         </ul>
       </div>
     </div>
