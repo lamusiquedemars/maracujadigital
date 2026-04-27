@@ -64,5 +64,11 @@ return [
     'view' => 'valeur-site-web',
     'title' => "Quelle est la valeur d'un site web ?",
     'controller' => 'valeur-site-web'
+  ],
+  'site-web-quelles-options' => [
+    'path' => 'site-web-quelles-options',
+    'view' => 'site-web-quelles-options',
+    'title' => "Site web : quelles options ?",
+    'controller' => 'site-web-quelles-options'
   ]
 ];

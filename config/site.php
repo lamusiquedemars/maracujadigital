@@ -50,6 +50,7 @@ $SITE = [
       ['label' => 'CGV', 'route' => 'cgv'],
       ['label' => 'Pourquoi avoir un site web', 'route' => 'pourquoi-site-web'],
       ['label' => 'Quelle est la valeur d\'un site web ?', 'route' => 'valeur-site-web'],
+      ['label' => 'Site web : quelles options ?', 'route' => 'site-web-quelles-options'],
       ['label' => 'Contact', 'route' => 'contact'],
     ],
     'socials' => [],

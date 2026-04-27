@@ -321,7 +321,7 @@ h2.h2--moderne::before {
 
 .card--featured p {
   padding-top: var(--space-m);
-  color: var(--color-muted);
+  /* color: var(--color-muted); */
 }
 
 .card--featured ul {
