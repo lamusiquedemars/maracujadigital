@@ -1,127 +1,102 @@
 <?php
-// ======================
-// ESCAPE HTML
-// ======================
-function e($value): string
+/**
+ * Helpers globaux de l'application.
+ *
+ * Fichier unique compatible avec les deux structures existantes.
+ * Il garde les mêmes noms de fonctions :
+ * base_path, app_path, config_path, public_path,
+ * url, asset, img, e, esc_attr, load_env,
+ * dd, is_dev, render, slot_add, route.
+ */
+
+
+/* ============================================================
+ * PATH HELPERS
+ * ============================================================ */
+
+/**
+ * Chemin racine du projet.
+ *
+ * Priorité :
+ * - constante ROOT si elle existe ;
+ * - sinon dossier parent du dossier courant.
+ */
+function base_path(string $path = ''): string
 {
-    return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
+    $root = defined('ROOT') ? ROOT : dirname(__DIR__);
+
+    return rtrim($root, DIRECTORY_SEPARATOR)
+        . ($path ? DIRECTORY_SEPARATOR . ltrim($path, DIRECTORY_SEPARATOR) : '');
 }
 
-// ======================
-// URL HELPERS
-// ======================
-/*
-    * Génère une URL complète à partir d'un chemin relatif
-    * ex: url('contact') => https://mon-site.com/contact
-    */
+function app_path(string $path = ''): string
+{
+    return base_path('app' . ($path ? DIRECTORY_SEPARATOR . ltrim($path, DIRECTORY_SEPARATOR) : ''));
+}
+
+function config_path(string $path = ''): string
+{
+    return base_path('config' . ($path ? DIRECTORY_SEPARATOR . ltrim($path, DIRECTORY_SEPARATOR) : ''));
+}
+
+function public_path(string $path = ''): string
+{
+    return base_path('public' . ($path ? DIRECTORY_SEPARATOR . ltrim($path, DIRECTORY_SEPARATOR) : ''));
+}
+
+
+/* ============================================================
+ * ESCAPE HELPERS
+ * ============================================================ */
+
+function e($value): string
+{
+    return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
+}
+
+function esc_attr($value): string
+{
+    return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
+}
+
+
+/* ============================================================
+ * URL HELPERS
+ * ============================================================ */
+
+/**
+ * Génère une URL à partir d'un chemin relatif.
+ *
+ * Compatible avec :
+ * - $GLOBALS['app']['base']
+ * - BASE_URL
+ */
 function url($path = ''): string
 {
     if (is_array($path)) {
         return '';
     }
 
-    $base = rtrim(BASE_URL, '/');
-    $path = trim((string)$path, '/');
+    if (isset($GLOBALS['app']['base'])) {
+        $base = rtrim((string) $GLOBALS['app']['base'], '/');
+    } elseif (defined('BASE_URL')) {
+        $base = rtrim((string) BASE_URL, '/');
+    } else {
+        $base = '';
+    }
+
+    $path = trim((string) $path, '/');
+
+    if ($base === '') {
+        return $path ? '/' . $path : '/';
+    }
 
     return $base . ($path ? '/' . $path : '');
 }
 
-// ======================
-// ASSETS HELPERS
-// ======================
-/* Génère une URL d'asset à partir d'un chemin relatif
-   ex: asset('css/style.css') => https://mon-site.com/assets/css/style.css
-*/
-function asset(string $path): string
-{
-    return url('assets/' . ltrim($path, '/'));
-}
-/* Génère une URL d'image à partir d'un chemin relatif
-   ex: img('logo.png') => https://mon-site.com/assets/img/logo.png
-*/
-function img(string $path): string
-{
-    return asset('img/' . ltrim($path, '/'));
-}
-
-// ======================
-// DEBUG
-// ======================
-function dd($data): void
-{
-    echo '<pre>';
-    var_dump($data);
-    echo '</pre>';
-    exit;
-}
-
-// ======================
-// SAFE OUTPUT
-// ======================
-function esc_attr($value): string
-{
-    return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
-}
-
-// ======================
-// ENV CHECK
-// ======================
-function is_dev(): bool
-{
-    return APP_ENV === 'dev';
-}
-
-// ======================
-// RENDER COMPONENT
-// ======================
- /* Charge un fichier de composant PHP et lui passe des données ($props).
- * Objectif : composants simples + réutilisables.
+/**
+ * Génère une URL depuis une route nommée.
  */
-function render(string $block, array $props = []): void
-{
-    // Chemin du composant
-    $file = ROOT . '/app/components/' . basename($block) . '.php';
-    // Sécurité : vérifie que le fichier existe
-    if (!file_exists($file)) {
-        throw new Exception("Component not found: " . $block);
-    }
-    /**
-     * NORMALISATION GÉNÉRIQUE DES PROPS
-     * But : éviter les formats multiples côté composants.
-     * Exemple traité ici :
-     * - class peut être string OU array
-     * - si array => transformé en string CSS
-     * On garde le reste intact (items, etc.).
-     */
-    foreach ($props as $key => $value) {
-        // Cas spécifique mais générique : listes simples
-        // ex: ['hero--page', 'hero--center']
-        if ($key === 'class' && is_array($value)) {
-            $props[$key] = implode(' ', $value);
-        }
-    }
-    // Injection des props dans le scope du composant
-    require $file;
-}
-// ======================
-// SLOTS
-// ======================
-/*
-    * Permet d'ajouter du contenu à un "slot" qui peut être affiché dans le layout
-    * ex: slot_add('meta', '<meta name="description" content="...">') ajoute une meta description qui peut être affichée dans le <head> du layout
-*/
-function slot_add(string $type, string $value): void
-{
-    global $slots;
-    $slots[$type][] = $value;
-}
-
-// ======================
-// ROUTING HELPER
-// ======================
-/* Génère une URL à partir du nom d'une route définie dans config/routes.php
-   ex: route('contact') => https://mon-site.com/contact
-*/
 function route(string $name): string
 {
     global $ROUTES;
@@ -131,4 +106,156 @@ function route(string $name): string
     }
 
     return url($ROUTES[$name]['path'] ?? '');
+}
+
+
+/* ============================================================
+ * ASSET HELPERS
+ * ============================================================ */
+
+/**
+ * Génère une URL vers /assets.
+ *
+ * Exemple :
+ * asset('css/style.css')
+ * => /assets/css/style.css
+ */
+function asset(string $path = ''): string
+{
+    return url('assets/' . ltrim($path, '/'));
+}
+
+/**
+ * Génère une URL vers /assets/img.
+ *
+ * Exemple :
+ * img('logo.png')
+ * => /assets/img/logo.png
+ */
+function img(string $path): string
+{
+    return asset('img/' . ltrim($path, '/'));
+}
+
+
+/* ============================================================
+ * ENV HELPERS
+ * ============================================================ */
+
+/**
+ * Charge un fichier .env simple.
+ */
+function load_env(string $path): void
+{
+    if (!is_file($path)) {
+        return;
+    }
+
+    $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+    foreach ($lines as $line) {
+        $line = trim($line);
+
+        if ($line === '' || strpos($line, '#') === 0) {
+            continue;
+        }
+
+        [$key, $value] = array_pad(explode('=', $line, 2), 2, '');
+
+        $key = trim($key);
+        $value = trim($value);
+
+        if ($key === '') {
+            continue;
+        }
+
+        $_ENV[$key] = $value;
+        putenv($key . '=' . $value);
+    }
+}
+
+/**
+ * Vérifie si l'environnement est en dev.
+ *
+ * Compatible avec :
+ * - constante APP_ENV
+ * - variable $_ENV['APP_ENV']
+ * - getenv('APP_ENV')
+ */
+function is_dev(): bool
+{
+    if (defined('APP_ENV')) {
+        return APP_ENV === 'dev';
+    }
+
+    if (isset($_ENV['APP_ENV'])) {
+        return $_ENV['APP_ENV'] === 'dev';
+    }
+
+    return getenv('APP_ENV') === 'dev';
+}
+
+
+/* ============================================================
+ * VIEW / COMPONENT HELPERS
+ * ============================================================ */
+
+/**
+ * Charge un composant PHP et lui passe des props.
+ *
+ * Exemple :
+ * render('hero', [
+ *   'title' => 'Accueil',
+ *   'class' => ['hero--page', 'hero--center']
+ * ]);
+ */
+function render(string $block, array $props = []): void
+{
+    $file = app_path('components/' . basename($block) . '.php');
+
+    if (!file_exists($file)) {
+        throw new Exception('Component not found: ' . $block);
+    }
+
+    foreach ($props as $key => $value) {
+        if ($key === 'class' && is_array($value)) {
+            $props[$key] = implode(' ', $value);
+        }
+    }
+
+    require $file;
+}
+
+/**
+ * Ajoute du contenu dans un slot.
+ */
+function slot_add(string $type, string $value): void
+{
+    global $slots;
+
+    if (!isset($slots)) {
+        $slots = [];
+    }
+
+    if (!isset($slots[$type])) {
+        $slots[$type] = [];
+    }
+
+    $slots[$type][] = $value;
+}
+
+
+/* ============================================================
+ * DEBUG HELPERS
+ * ============================================================ */
+
+/**
+ * Dump + stop.
+ */
+function dd($data): void
+{
+    echo '<pre>';
+    var_dump($data);
+    echo '</pre>';
+    exit;
 }

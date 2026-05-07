@@ -1,9 +1,7 @@
 <?php
 $title = "Accueil";
-?>
 
-<!-- HERO -->
-<?php
+/*HERO*/
 render('hero', [
   'title' => 'Donner vie à ses idées.',
   'subtitle' => 'Création de sites web et accompagnement de projets digitaux.',
