@@ -28,7 +28,8 @@ render('hero', [
     <p>
       Si la réponse n’est pas immédiate, ils repartent.
     </p>
-    <hr>
+    <div class="divider"></div>
+
     <p class="text-accent">
       Un site efficace ne sert pas à être présent. Il sert à être compris et choisi.
     </p>
@@ -83,16 +84,15 @@ render('hero', [
   </div>
 </section>
 
-<!-- CE QUE JE FAIS -->
+<!-- CE QUE FAIT UN BON SITE -->
 <section class="section">
   <div class="container no-padding">
     <div class="card card--featured card--maracuja">
       <h2 class="h2--moderne">Ce qu’un site bien structuré doit permettre</h2>
-
       <ul class="ul-icon">
-        <li><i data-lucide="target"></i>Clarifier ce que vous faites réellement</li>
-        <li><i data-lucide="layers"></i>Structurer votre offre pour qu’elle soit comprise</li>
-        <li><i data-lucide="layout"></i>Construire un site lisible et cohérent</li>
+        <li class="spacing-sm"><i data-lucide="target"></i>Clarifier ce que vous faites réellement</li>
+        <li class="spacing-sm"><i data-lucide="layers"></i>Structurer votre offre pour qu’elle soit comprise</li>
+        <li class="spacing-sm"><i data-lucide="layout"></i>Construire un site lisible et cohérent</li>
         <li><i data-lucide="user-check"></i>Faciliter la décision du client</li>
       </ul>
     </div>
@@ -102,24 +102,24 @@ render('hero', [
 <!-- MÉTHODE -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Une approche simple</h2>
-
+    <h2 class="h2--moderne">Du besoin à la mise en ligne</h2>
+    <p class="section-intro">
+      Le projet avance étape par étape, avec une méthode claire pour organiser les besoins,
+      structurer le contenu et construire un site cohérent.
+    </p>
     <div class="grid grid--4">
       <div class="card">
         <h3>Cadrer</h3>
         <p>Comprendre votre activité, vos clients, vos enjeux</p>
       </div>
-
       <div class="card">
         <h3>Structurer</h3>
         <p>Clarifier votre offre et votre positionnement</p>
       </div>
-
       <div class="card">
         <h3>Réaliser</h3>
         <p>Créer un site clair, cohérent et lisible</p>
       </div>
-
       <div class="card">
         <h3>Déployer</h3>
         <p>Mettre en ligne un outil utile pour votre activité</p>
@@ -131,8 +131,11 @@ render('hero', [
 <!-- RÉSULTAT -->
 <section class="section">
   <div class="container no-padding">
-    <h2 class="h2--moderne">Résultat</h2>
-
+    <h2 class="h2--moderne">Ce que le site doit produire</h2>
+    <p class="section-intro">
+      Un site bien construit doit aider le visiteur à comprendre rapidement l’activité,
+      à se faire une opinion claire et à savoir quoi faire ensuite.
+    </p>
     <div class="grid grid--3">
       <div class="card">
         <i data-lucide="eye" class="card-icon"></i>
@@ -155,19 +158,21 @@ render('hero', [
   </div>
 </section>
 
-<!-- CTA -->
+<!-- Conclusion -->
 <section class="section">
   <div class="container">
+    <h2 class="h2--moderne">Conclusion</h2>
     <div class="card card--ghost">
       <p>
         Si aujourd’hui votre site ne génère pas de demandes, ce n’est pas un problème technique.
         C’est un problème de clarté.
       </p>
-      <span class="btn btn-ghost">
-        <a href="<?= route('contact') ?>">
-          <strong>Faire le point sur votre site</strong>
-        </a>
-      </span>
+      <p>
+        Un premier échange permet d’identifier la situation du projet, le niveau d’accompagnement utile et le format le plus adapté.
+      </p>
+      <p>
+        <a href="<?= route('contact') ?>" class="btn btn-ghost">Présenter un projet</a>
+      </p>
     </div>
   </div>
 </section>

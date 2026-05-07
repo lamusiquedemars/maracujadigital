@@ -326,6 +326,7 @@ render('hero', [
             les appels à l’action, la qualité perçue et l’évolutivité du site.</p>
       </div>
     </div>
+    <div class="divider"></div>
     <p>
       Dans les deux cas, je ne pars pas directement du design ou du code.
       Je commence par comprendre ce que le site doit permettre à vos clients de comprendre, comparer et décider.

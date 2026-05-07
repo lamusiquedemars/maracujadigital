@@ -28,7 +28,7 @@ render('hero', [
       C’est l’endroit où une activité devient lisible, où une offre prend forme,
       et où une décision commence à se construire.
     </p>
-    <hr>
+    <div class="divider"></div>
     <p class="text-accent">
       Voici 5 situations concrètes, comparées à ce qu’un site web professionnel change réellement.
     </p>
@@ -413,8 +413,7 @@ render('hero', [
   </div>
 </section>
 
-
-<!-- PROCESS -->
+<!-- Conclusion -->
 <section class="section">
   <div class="container">
     <h2 class="h2--moderne">Conclusion</h2>

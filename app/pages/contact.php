@@ -2,46 +2,48 @@
 <?php
 render('hero', [
   'title' => 'Entrons en contact.',
-  'subtitle' => 'Pour échanger sur un projet ou une collaboration, vous pouvez me contacter ici.',
+  'subtitle' => 'Pour parler d’un site web, d’un projet digital ou d’une collaboration.',
   'class' => ['hero--page', 'hero--center'],
   'link' => '',
   'label' => ''
 ]);
 ?>
+
 <!-- VALEUR -->
 <section class="section">
   <div class="container">
+    <h2 class="h2--moderne">Un premier échange pour cadrer le besoin</h2>
     <div class="grid grid--2-3">
       <div class="card card--ghost">
-        <h2 class="h2--moderne">Pourquoi travailler avec moi</h2>
         <p>
-          Chaque projet commence par un échange pour comprendre vos besoins, qu’il s’agisse d’un site web ou d’un accompagnement en gestion de projet.
-          Cela permet d'identifier la bonne approche, afin d’avancer de manière claire et structurée. Disons que c’est mon côté chef de projet...
-        </p>
-        <p>
-          En effet, ayant travaillé sur des projets de grande ampleur en environnements grands comptes, la clarté et la structuration sont indispensables.
-          Et comme mon rôle a été de comprendre les besoins pas toujours complètement formalisés, de les transformer en documents exploitables, 
-          puis en solutions concrètes, c’est cette méthode que j’applique aujourd’hui à la création de sites.
-        </p>
-        <p>
-          D'un parcours également issu de la musique et de la pédagogie, ainsi que d’une pratique artisanale,
-          j’ai développé une sensibilité à l’écoute, au détail et à la relation humaine.
-        </p>
-        <p>
-          C'est pourquoi j’ai choisi de travailler au plus près des artisans, indépendants et TPE, parce que j’aime la proximité,
-          les échanges directs, et le fait de rendre leur travail visible.
-        </p>
-        <p>
-          Je cherche à mettre cette combinaison de rigueur et de sensibilité au service de ces personnes, 
-          avec des solutions utiles et adaptées à leur réalité, avec la même exigence qu’un projet stratégique.
+          Un projet web commence rarement par une solution toute faite.
+          Il faut d’abord comprendre l’activité, les objectifs, les contenus disponibles, les contraintes et le niveau d’accompagnement nécessaire.
         </p>
 
-        Avant de parler design, je clarifie.
-        Avant de développer, je structure.
-        Avant d’écrire, je formalise.
+        <p>
+          Cette étape permet de vérifier si le besoin relève d’un site vitrine, d’un accompagnement plus structuré, d’une refonte, ou d’un projet digital plus large.
+        </p>
+
+        <p>
+          Maracuja Digital fonctionne avec un interlocuteur principal, une méthode de cadrage issue de l’AMOA, et la possibilité de mobiliser des compétences complémentaires selon le projet : photographie, graphisme, référencement ou communication.
+        </p>
+
+        <p class="lead">
+          Avant de produire, le besoin est clarifié.
+          Avant de développer, la structure est posée.
+          Avant de mettre en ligne, les choix sont validés.
+        </p>
       </div>
-      <div class="card card--ghost">
-        <img src="<?= asset('img/ivo.png') ?>" alt="Photo de Ivo Correia" class="card-image">
+
+      <div class="card">
+        <h3>Ce premier échange permet de vérifier</h3>
+        <ul class="ul-icon">
+          <li><i data-lucide="check"></i>le type de projet à engager</li>
+          <li><i data-lucide="check"></i>le niveau de cadrage nécessaire</li>
+          <li><i data-lucide="check"></i>les contenus déjà disponibles</li>
+          <li><i data-lucide="check"></i>les compétences complémentaires à prévoir</li>
+          <li><i data-lucide="check"></i>la formule ou l’approche la plus adaptée</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -52,30 +54,23 @@ render('hero', [
   <div class="container">
     <div class="grid">
       <h2 class="h2--moderne">Un projet, une mission, une idée&nbsp;?</h2>
+
       <p class="text-muted">
-        Je réponds personnellement à chaque message sous 24–48h.
-        Décrivez-moi votre besoin, je vous propose une approche claire et adaptée.
+        Maracuja Digital est une structure indépendante basée près de Lyon, portée par Ivo Correia de Melo.
+        Pour un site web, une refonte ou un accompagnement de projet digital, vous pouvez envoyer un message directement par email.
       </p>
     </div>
-    <div class="grid grid--3">
-      <a href="mailto:contact@maracujaconsulting.fr" class="card">
-        <i data-lucide="mail" class="card-icon"></i>
-        <h3>Email</h3>
-        <p>contact@maracujaconsulting.fr</p>
-        <span class="btn btn-ghost">Écrire un message</span>
-      </a>
-      <a href="https://fr.linkedin.com/in/ivo-correia" target="_blank" class="card">
-        <i data-lucide="briefcase" class="card-icon"></i>
-        <h3>LinkedIn</h3>
-        <p>Pour échanger professionnellement...</p>
-        <span class="btn btn-ghost">Voir le profil</span>
-      </a>
-      <a href="https://www.instagram.com/ivo_incidit/" target="_blank" class="card">
-        <i data-lucide="camera" class="card-icon"></i>
-        <h3>Instagram</h3>
-        <p>... Ou suivre mon travail d’archetier !</p>
-        <span class="btn btn-ghost">Découvrir</span>
-      </a>
+
+    <div class="card card--featured card--maracuja">
+      <i data-lucide="mail" class="card-icon"></i>
+      <h3>Contacter Maracuja Digital</h3>
+      <p>
+        Votre message sera lu directement par Ivo Correia de Melo.
+        Indiquez simplement le contexte, le besoin et l’état d’avancement du projet.
+      </p>
+      <p>
+        <a href="mailto:contact@maracujaconsulting.fr" class="btn btn-primary">Écrire un message</a>
+      </p>
     </div>
   </div>
 </section>

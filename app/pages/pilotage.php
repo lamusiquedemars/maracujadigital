@@ -16,6 +16,7 @@ render('hero', [
       Ces accompagnements s’adressent aux projets qui ont besoin d’être clarifiés, structurés ou remis sous contrôle.
       Le format exact dépend du contexte, du niveau d’avancement et du nombre d’acteurs impliqués.
     </p>
+    <div class="divider"></div>
     <div class="grid grid--3">
 
       <!-- OFFRE 1 -->

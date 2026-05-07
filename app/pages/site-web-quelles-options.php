@@ -21,10 +21,10 @@ render('hero', [
     </p>
     <p>
       Ainsi, un site très simple, fait pour exister en ligne, ne demande pas le même niveau de conception
-       qu’un site qui doit porter une image professionnelle, publier régulièrement des actualités ou évoluer dans le temps.
+      qu’un site qui doit porter une image professionnelle, publier régulièrement des actualités ou évoluer dans le temps.
     </p>
     <p>
-      Prenons donc le temps de comparer les options les plus populaires aujourd’hui.     
+      Prenons donc le temps de comparer les options les plus populaires aujourd’hui.
       Partons d’un exemple assez courant : un site vitrine de 5 pages avec une petite partie actualités.
       C’est parlant, parce que ça force à parler contenu, structure, maintenance, coûts, autonomie et évolutivité.
     </p>
@@ -37,53 +37,54 @@ render('hero', [
     <h2 class="h2--moderne">Les différentes options</h2>
     <h3>1. Le site-builder-hébergeur : Hostinger, IONOS, GoDaddy, etc.</h3>
     <p>
-      C’est la solution la plus directe. On prend un hébergement, on utilise son constructeur intégré, on choisit un modèle, 
-      on modifie les textes et les images. Hostinger met par exemple en avant un builder sans code avec outils IA et des prix d’appel très bas ; 
+      C’est la solution la plus directe. On prend un hébergement, on utilise son constructeur intégré, on choisit un modèle,
+      on modifie les textes et les images. Hostinger met par exemple en avant un builder sans code avec outils IA et des prix d’appel très bas ;
       IONOS présente aussi son Website Builder comme une solution utilisable sans compétence en code ou design.
     </p>
     <p>
-      C’est adapté à quelqu’un qui veut une présence en ligne rapidement, avec un budget réduit, et qui accepte une personnalisation limitée. 
+      C’est adapté à quelqu’un qui veut une présence en ligne rapidement, avec un budget réduit, et qui accepte une personnalisation limitée.
       Pour un site de 5 pages, c’est souvent suffisant si l’enjeu principal est seulement d’avoir une carte de visite en ligne.
     </p>
     <p>
-      Le coût est faible au départ, souvent quelques euros par mois, mais il faut faire attention aux prix promotionnels 
+      Le coût est faible au départ, souvent quelques euros par mois, mais il faut faire attention aux prix promotionnels
       et aux tarifs de renouvellement, qui remontent après la période initiale.
     </p>
-
+    <div class="divider"></div>
     <h3>2. Wix ou Squarespace : le builder plus complet</h3>
     <p>
-      Ici, on reste dans le no-code, mais avec plus de modèles, plus d’options, plus de confort graphique. 
-      Wix est souvent présenté comme l’un des builders les plus complets, avec templates, IA et fonctions marketing ; 
+      Ici, on reste dans le no-code, mais avec plus de modèles, plus d’options, plus de confort graphique.
+      Wix est souvent présenté comme l’un des builders les plus complets, avec templates, IA et fonctions marketing ;
       Squarespace est plutôt reconnu pour ses templates visuels et son positionnement créatif.
     </p>
     <p>
-      C’est pertinent pour un indépendant, un artisan, un créatif ou une petite structure qui veut un rendu plus soigné sans 
+      C’est pertinent pour un indépendant, un artisan, un créatif ou une petite structure qui veut un rendu plus soigné sans
       entrer dans la technique. Le coût devient généralement plus élevé qu’un builder d’hébergeur, surtout si l’on ajoute domaine, email, fonctionnalités marketing ou e-commerce léger.
     </p>
     <p>
-      Pour notre client avec son site vitrine, le point important serait : Wix ou Squarespace ne vendent pas seulement un site, 
+      Pour notre client avec son site vitrine, le point important serait : Wix ou Squarespace ne vendent pas seulement un site,
       ils vendent un environnement fermé et confortable. C’est pratique, mais la liberté technique reste limitée.
     </p>
-
+    <div class="divider"></div>
     <h3>3. Webflow ou Framer : plus de design, plus d’exigence</h3>
     <p>
-      Webflow et Framer sont intéressants parce qu’ils ne s’adressent pas exactement au même public que les builders grand public. 
-      Ils permettent une construction visuelle plus fine, des animations, une vraie logique de design, et parfois un CMS pour gérer des contenus. 
-      Webflow indique que les plans de site sont nécessaires pour publier, avec options CMS selon l’offre ; 
+      Webflow et Framer sont intéressants parce qu’ils ne s’adressent pas exactement au même public que les builders grand public.
+      Ils permettent une construction visuelle plus fine, des animations, une vraie logique de design, et parfois un CMS pour gérer des contenus.
+      Webflow indique que les plans de site sont nécessaires pour publier, avec options CMS selon l’offre ;
       Framer propose aussi des plans avec CMS, localisation et domaine personnalisé selon les niveaux.
     </p>
     <p>
-      C’est adapté à quelqu’un qui veut un rendu plus moderne, plus maîtrisé visuellement, mais qui accepte un outil plus technique. 
-      Pour un site de 5 pages avec actualités, Webflow ou Framer peuvent être très bons, mais l’inconvénient est que ce n’est plus vraiment “simple” 
+      C’est adapté à quelqu’un qui veut un rendu plus moderne, plus maîtrisé visuellement, mais qui accepte un outil plus technique.
+      Pour un site de 5 pages avec actualités, Webflow ou Framer peuvent être très bons, mais l’inconvénient est que ce n’est plus vraiment “simple”
       pour un débutant. La prise en main, le responsive, la gestion du contenu et des modules demandent du temps.
     </p>
     <p>
       Certes, ce sont des outils puissants, mais pas magiques. Ils réduisent le code visible, pas le travail de conception.
     </p>
+    <div class="divider"></div>
 
     <h3>4. WordPress : flexible, répandu, mais à cadrer</h3>
     <p>
-      WordPress est probablement la solution la plus connue pour un site vitrine avec actualités : c’est même son ADN. 
+      WordPress est probablement la solution la plus connue pour un site vitrine avec actualités : c’est même son ADN.
       Avec un thème ou un builder moderne comme Elementor, on peut créer un site administrable, publier des articles, ajouter des pages, gérer le SEO, les formulaires, les extensions. Elementor affiche des offres payantes à partir d’un abonnement annuel, en plus de l’hébergement WordPress éventuel.
     </p>
     <p>
@@ -92,6 +93,7 @@ render('hero', [
     <p>
       C’est ici que cette solution peut perdre sa puissance : WordPress est excellent quand il est structuré. Il devient pénible quand il est mal administré.
     </p>
+    <div class="divider"></div>
 
     <h3>5. Shopify : surtout pour vendre</h3>
     <p>
@@ -100,6 +102,7 @@ render('hero', [
     <p>
       Pour notre cas, nous pouvons dire simplement : Shopify est très fort pour vendre, mais ne convient pas pour un simple site de présentation avec quelques actualités. Le coût mensuel et l’écosystème d’apps se justifient si le commerce est au cœur du projet.
     </p>
+    <div class="divider"></div>
 
     <h3>6. Site sur mesure léger : HTML/CSS/PHP ou framework simple</h3>
     <p>
@@ -111,13 +114,14 @@ render('hero', [
     <p>
       C’est la solution adaptée à quelqu’un qui veut un site professionnel, sobre, durable, sans abonnement lourd à une plateforme de création, et qui préfère déléguer les choix de structure, de contenu et de mise en œuvre, afin de de concentrer sur son propre métier.
     </p>
+    <div class="divider"></div>
 
     <h3>7. Site accompagné par un professionnel</h3>
     <p>
       Ici, in ne s’agit pas d’appliquer une technologie en soi, mais de la définir en fonction du besoin du client.
     </p>
     <p>
-      Un professionnel peut travailler avec WordPress, Webflow, un builder, du code maison ou une solution hybride. 
+      Un professionnel peut travailler avec WordPress, Webflow, un builder, du code maison ou une solution hybride.
       La différence ne vient donc pas seulement de l’outil. Elle vient de la manière dont le projet est cadré.
     </p>
     <p>
@@ -225,6 +229,9 @@ render('hero', [
       </p>
       <p class="text-accent">
         Si l’objectif est d’avoir un site clair, cohérent, évolutif et aligné avec son activité, l’accompagnement prend tout son sens.
+      </p>
+      <p>
+        <a href="<?= route('contact') ?>" class="btn">Présenter un projet</a>
       </p>
     </div>
   </div>

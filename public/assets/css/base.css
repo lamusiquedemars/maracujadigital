@@ -61,12 +61,13 @@ ul, ol {
 .ul-icon li {
   display: flex;
   gap: 0.5rem;
+  margin-bottom: 0.4rem;
   align-items: flex-start;
 }
 
 .ul-icon svg {
   width: 1em;
-  height: 1em;
+  /*height: 1em;*/
   flex-shrink: 0;
 }
 
@@ -110,6 +111,10 @@ p {
 .text-spaced {
   padding: var(--space-l) 0 0;
 }   
+
+.spacing-sm {
+  margin-bottom: 0.5rem;
+}
 
 .text-muted {
   color: var(--color-muted);

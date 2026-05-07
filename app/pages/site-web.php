@@ -20,6 +20,8 @@ render('hero', [
       Les formules donnent un cadre de départ selon le niveau de contenu, d’autonomie et de fonctionnalités attendu.
       Le périmètre exact est confirmé après un premier cadrage.
     </p>
+    <div class="divider"></div>
+
     <table class="table--featured">
       <thead>
         <tr>
@@ -95,7 +97,7 @@ render('hero', [
         <li><i data-lucide="leaf"></i>Mise en ligne sur votre nom de domaine</li>
         <li><i data-lucide="leaf"></i>Dossier de livraison du site</li>
       </ul>
-      <p><a href=<?= route('methode') ?> class="btn">Regardez ma méthode dans le détail</a></p>
+      <p><a href=<?= route('methode') ?> class="btn">Connaître l'approche dans le détail</a></p>
     </div>
   </div>
 </section>
