@@ -5,14 +5,14 @@ Surcharge de styles pour le thème de base
 1. VARIABLES
 ========================= */
 :root {
---color-bg: #fbfaf7;
---color-surface: #ffffff;
---color-text: #1a1a1a;
---color-muted: #6b6b6b;
---color-border: #e5e2dc;
+  --color-bg: #fbfaf7;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-border: #e5e2dc;
 
---color-accent: #d96b4a;
---color-accent-soft: #f3ddd6;
+  --color-accent: #d96b4a;
+  --color-accent-soft: #f3ddd6;
 }
 
 /* =========================
@@ -56,7 +56,11 @@ h2.h2--moderne::after {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(to right, var(--color-accent, currentColor) 40%, transparent);
+  background: linear-gradient(
+    to right,
+    var(--color-accent, currentColor) 40%,
+    transparent
+  );
   opacity: 0.6;
 }
 
@@ -151,8 +155,8 @@ h2.h2--moderne::before {
 .hero--image::before {
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0.55)
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.55)
   );
 }
 .hero--home.hero--image {
@@ -177,7 +181,7 @@ h2.h2--moderne::before {
   padding: var(--space-l) 0;
   position: relative;
   overflow: hidden;
-  background-image: url('../img/passiflora-mono.jpg');
+  background-image: url("../img/passiflora-mono.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,8 +192,8 @@ h2.h2--moderne::before {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.7)
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.7)
   );
   z-index: 1;
 }
@@ -217,12 +221,17 @@ h2.h2--moderne::before {
 .hero--maracuja {
   position: relative;
   overflow: hidden;
-  background-image: url('../img/passiflora-background.png');
+  background-image: url("../img/passiflora-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .hero--maracuja {
+    background-size: contain;
+  }
+}
 /* overlay doux (lisibilité + identité) */
 .hero--maracuja::before {
   content: "";
@@ -230,8 +239,8 @@ h2.h2--moderne::before {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0.6)
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.6)
   );
   z-index: 1;
 }
@@ -298,13 +307,13 @@ h2.h2--moderne::before {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .card:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .card--highlight {
@@ -337,7 +346,7 @@ h2.h2--moderne::before {
 .card--maracuja {
   padding-right: 200px;
   background:
-    url('../img/passiflora-rameau.png') no-repeat right 1rem center / 200px,
+    url("../img/passiflora-rameau.png") no-repeat right 1rem center / 200px,
     var(--color-surface);
 }
 
@@ -345,8 +354,8 @@ h2.h2--moderne::before {
   .card--maracuja {
     padding-right: var(--space-m);
     background:
-      linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
-      url('../img/passiflora-rameau.png') no-repeat right 1rem center / 200px,
+      linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+      url("../img/passiflora-rameau.png") no-repeat right 1rem center / 200px,
       var(--color-surface);
   }
 }
