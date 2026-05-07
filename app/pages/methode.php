@@ -6,7 +6,7 @@ $title = "Méthode";
 <?php
 render('hero', [
   'title' => 'Méthode',
-  'subtitle' => 'Concevoir un site qui aide vos clients à comprendre, comparer et passer à l’action.',
+  'subtitle' => 'Une méthode pour concevoir des sites clairs, structurés et orientés décision.',
   'class' => ['hero--page', 'hero--center']
 ]);
 ?>
@@ -24,7 +24,7 @@ render('hero', [
       puis l’orienter vers une action claire.
     </p>
     <p>
-      Ma méthode consiste à construire un site comme un outil de décision.
+      La méthode consiste à construire un site comme un outil de décision.
       Le visiteur doit comprendre rapidement qui vous êtes, ce que vous proposez,
       pourquoi c’est pertinent pour lui, et ce qu’il peut faire ensuite.
     </p>
@@ -95,11 +95,9 @@ render('hero', [
 <section class="section">
   <div class="container">
     <h2 class="h2--moderne">Les 4 grandes briques d’un projet</h2>
-
     <p class="lead">
-      Pour rendre la méthode lisible, je regroupe ces étapes en 4 grandes briques.
+      Pour rendre la démarche lisible, les étapes sont regroupées en 4 grandes briques.
     </p>
-
     <table class="table--featured">
       <thead>
         <tr>
@@ -111,22 +109,22 @@ render('hero', [
       <tbody>
         <tr>
           <td><strong>Clarification stratégique</strong></td>
-          <td>On comprend votre activité, vos offres, vos clients, vos objectifs et vos freins</td>
+          <td>Analyser l’activité, des offres, des clients, des objectifs et des freins</td>
           <td>Le site a une direction claire</td>
         </tr>
         <tr>
           <td><strong>Structure & contenus</strong></td>
-          <td>On définit les pages, les parcours, les messages et les appels à l’action</td>
+          <td>Définir les pages, des parcours, des messages et des appels à l’action</td>
           <td>Le visiteur comprend quoi lire, quoi choisir et quoi faire</td>
         </tr>
         <tr>
           <td><strong>Design & réalisation</strong></td>
-          <td>On crée l’interface, l’ambiance visuelle, les composants et le site technique</td>
+          <td>Créer l’interface, l’ambiance visuelle, les composants et le site technique</td>
           <td>Le site devient clair, crédible et utilisable</td>
         </tr>
         <tr>
           <td><strong>Visibilité & amélioration</strong></td>
-          <td>On pose les bases SEO, l’indexation, le suivi et les optimisations</td>
+          <td>Poser les bases SEO, de l’indexation, du suivi et des optimisations</td>
           <td>Le site peut vivre après sa mise en ligne</td>
         </tr>
       </tbody>
@@ -141,7 +139,7 @@ render('hero', [
 
     <p class="lead">
       Toutes les prestations n’ont pas besoin du même niveau de profondeur.
-      Mais certaines briques ne doivent pas disparaître, même dans un site simple. Dans ce tableau, je représente le détail de chaque 
+      Mais certaines briques ne doivent pas disparaître, même dans un site simple. Dans ce tableau, est représenté le détail de chaque
       étape dans la construction d'un site, avec la notion de part de valeur dans le produit final.
     </p>
 
@@ -246,12 +244,12 @@ render('hero', [
       <h2 class="h2--moderne">Le cœur de ma méthode : comprendre, structurer, réaliser</h2>
 
       <p>
-        Mon rôle n’est pas seulement de produire un site.
-        Mon rôle est de transformer une activité parfois complexe en un parcours clair pour vos futurs clients.
+        L’enjeu n’est pas seulement de produire un site.
+        Il s’agit de transformer une activité parfois complexe en un parcours clair pour vos futurs clients.
       </p>
 
       <p>
-        Concrètement, je cherche à répondre à ces questions :
+        Concrètement, le projet doit répondre à ces questions :
       </p>
 
       <ul class="ul-icon">
@@ -279,7 +277,7 @@ render('hero', [
         Elle peut générer des idées, reformuler des textes, proposer une première structure ou aider à clarifier une offre.
       </p>
       <p>
-        Je ne la refute pas. Au contraire : bien utilisée, elle peut faire gagner du temps.
+        Elle n'est pas à écarter. Au contraire : bien utilisée, elle peut faire gagner du temps.
         Mais une IA ne remplace pas le travail de décision.
       </p>
       <p>
@@ -288,13 +286,13 @@ render('hero', [
         puis transformer tout cela en structure cohérente.
       </p>
       <p>
-        C’est là que mon travail intervient.
+        C’est là que l’accompagnement prend tout son sens.
         Je peux partir de vos propres réflexions, de vos textes, de documents préparés avec une IA ou d’un brief encore à l'état de brouillon.
         L’important est de ne pas développer un site sur une base fragile.
       </p>
       <p>
         Si votre cadrage est déjà solide, nous avançons plus vite.
-        S’il manque des éléments, je vous les signale avant de construire.
+        S’il manque des éléments, ils sont identifiés avant la construction du site.
       </p>
       <p class="text-accent">
         L’objectif n’est pas de produire plus de contenu.
@@ -316,20 +314,24 @@ render('hero', [
       <div class="card">
         <i data-lucide="leaf" class="card-icon"></i>
         <h3><strong>Essence</strong></h3>
-        <p>On construit un site propre, lisible, crédible, avec une structure simple,
-            des contenus fournis ou légèrement retravaillés, et une mise en ligne solide.</p>
+        <p>
+          Le projet aboutit à un site propre, lisible et crédible,
+          avec une structure simple, des contenus fournis ou légèrement retravaillés, et une mise en ligne solide.
+        </p>
       </div>
       <div class="card">
         <i data-lucide="globe" class="card-icon"></i>
-        <h3><strong>Signature & Universe</strong></h3>
-        <p>On travaille plus finement les parcours, les freins clients, les messages, les preuves,
-            les appels à l’action, la qualité perçue et l’évolutivité du site.</p>
+        <h3><strong>Signature & Univers</strong></h3>
+        <p>
+          Le travail va plus loin sur les parcours, les freins clients, les messages,
+          les preuves, les appels à l’action, la qualité perçue et l’évolutivité du site.
+        </p>
       </div>
     </div>
     <div class="divider"></div>
     <p>
-      Dans les deux cas, je ne pars pas directement du design ou du code.
-      Je commence par comprendre ce que le site doit permettre à vos clients de comprendre, comparer et décider.
+      Dans les deux cas, le projet ne démarre pas directement par le design ou le code.
+      Il commence par ce que le site doit permettre à vos clients de comprendre, comparer et décider.
     </p>
   </div>
 </section>
@@ -361,8 +363,8 @@ render('hero', [
     <h2 class="h2--moderne">Prochaine étape</h2>
     <div class="card card--ghost">
       <span class="btn btn-ghost">
-        <strong>Vous avez besoin d’un site plus clair, plus structuré, plus utile ?</strong>
-        <a href="<?= route('contact') ?>">Contactez-moi</a> pour un premier échange.
+        <strong>Besoin d’un site plus clair, plus structuré, plus utile ?</strong>
+        <a href="<?= route('contact') ?>">Présenter un projet</a>
       </span>
     </div>
   </div>
