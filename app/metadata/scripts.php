@@ -1,19 +1,28 @@
-<!-- chargement des fonctions js -->
-<script src="<?= asset('js/site.js') ?>"></script>
-<!-- fonction google analytics -->
+<!-- Chargement des fonctions JS du site -->
+<script src="<?= e(asset('js/site.js')) ?>"></script>
+
 <?php if (!empty($SITE['tracking']['ga_id'])): ?>
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?= e($SITE['tracking']['ga_id']) ?>"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '<?= e($SITE['tracking']['ga_id']) ?>');
-</script>
+  <?php $gaId = $SITE['tracking']['ga_id']; ?>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<?= e($gaId) ?>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', <?= json_encode($gaId) ?>);
+  </script>
 <?php endif; ?>
-<!-- icônes Lucide -->
+
+<!-- Icônes Lucide -->
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    lucide.createIcons();
+    if (window.lucide) {
+      lucide.createIcons();
+    }
   });
 </script>

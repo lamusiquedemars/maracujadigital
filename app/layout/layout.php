@@ -5,13 +5,17 @@
   <?php require ROOT . '/app/metadata/head.php'; ?>
 </head>
 
-<body>
+<body class="<?= e($bodyClass ?? '') ?>">
 
   <?php require ROOT . '/app/layout/header.php'; ?>
 
   <?php
+  /*
+   * La page demandée est rendue ici.
+   * Elle ne doit contenir ni <html>, ni <head>, ni <body>, ni <main>.
+   */
   ob_start();
-  require $view;
+  require $viewPath;
   $pageContent = ob_get_clean();
   ?>
 

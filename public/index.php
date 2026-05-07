@@ -1,40 +1,66 @@
 <?php
+declare(strict_types=1);
+
+/**
+ * Point d'entrée public de l'application.
+ *
+ * Toutes les requêtes arrivent ici.
+ * Ce fichier :
+ * - charge le bootstrap ;
+ * - résout la route courante ;
+ * - prépare les variables communes ;
+ * - délègue l'affichage au layout principal.
+ */
 
 require_once dirname(__DIR__) . '/core/bootstrap.php';
 require_once ROOT . '/core/router.php';
 
 /*
-  Résolution de la route courante
-*/
-$rawUri = $_SERVER['REQUEST_URI'] ?? '/';
-$uri = parse_url($rawUri, PHP_URL_PATH) ?? '/';
-$base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
-if ($base !== '' && str_starts_with($uri, $base)) {
-    $uri = substr($uri, strlen($base));
-}
-$uri = trim($uri, '/');
-if (str_starts_with($uri, 'index.php')) {
-    $uri = trim(substr($uri, strlen('index.php')), '/');
-}
+ * Résolution de la route courante.
+ */
+$route = resolveRoute(currentPath(), $ROUTES);
 
 /*
-  Slots globaux
-*/
+ * Code HTTP retourné par le router.
+ */
+http_response_code($route['status'] ?? 200);
+
+/*
+ * Variables communes disponibles dans le layout et les pages.
+ */
+$title = $route['title'] ?? ($SITE['name'] ?? 'Site');
+$description = $route['description'] ?? ($SITE['seo']['description'] ?? '');
+$bodyClass = $route['bodyClass'] ?? '';
+
+/*
+ * Vue à afficher.
+ */
+$view = $route['view'] ?? '404';
+$viewPath = $route['viewPath'] ?? ROOT . '/app/pages/404.php';
+
+/*
+ * Paramètres transmis à la page.
+ *
+ * Exemple :
+ * routes.php :
+ * 'params' => ['range' => 'ars-antiqua']
+ *
+ * page :
+ * $range = $params['range'] ?? null;
+ */
+$params = $route['params'] ?? [];
+
+/*
+ * Slots facultatifs pour enrichir certaines pages.
+ */
 $slots = [
     'meta' => [],
     'css' => [],
     'js' => [],
-    'head' => []
+    'head' => [],
 ];
 
-$route = resolveRoute($uri, $ROUTES);
-
-$view = $route['view'];
-$title = $route['title'];
-$data  = $route['data'] ?? [];
-
-if (($route['status'] ?? null) === 404) {
-    http_response_code(404);
-}
-
+/*
+ * Affichage.
+ */
 require ROOT . '/app/layout/layout.php';

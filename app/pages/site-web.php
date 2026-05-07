@@ -3,11 +3,11 @@ $title = "Création de sites web";
 ?>
 
 <!-- HERO -->
- <?php
-  render('hero', [
+<?php
+render('hero', [
   'title' => 'Création de sites web',
-  'subtitle' => 'Je conçois des sites sur-mesure (code ou WordPress), 
-  avec la même exigence de structure et de méthode que dans mes projets digitaux.',
+  'subtitle' => 'Des sites sur-mesure, 
+  avec la même exigence de structure et de méthode que dans des projets digitaux.',
   'class' => ['hero--page', 'hero--center']
 ]);
 ?>
@@ -16,6 +16,10 @@ $title = "Création de sites web";
 <section class="section">
   <div class="container">
     <h2 class="h2--moderne">Nos trois formules</h2>
+    <p class="section-intro">
+      Les formules donnent un cadre de départ selon le niveau de contenu, d’autonomie et de fonctionnalités attendu.
+      Le périmètre exact est confirmé après un premier cadrage.
+    </p>
     <table class="table--featured">
       <thead>
         <tr>
@@ -83,13 +87,15 @@ $title = "Création de sites web";
       </p>
       <h3>Éléments inclus dans toutes les offres</h3>
       <ul class="ul-icon">
-        <li><i data-lucide="leaf"></i>Cadrage du projet avec ma méthode AMOA</li>
+        <li><i data-lucide="leaf"></i>Cadrage du projet avec une méthode issue de l’AMOA</li>
         <li><i data-lucide="leaf"></i>Design sobre et élégant réalisé sur mesure avec vos photos et votre univers</li>
         <li><i data-lucide="leaf"></i>Galerie photos avec agrandissement au clic et légendes</li>
         <li><i data-lucide="leaf"></i>Formulaire de contact + carte de localisation + liens vers vos réseaux sociaux</li>
         <li><i data-lucide="leaf"></i>Développement complet, tests sur tous les appareils et optimisation pour un chargement rapide</li>
         <li><i data-lucide="leaf"></i>Mise en ligne sur votre nom de domaine</li>
+        <li><i data-lucide="leaf"></i>Dossier de livraison du site</li>
       </ul>
+      <p><a href=<?= route('methode') ?> class="btn">Regardez ma méthode dans le détail</a></p>
     </div>
   </div>
 </section>
@@ -97,33 +103,51 @@ $title = "Création de sites web";
 <!-- OPTIONS -->
 <section class="section">
   <div class="container no-padding ">
-    <h2 class="h2--moderne">Options et accompagnement</h2>
+    <h2 class="h2--moderne">Socle inclus et renforts possibles</h2>
+    <p class="section-intro">
+      Chaque site intègre les bases nécessaires pour être clair, rapide, consultable sur tous les appareils et correctement structuré.
+      Certains besoins peuvent demander un accompagnement complémentaire, notamment pour le référencement, l’identité visuelle, la photographie ou le suivi des performances.
+    </p>
     <div class="grid grid--3">
       <div class="card">
         <i data-lucide="search" class="card-icon"></i>
-        <h3>SEO & visibilité</h3>
-        <p>Optimisation locale et structurelle du site.</p>
+        <h3>Référencement</h3>
+        <p>
+          Les bases techniques et structurelles sont intégrées au site : titres, hiérarchie des contenus, performance, responsive et pages indexables.
+          Une stratégie SEO plus avancée peut être ajoutée si l’objectif est de travailler la visibilité dans la durée.
+        </p>
       </div>
       <div class="card">
         <i data-lucide="palette" class="card-icon"></i>
-        <h3>Graphisme</h3>
-        <p>Travail avancé sur identité visuelle et cohérence.</p>
+        <h3>Identité visuelle</h3>
+        <p>
+          Le site est conçu avec une direction sobre et cohérente à partir de votre univers existant.
+          Un travail graphique plus poussé peut être prévu si l’identité visuelle doit être créée ou retravaillée.
+        </p>
       </div>
       <div class="card">
         <i data-lucide="bar-chart-2" class="card-icon"></i>
-        <h3>Suivi & analytics</h3>
-        <p>Installation et lecture des performances.</p>
+        <h3>Suivi & mesure</h3>
+        <p>
+          Les outils de suivi peuvent être installés pour comprendre les visites, les prises de contact et les pages consultées.
+          Une lecture régulière des résultats peut être ajoutée après la mise en ligne.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS -->
+<!-- PROCHAINE ETAPE -->
 <section class="section">
   <div class="container">
     <h2 class="h2--moderne">Prochaine étape</h2>
     <div class="card card--ghost">
-      <span class="btn btn-ghost"><strong>Vous souhaitez avancer ?</strong> <a href="<?= route('contact') ?>">Contactez-moi</a> pour un premier échange.</span>
+      <p>
+        Un premier échange permet de vérifier le besoin, le niveau d’accompagnement nécessaire et la formule la plus adaptée.
+      </p>
+      <p>
+        <a href="<?= route('contact') ?>" class="btn btn-ghost">Présenter un projet</a>
+      </p>
     </div>
   </div>
 </section>

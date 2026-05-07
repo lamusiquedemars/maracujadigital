@@ -3,8 +3,8 @@ $title = "Pourquoi un site web ?";
 ?>
 
 <!-- HERO -->
- <?php
-  render('hero', [
+<?php
+render('hero', [
   'title' => 'Un site web n’est plus une vitrine. C’est un outil de décision.',
   'subtitle' => 'Aujourd’hui, le vrai enjeu n’est pas d’être visible en ligne, mais d’être compris rapidement, 
   perçu correctement, et choisi sans hésitation.',
@@ -418,14 +418,16 @@ $title = "Pourquoi un site web ?";
 <section class="section">
   <div class="container">
     <h2 class="h2--moderne">Conclusion</h2>
-
     <div class="card card--ghost">
       <p>
         La différence entre une présence digitale classique et un site web professionnel ne se joue pas sur la visibilité, mais sur la capacité à transformer une attention en décision.
       </p>
-      <span class="btn btn-ghost"><a href="<?= route('contact') ?>"><strong>Vous souhaitez avancer ?</strong> Contactez-moi pour un premier échange.</a></span>
-
+      <p>
+        Un premier échange permet d’identifier la situation du projet, le niveau d’accompagnement utile et le format le plus adapté.
+      </p>
+      <p>
+        <a href="<?= route('contact') ?>" class="btn btn-ghost">Présenter un projet</a>
+      </p>
     </div>
-
   </div>
 </section>

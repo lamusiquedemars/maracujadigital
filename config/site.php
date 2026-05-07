@@ -1,93 +1,81 @@
 <?php
-/*  Fichier de configuration du site
-  Contient les informations globales du site, comme le nom, l'auteur, les liens de navigation, etc.
-  Ces données sont accessibles dans les vues via la variable $SITE
-*/
-$SITE = [
+/**
+ * Configuration principale du site.
+ */
 
-  // ======================
-  // IDENTITÉ
-  // ======================
-  'name' => 'Maracuja Digital',
-  'author' => 'Ivo Correia de Melo',
+return [
+    // Identité
+    'name' => 'Maracuja Digital',
+    'author' => 'Ivo Correia de Melo',
 
-  // ======================
-  // SEO
-  // ======================
-  'seo' => [
-    'default_title' => 'Maracuja Digital',
-    'default_description' => 'Artisan de sites web modernes',
-  ],
+    // Environnement
+    'env' => $_ENV['APP_ENV'] ?? 'prod',
+    'url' => $_ENV['APP_URL'] ?? 'http://maracujadigital.local',
+    'base' => $_ENV['APP_BASE'] ?? '',
 
-  // ======================
-  // ASSETS (RELATIF UNIQUEMENT)
-  // ======================
-  'assets' => [
-    'logo' => 'img/logo.png',
-    'default_image' => 'img/og-default.jpg',
-    'favicon_path' => 'img/',
-  ],
-
-  // ======================
-  // NAVIGATION
-  // ======================
-  'navigation' => [
-    ['label' => 'Accueil', 'route' => 'home', 'show_mobile' => false],
-    ['label' => 'Site web', 'route' => 'site-web'],
-    ['label' => 'AMOA & Pilotage', 'route' => 'pilotage'],
-    /*['label' => 'Réalisations', 'route' => 'realisations'],
-    ['label' => 'À propos', 'route' => 'a-propos'],*/
-    ['label' => 'Contact', 'route' => 'contact'],
-  ],
-
-  // ======================
-  // FOOTER
-  // ======================
-  'footer' => [
-    'baseline' => 'Création de sites web et pilotage de projets digitaux.',
-    'links' => [
-      ['label' => 'Mentions légales', 'route' => 'mentions-legales'],
-      ['label' => 'CGV', 'route' => 'cgv'],
-      ['label' => 'Pourquoi avoir un site web', 'route' => 'pourquoi-site-web'],
-      ['label' => 'Quelle est la valeur d\'un site web ?', 'route' => 'valeur-site-web'],
-      ['label' => 'Site web : quelles options ?', 'route' => 'site-web-quelles-options'],
-      ['label' => 'Contact', 'route' => 'contact'],
+    // SEO
+    'description' => 'Artisan de sites web modernes.',
+    'seo' => [
+        'default_title' => 'Maracuja Digital',
+        'default_description' => 'Artisan de sites web modernes.',
     ],
-    'socials' => [],
-  ],
 
-  // ======================
-  // REALISATIONS
-  // ======================
-  'realisations' => [
-    'title' => 'Réalisations',
-    'items' => [
-      [
-        'type' => 'site',
-        'title' => 'Site vitrine – luthier à Lyon',
-        'text' => 'Réalisation d’un site vitrine, conseil et structuration du contenu.',
-        'image' => 'contempoluthiers.png'
-      ],
-      [
-        'type' => 'deliverable',
-        'title' => 'Modélisation de processus métier',
-        'text' => 'Exemple de modélisation d’un workflow de changement de statut.',
-        'image' => 'process-workflow.png'
-      ],
-      [
-        'type' => 'site',
-        'title' => 'Site vitrine – archetier à Lyon',
-        'text' => 'création de mon site vitrine d\'artisan.',
-        'image' => 'atelierivoincidit.png'
-      ]
-    ]
-  ],
+    // Assets
+    'assets' => [
+        'logo' => 'img/logo.png',
+        'default_image' => 'img/og-default.jpg',
+        'favicon_path' => 'img/',
+    ],
 
-  // ======================
-  // TRACKING
-  // ======================
-  'tracking' => [
-    'ga_id' => null,
-  ],
+    // Navigation
+    'navigation' => [
+        ['label' => 'Accueil', 'route' => 'home', 'show_mobile' => false],
+        ['label' => 'Site web', 'route' => 'site-web'],
+        ['label' => 'AMOA & Pilotage', 'route' => 'pilotage'],
+        ['label' => 'Contact', 'route' => 'contact'],
+    ],
 
+    // Footer
+    'footer' => [
+        'baseline' => 'Création de sites web et pilotage de projets digitaux.',
+        'links' => [
+            ['label' => 'Mentions légales', 'route' => 'mentions-legales'],
+            ['label' => 'CGV', 'route' => 'cgv'],
+            ['label' => 'Pourquoi avoir un site web', 'route' => 'pourquoi-site-web'],
+            ['label' => 'Quelle est la valeur d\'un site web ?', 'route' => 'valeur-site-web'],
+            ['label' => 'Site web : quelles options ?', 'route' => 'site-web-quelles-options'],
+            ['label' => 'Contact', 'route' => 'contact'],
+        ],
+        'socials' => [],
+    ],
+
+    // Réalisations / projets
+    'realisations' => [
+        'title' => 'Réalisations',
+        'items' => [
+            [
+                'type' => 'site',
+                'title' => 'Site vitrine – luthier à Lyon',
+                'text' => 'Réalisation d’un site vitrine, conseil et structuration du contenu.',
+                'image' => 'contempoluthiers.png',
+            ],
+            [
+                'type' => 'deliverable',
+                'title' => 'Modélisation de processus métier',
+                'text' => 'Exemple de modélisation d’un workflow de changement de statut.',
+                'image' => 'process-workflow.png',
+            ],
+            [
+                'type' => 'site',
+                'title' => 'Site vitrine – archetier à Lyon',
+                'text' => 'Création de mon site vitrine d’artisan.',
+                'image' => 'atelierivoincidit.png',
+            ],
+        ],
+    ],
+
+    // Tracking
+    'tracking' => [
+        'ga_id' => null,
+    ],
 ];

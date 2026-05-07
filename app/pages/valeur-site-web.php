@@ -87,7 +87,7 @@ render('hero', [
 <section class="section">
   <div class="container no-padding">
     <div class="card card--featured card--maracuja">
-      <h2 class="h2--moderne">Ce que je fais</h2>
+      <h2 class="h2--moderne">Ce qu’un site bien structuré doit permettre</h2>
 
       <ul class="ul-icon">
         <li><i data-lucide="target"></i>Clarifier ce que vous faites réellement</li>

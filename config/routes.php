@@ -29,6 +29,12 @@ return [
     'title' => 'Pilotage',
     'controller' => 'pilotage'
   ],
+  'methode' => [
+    'path' => 'methode',
+    'view' => 'methode',
+    'title' => 'Méthode',
+    'controller' => 'methode'
+  ],
   'a_propos' => [
     'path' => 'a-propos',
     'view' => 'a-propos',

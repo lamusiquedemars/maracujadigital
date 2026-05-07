@@ -16,11 +16,11 @@ render('hero', [
         <h2 class="h2--moderne">Pourquoi travailler avec moi</h2>
         <p>
           Chaque projet commence par un échange pour comprendre vos besoins, qu’il s’agisse d’un site web ou d’un accompagnement en gestion de projet.
-          Cela permet d'identifier la bonne approche, afin d’avancer de manière claire et structurée. Disons que c'est mon côté chef de projet...
+          Cela permet d'identifier la bonne approche, afin d’avancer de manière claire et structurée. Disons que c’est mon côté chef de projet...
         </p>
         <p>
           En effet, ayant travaillé sur des projets de grande ampleur en environnements grands comptes, la clarté et la structuration sont indispensables.
-          E comme mon rôle a été de comprendre les besoins pas toujours complètement formalisés, de les transformer en documents exploitables, 
+          Et comme mon rôle a été de comprendre les besoins pas toujours complètement formalisés, de les transformer en documents exploitables, 
           puis en solutions concrètes, c’est cette méthode que j’applique aujourd’hui à la création de sites.
         </p>
         <p>
