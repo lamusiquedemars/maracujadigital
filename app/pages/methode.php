@@ -231,7 +231,7 @@ render('hero', [
         </tr>
       </tbody>
     </table>
-
+    <div class="divider"></div>
     <p class="text-accent">
       Le pourcentage ne représente pas seulement le temps passé.
       Il représente la valeur dans le résultat final : ce qui permet au site d’être compris, crédible et utile.
