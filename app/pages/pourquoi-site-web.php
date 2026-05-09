@@ -413,20 +413,31 @@ render('hero', [
   </div>
 </section>
 
-<!-- Conclusion -->
+<!-- CTA FINAL -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Conclusion</h2>
-    <div class="card card--ghost">
+    <div class="split">
+      <div class="split__item">
+        <img
+          src="<?= e(img('desk-lamp.png')) ?>"
+          alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+      </div>
+      <div class="split__item">
+        <h2>Conclusion</h2>
       <p>
         La différence entre une présence digitale classique et un site web professionnel ne se joue pas sur la visibilité, mais sur la capacité à transformer une attention en décision.
       </p>
       <p>
         Un premier échange permet d’identifier la situation du projet, le niveau d’accompagnement utile et le format le plus adapté.
       </p>
-      <p>
-        <a href="<?= route('contact') ?>" class="btn btn-ghost">Présenter un projet</a>
-      </p>
+        <div>
+          <?php render('btn', [
+            'route' => 'contact',
+            'label' => 'Présenter un projet'
+          ]); ?>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

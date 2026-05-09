@@ -53,31 +53,19 @@ render('hero', [
 <section class="">
   <div class="container">
     <?php
-    $realisations = $SITE['realisations'];
-
-    $items = array_map(function ($item) {
-      return [
-        'image' => img($item['image']),
-        'alt' => $item['alt'],
-        'title' => $item['title'],
-        'meta' => $item['meta'],
-        'text' => $item['text'],
-        'href' => $item['href'],
-        'linkLabel' => $item['linkLabel'],
-      ];
-    }, $realisations['items']);
+    $realisations = require app_path('data/showcase.php');
 
     render('showcase', [
-      'title' => $realisations['title'],
-      'intro' => $realisations['intro'],
-      'layout' => 'featured',
-      'lightbox' => true,
-      'class' => '',
-      'items' => $items,
+      'title' => 'Réalisations',
+      'intro' => 'Quelques exemples de sites, cadrages et livrables réalisés.',
+
+      'variant' => 'editorial',
+      'items' => $realisations,
     ]);
     ?>
   </div>
 </section>
+
 <!-- APPROCHE / POSITIONNEMENT -->
 <section class="section">
   <div class="container">

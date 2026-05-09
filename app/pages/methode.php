@@ -357,15 +357,28 @@ render('hero', [
   </div>
 </section>
 
-<!-- CTA -->
+<!-- CTA FINAL -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Prochaine étape</h2>
-    <div class="card card--ghost">
-      <span class="btn btn-ghost">
-        <strong>Besoin d’un site plus clair, plus structuré, plus utile ?</strong>
-        <a href="<?= route('contact') ?>">Présenter un projet</a>
-      </span>
+    <div class="split">
+      <div class="split__item">
+        <img
+          src="<?= e(img('desk-sunlight.png')) ?>"
+          alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+      </div>
+      <div class="split__item">
+        <h2>Prochaine étape</h2>
+        <p>
+          Besoin d’un site plus clair, plus structuré, plus utile&nbsp;?
+        </p>
+        <div>
+          <?php render('btn', [
+            'route' => 'contact',
+            'label' => 'Présenter un projet'
+          ]); ?>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

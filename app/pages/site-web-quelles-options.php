@@ -215,24 +215,35 @@ render('hero', [
   </div>
 </section>
 
-<!-- CONCLUSION -->
+<!-- CTA FINAL -->
 <section class="section">
-  <div class="container no-padding">
-    <div class="card card--featured card--maracuja">
-      <h2 class="h2--moderne">Conclusion</h2>
-      <p>
-        La bonne solution n’est pas forcément la plus puissante.
-        C’est celle qui correspond au vrai besoin du client, au temps disponible, au niveau d’autonomie souhaité et à l’importance du site dans l’activité.
-      </p>
-      <p>
-        Si l’objectif est simplement d’exister en ligne, un builder peut suffire.
-      </p>
-      <p class="text-accent">
-        Si l’objectif est d’avoir un site clair, cohérent, évolutif et aligné avec son activité, l’accompagnement prend tout son sens.
-      </p>
-      <p>
-        <a href="<?= route('contact') ?>" class="btn">Présenter un projet</a>
-      </p>
+  <div class="container">
+    <h2 class="h2--moderne">Conclusion</h2>
+    <div class="split">
+      <div class="split__item">
+        <img
+          src="<?= e(img('desk-lamp.png')) ?>"
+          alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+      </div>
+      <div class="split__item">
+        <div class="card card--featured card--maracuja">
+          <p>
+            La bonne solution n’est pas forcément la plus puissante.
+            C’est celle qui correspond au vrai besoin du client, au temps disponible, au niveau d’autonomie souhaité 
+            et à l’importance du site dans l’activité.
+          </p>
+          <p>
+            Si l’objectif est simplement d’exister en ligne, un builder peut suffire.
+          </p>
+          <p>
+            Si l’objectif est d’avoir un site clair, cohérent, évolutif et aligné avec son activité, l’accompagnement prend tout son sens.
+          </p>
+          <p>
+            <a href="<?= route('contact') ?>" class="btn">Présenter un projet</a>
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

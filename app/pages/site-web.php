@@ -81,7 +81,7 @@ render('hero', [
 <!-- INCLUS -->
 <section class="section">
   <div class="container no-padding">
-    <h2 class="h2--moderne">Un site conçu comme un vrai projet</h2>
+    <h2 class="h2--moderne">Un site est un vrai projet</h2>
     <div class="split">
       <div class="split__item">
         <p>
