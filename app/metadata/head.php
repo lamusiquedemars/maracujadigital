@@ -16,8 +16,9 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- Favicon -->
-<link rel="icon" href="<?= asset('img/favicon.ico') ?>">
+<link rel="icon" href="<?= asset('images/favicon.ico') ?>">
 <!-- CSS  -->
 <link rel="stylesheet" href="<?= asset('css/base.css') ?>">
 <link rel="stylesheet" href="<?= asset('css/theme.css') ?>">
 <link rel="stylesheet" href="<?= asset('css/fonts.css') ?>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />

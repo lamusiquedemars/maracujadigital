@@ -50,12 +50,34 @@ render('hero', [
 </section>
 
 <!-- REALISATIONS -->
-<?php
-render('realisations', [
-  'title' => $SITE['realisations']['title'],
-  'items' => $SITE['realisations']['items']
-]);
-?>
+<section class="">
+  <div class="container">
+    <?php
+    $realisations = $SITE['realisations'];
+
+    $items = array_map(function ($item) {
+      return [
+        'image' => img($item['image']),
+        'alt' => $item['alt'],
+        'title' => $item['title'],
+        'meta' => $item['meta'],
+        'text' => $item['text'],
+        'href' => $item['href'],
+        'linkLabel' => $item['linkLabel'],
+      ];
+    }, $realisations['items']);
+
+    render('showcase', [
+      'title' => $realisations['title'],
+      'intro' => $realisations['intro'],
+      'layout' => 'featured',
+      'lightbox' => true,
+      'class' => '',
+      'items' => $items,
+    ]);
+    ?>
+  </div>
+</section>
 <!-- APPROCHE / POSITIONNEMENT -->
 <section class="section">
   <div class="container">
@@ -131,12 +153,28 @@ render('realisations', [
 </section>
 
 <!-- CTA FINAL -->
-<section class="section">
+<section class="section home-final-cta">
   <div class="container">
-    <h2>Un projet en tête ?</h2>
-    <?php render('btn', [
-      'route' => 'contact',
-      'label' => 'Parlons-en !'
-    ]); ?>
+    <div class="split">
+      <div class="split__item">
+        <img
+          src="<?= e(img('desk-laptop-sheets.png')) ?>"
+          alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+      </div>
+      <div class="split__item">
+        <p>Démarrer simplement</p>
+        <h2>Un projet en tête&nbsp;?</h2>
+        <p>
+          Un premier échange pour clarifier le besoin, organiser les idées et poser les bonnes bases du projet.
+        </p>
+        <div>
+          <?php render('btn', [
+            'route' => 'contact',
+            'label' => 'Parlons-en'
+          ]); ?>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>

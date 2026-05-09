@@ -16,7 +16,7 @@ $currentUri = $currentUri ?? '';
 
     <div>
       <a href="<?= route('home') ?>">
-        <img src="<?= asset('img/logo.png') ?>" alt="<?= e($siteName) ?>" class="brand-logo">
+        <img src="<?= img('logo.png') ?>" alt="<?= e($siteName) ?>" class="brand-logo">
       </a>
     </div>
 

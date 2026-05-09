@@ -52,25 +52,31 @@ render('hero', [
 <!-- COORDONNEES -->
 <section class="section">
   <div class="container">
-    <div class="grid">
-      <h2 class="h2--moderne">Un projet, une mission, une idée&nbsp;?</h2>
+    <h2 class="h2--moderne">Un projet, une mission, une idée&nbsp;?</h2>
 
-      <p class="text-muted">
-        Maracuja Digital est une structure indépendante basée près de Lyon, portée par Ivo Correia de Melo.
-        Pour un site web, une refonte ou un accompagnement de projet digital, vous pouvez envoyer un message directement par email.
-      </p>
+    <p class="text-muted">
+      Maracuja Digital est une structure indépendante basée près de Lyon, portée par Ivo Correia de Melo.
+      Pour un site web, une refonte ou un accompagnement de projet digital, vous pouvez envoyer un message directement par email.
+    </p>
+    <div class="split">
+      <div class="split__item">
+        <img src="<?= e(img('desk-maracuja.png')) ?>" alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+      </div>
+      <div class="split__item">
+        <div class="card card--featured card--maracuja">
+          <i data-lucide="mail" class="card-icon"></i>
+          <h3>Contacter Maracuja Digital</h3>
+          <p>
+            Votre message sera lu directement par Ivo Correia de Melo.
+            Indiquez simplement le contexte, le besoin et l’état d’avancement du projet.
+          </p>
+          <p>
+            <a href="mailto:contact@maracujaconsulting.fr" class="btn btn-primary">Écrire un message</a>
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="card card--featured card--maracuja">
-      <i data-lucide="mail" class="card-icon"></i>
-      <h3>Contacter Maracuja Digital</h3>
-      <p>
-        Votre message sera lu directement par Ivo Correia de Melo.
-        Indiquez simplement le contexte, le besoin et l’état d’avancement du projet.
-      </p>
-      <p>
-        <a href="mailto:contact@maracujaconsulting.fr" class="btn btn-primary">Écrire un message</a>
-      </p>
-    </div>
+
   </div>
 </section>

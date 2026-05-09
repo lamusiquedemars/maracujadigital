@@ -1,11 +1,8 @@
 <?php
-echo '<div style="background:#0ff;color:#000;padding:20px;z-index:9999;position:relative;">SHOWCASE.PHP CHARGÉ</div>';
 /**
  * Showcase
- *
  * Composant visuel générique.
  * Ne gère ni <section>, ni .container.
- *
  * Props :
  * - title
  * - intro

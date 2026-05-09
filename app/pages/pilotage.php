@@ -108,16 +108,28 @@ render('hero', [
   </div>
 </section>
 
+<!-- CTA FINAL -->
 <section class="section">
   <div class="container">
-    <div class="card card--ghost">
-      <h2 class="h2--moderne">Évaluer le besoin</h2>
-      <p>
+    <div class="split">
+      <div class="split__item">
+        <img
+          src="<?= e(img('desk-lamp.png')) ?>"
+          alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+      </div>
+      <div class="split__item">
+        <h2>Évaluer le besoin</h2>
+        <p>
         Un premier échange permet d’identifier la situation du projet, le niveau d’accompagnement utile et le format le plus adapté.
-      </p>
-      <p>
-        <a href="<?= route('contact') ?>" class="btn btn-ghost">Présenter un projet</a>
-      </p>
+        </p>
+        <div>
+          <?php render('btn', [
+            'route' => 'contact',
+            'label' => 'Présenter un projet'
+          ]); ?>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

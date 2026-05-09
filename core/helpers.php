@@ -134,7 +134,7 @@ function asset(string $path = ''): string
  */
 function img(string $path): string
 {
-    return asset('img/' . ltrim($path, '/'));
+    return asset('images/' . ltrim($path, '/'));
 }
 
 

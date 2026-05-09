@@ -181,10 +181,11 @@ h2.h2--moderne::before {
   padding: var(--space-l) 0;
   position: relative;
   overflow: hidden;
-  background-image: url("../img/passiflora-mono.jpg");
+  background-image: url("../images/desk-lamp.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 30vh;
 }
 .hero--page::before {
   content: "";
@@ -193,7 +194,7 @@ h2.h2--moderne::before {
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.7)
+    rgba(0, 0, 0, 0.1)
   );
   z-index: 1;
 }
@@ -221,7 +222,7 @@ h2.h2--moderne::before {
 .hero--maracuja {
   position: relative;
   overflow: hidden;
-  background-image: url("../img/passiflora-background.png");
+  background-image: url("../images/passiflora-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -346,7 +347,7 @@ h2.h2--moderne::before {
 .card--maracuja {
   padding-right: 200px;
   background:
-    url("../img/passiflora-rameau.png") no-repeat right 1rem center / 200px,
+    url("../images/passiflora-rameau.png") no-repeat right 1rem center / 200px,
     var(--color-surface);
 }
 
@@ -355,7 +356,7 @@ h2.h2--moderne::before {
     padding-right: var(--space-m);
     background:
       linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-      url("../img/passiflora-rameau.png") no-repeat right 1rem center / 200px,
+      url("../images/passiflora-rameau.png") no-repeat right 1rem center / 200px,
       var(--color-surface);
   }
 }

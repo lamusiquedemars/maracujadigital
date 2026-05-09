@@ -81,25 +81,29 @@ render('hero', [
 <!-- INCLUS -->
 <section class="section">
   <div class="container no-padding">
-    <div class="card card--featured card--maracuja">
-      <h2 class="h2--moderne">Un site conçu comme un vrai projet</h2>
-      <p>
-        Chaque site est cadré comme un projet à part entière : analyse des besoins, structuration des contenus, définition précise des fonctionnalités.
-        Cette approche issue des environnements grands comptes permet d’éviter l’approximation et de construire un site cohérent, pensé dans sa globalité.
-      </p>
-      <h3>Éléments inclus dans toutes les offres</h3>
-      <ul class="ul-icon">
-        <li><i data-lucide="leaf"></i>Cadrage du projet avec une méthode issue de l’AMOA</li>
-        <li><i data-lucide="leaf"></i>Design sobre et élégant réalisé sur mesure avec vos photos et votre univers</li>
-        <li><i data-lucide="leaf"></i>Galerie photos avec agrandissement au clic et légendes</li>
-        <li><i data-lucide="leaf"></i>Formulaire de contact + carte de localisation + liens vers vos réseaux sociaux</li>
-        <li><i data-lucide="leaf"></i>Développement complet, tests sur tous les appareils et optimisation pour un chargement rapide</li>
-        <li><i data-lucide="leaf"></i>Mise en ligne sur votre nom de domaine</li>
-        <li><i data-lucide="leaf"></i>Dossier de livraison du site</li>
-      </ul>
-      <p><a href=<?= route('methode') ?> class="btn">Connaître l'approche dans le détail</a></p>
+    <h2 class="h2--moderne">Un site conçu comme un vrai projet</h2>
+    <div class="split">
+      <div class="split__item">
+        <p>
+          Chaque site est cadré comme un projet à part entière : analyse des besoins, structuration des contenus, définition précise des fonctionnalités.
+          Cette approche issue des environnements grands comptes permet d’éviter l’approximation et de construire un site cohérent, pensé dans sa globalité.
+        </p>
+        <h3>Éléments inclus dans toutes les offres</h3>
+        <ul class="ul-icon">
+          <li><i data-lucide="leaf"></i>Cadrage du projet avec une méthode issue de l’AMOA</li>
+          <li><i data-lucide="leaf"></i>Design sobre et élégant réalisé sur mesure avec vos photos et votre univers</li>
+          <li><i data-lucide="leaf"></i>Galerie photos avec agrandissement au clic et légendes</li>
+          <li><i data-lucide="leaf"></i>Formulaire de contact + carte de localisation + liens vers vos réseaux sociaux</li>
+          <li><i data-lucide="leaf"></i>Développement complet, tests sur tous les appareils et optimisation pour un chargement rapide</li>
+          <li><i data-lucide="leaf"></i>Mise en ligne sur votre nom de domaine</li>
+          <li><i data-lucide="leaf"></i>Dossier de livraison du site</li>
+        </ul>
+        <p><a href=<?= route('methode') ?> class="btn">Connaître l'approche dans le détail</a></p>
+      </div>
+      <div class="split__item">
+        <img src="<?= img('desk-process.png') ?>" alt="Bureau de travail avec schémas, carnet et jus de fruit">
+      </div>
     </div>
-  </div>
 </section>
 
 <!-- OPTIONS -->
@@ -139,17 +143,28 @@ render('hero', [
   </div>
 </section>
 
-<!-- PROCHAINE ETAPE -->
+<!-- CTA FINAL -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Prochaine étape</h2>
-    <div class="card card--ghost">
-      <p>
-        Un premier échange permet de vérifier le besoin, le niveau d’accompagnement nécessaire et la formule la plus adaptée.
-      </p>
-      <p>
-        <a href="<?= route('contact') ?>" class="btn btn-ghost">Présenter un projet</a>
-      </p>
+    <div class="split">
+      <div class="split__item">
+        <img
+          src="<?= e(img('desk-sunlight.png')) ?>"
+          alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+      </div>
+      <div class="split__item">
+        <h2>Prochaine étape</h2>
+        <p>
+        Un premier échange permet de clarifier le besoin, le niveau d’accompagnement nécessaire et la formule la plus adaptée.
+        </p>
+        <div>
+          <?php render('btn', [
+            'route' => 'contact',
+            'label' => 'Présenter un projet'
+          ]); ?>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

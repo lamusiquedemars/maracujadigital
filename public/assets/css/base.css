@@ -157,6 +157,47 @@ p {
   margin: var(--space-l) 0;
 }
 
+/* SPLIT : layout éditorial à deux zones */
+.split {
+  display: flex;
+  gap: var(--space-m);
+  margin: 20px auto;
+  align-items: center;
+}
+
+.split__item {
+  flex: 1 1 0;
+  min-width: 400px;
+}
+
+.split__item img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius);
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .split {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .split__item {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .split__item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 /* GRID (ton approche implicite conservée) */
 
 .grid {
@@ -594,6 +635,104 @@ tr:last-child td {
   scroll-snap-align: start;
 }
 
+/* =========================
+7. SHOWCASE
+========================= */
+
+.showcase__header {
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+.showcase__title {
+  margin: 0 0 0.75rem;
+}
+
+.showcase__intro {
+  margin: 0;
+}
+
+.showcase__items {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.showcase__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.showcase__content {
+  padding-top: 1rem;
+}
+
+.showcase__meta {
+  margin: 0 0 0.35rem;
+  font-size: 0.875rem;
+}
+
+.showcase__item-title {
+  margin: 0 0 0.5rem;
+}
+
+.showcase__text {
+  margin: 0;
+}
+
+.showcase__link {
+  display: inline-block;
+  margin-top: 0.875rem;
+}
+
+.showcase--grid .showcase__items {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.showcase--carousel .showcase__items {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+
+.showcase--carousel .showcase__item {
+  flex: 0 0 min(360px, 85vw);
+  scroll-snap-align: start;
+}
+
+.showcase--featured .showcase__items {
+  grid-template-columns: 1.4fr 1fr 1fr;
+}
+
+.showcase--featured .showcase__item:first-child {
+  grid-row: span 2;
+}
+
+.showcase--featured .showcase__item:first-child .showcase__media img {
+  aspect-ratio: 4 / 5;
+}
+@media (max-width: 900px) {
+  .showcase--grid .showcase__items,
+  .showcase--featured .showcase__items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .showcase--featured .showcase__item:first-child {
+    grid-row: auto;
+  }
+
+  .showcase--featured .showcase__item:first-child .showcase__media img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .showcase--grid .showcase__items,
+  .showcase--featured .showcase__items {
+    grid-template-columns: 1fr;
+  }
+}
 /* =========================
 9. STATES (minimal, propre)
 ========================= */
