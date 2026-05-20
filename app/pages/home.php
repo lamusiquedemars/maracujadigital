@@ -54,12 +54,11 @@ render('hero', [
   <div class="container">
     <?php
     $realisations = require app_path('data/showcase.php');
-
     render('showcase', [
       'title' => 'Réalisations',
       'intro' => 'Quelques exemples de sites, cadrages et livrables réalisés.',
-
-      'variant' => 'editorial',
+      'layout' => 'carousel',
+      'lightbox' => true,
       'items' => $realisations,
     ]);
     ?>

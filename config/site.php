@@ -22,14 +22,13 @@ return [
 
     // Assets
     'assets' => [
-        'logo' => 'img/logo.png',
-        'default_image' => 'img/og-default.jpg',
-        'favicon_path' => 'img/',
+        'logo' => 'images/logo.png',
+        'default_image' => 'images/og-default.jpg',
+        'favicon_path' => 'images/',
     ],
 
     // Navigation
     'navigation' => [
-        ['label' => 'Accueil', 'route' => 'home', 'show_mobile' => false],
         ['label' => 'Site web', 'route' => 'site-web'],
         ['label' => 'AMOA & Pilotage', 'route' => 'pilotage'],
         ['label' => 'Contact', 'route' => 'contact'],

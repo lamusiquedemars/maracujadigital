@@ -1,8 +1,10 @@
 <?php
 /**
  * Showcase
+ *
  * Composant visuel générique.
  * Ne gère ni <section>, ni .container.
+ *
  * Props :
  * - title
  * - intro
@@ -13,7 +15,7 @@
  * - lightbox
  */
 
-$title = $props['title'] ?? null;
+$showcaseTitle = $props['title'] ?? null;
 $intro = $props['intro'] ?? null;
 $items = $props['items'] ?? [];
 $layout = $props['layout'] ?? 'grid';
@@ -31,15 +33,18 @@ if (!in_array($layout, $allowedLayouts, true)) {
     $layout = 'grid';
 }
 
+$isCarousel = $layout === 'carousel';
+
 $showcaseClass = trim("showcase showcase--{$layout} {$class}");
-$galleryId = 'showcase-' . substr(md5(($title ?? 'showcase') . serialize($items)), 0, 8);
+$itemsClass = trim("showcase__items" . ($isCarousel ? " f-carousel" : ""));
+$galleryId = 'showcase-' . substr(md5(($showcaseTitle ?? 'showcase') . serialize($items)), 0, 8);
 ?>
 
 <div class="<?= e($showcaseClass) ?>">
-    <?php if ($title || $intro): ?>
+    <?php if ($showcaseTitle || $intro): ?>
         <header class="showcase__header">
-            <?php if ($title): ?>
-                <h2 class="showcase__title"><?= e($title) ?></h2>
+            <?php if ($showcaseTitle): ?>
+                <h2 class="showcase__title"><?= e($showcaseTitle) ?></h2>
             <?php endif; ?>
 
             <?php if ($intro): ?>
@@ -48,12 +53,17 @@ $galleryId = 'showcase-' . substr(md5(($title ?? 'showcase') . serialize($items)
         </header>
     <?php endif; ?>
 
-    <div class="showcase__items">
+    <div
+        class="<?= e($itemsClass) ?>"
+        <?php if ($isCarousel): ?>
+            data-showcase-carousel
+        <?php endif; ?>
+    >
         <?php foreach ($items as $item): ?>
             <?php
             $image = $item['image'] ?? '';
             $alt = $item['alt'] ?? ($item['title'] ?? '');
-            $title = $item['title'] ?? '';
+            $itemTitle = $item['title'] ?? '';
             $meta = $item['meta'] ?? '';
             $text = $item['text'] ?? '';
             $href = $item['href'] ?? '';
@@ -62,7 +72,9 @@ $galleryId = 'showcase-' . substr(md5(($title ?? 'showcase') . serialize($items)
             // La lightbox peut être activée globalement ou item par item.
             $itemLightbox = $item['lightbox'] ?? $globalLightbox;
 
-            $finalItemClass = trim("showcase__item {$itemClass}");
+            $finalItemClass = trim(
+                "showcase__item {$itemClass}" . ($isCarousel ? " f-carousel__slide" : "")
+            );
             ?>
 
             <article class="<?= e($finalItemClass) ?>">
@@ -70,19 +82,19 @@ $galleryId = 'showcase-' . substr(md5(($title ?? 'showcase') . serialize($items)
                     <div class="showcase__media">
                         <?php if ($itemLightbox): ?>
                             <a
-                                href="<?= e(asset($image)) ?>"
+                                href="<?= e(img($image)) ?>"
                                 data-fancybox="<?= e($galleryId) ?>"
-                                data-caption="<?= e($title) ?>"
+                                data-caption="<?= e($itemTitle) ?>"
                             >
                                 <img
-                                    src="<?= e(asset($image)) ?>"
+                                    src="<?= e(img($image)) ?>"
                                     alt="<?= e($alt) ?>"
                                     loading="lazy"
                                 >
                             </a>
                         <?php else: ?>
                             <img
-                                src="<?= e(asset($image)) ?>"
+                                src="<?= e(img($image)) ?>"
                                 alt="<?= e($alt) ?>"
                                 loading="lazy"
                             >
@@ -95,8 +107,8 @@ $galleryId = 'showcase-' . substr(md5(($title ?? 'showcase') . serialize($items)
                         <p class="showcase__meta"><?= e($meta) ?></p>
                     <?php endif; ?>
 
-                    <?php if ($title): ?>
-                        <h3 class="showcase__item-title"><?= e($title) ?></h3>
+                    <?php if ($itemTitle): ?>
+                        <h3 class="showcase__item-title"><?= e($itemTitle) ?></h3>
                     <?php endif; ?>
 
                     <?php if ($text): ?>

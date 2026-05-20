@@ -34,6 +34,12 @@ return [
     'view' => 'methode',
     'title' => 'Méthode',
     'controller' => 'methode'
+  ],  
+  'offre-site-web' => [
+    'path' => 'offre-site-web',
+    'view' => 'offre-site-web',
+    'title' => 'Détail de l’offre de site web',
+    'controller' => 'offre-site-web'
   ],
   'a_propos' => [
     'path' => 'a-propos',

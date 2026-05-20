@@ -17,7 +17,8 @@ render('hero', [
   <div class="container">
     <h2 class="h2--moderne">Nos trois formules</h2>
     <p class="section-intro">
-      Les formules donnent un cadre de départ selon le niveau de contenu, d’autonomie et de fonctionnalités attendu.
+      Chaque formule correspond à un niveau de besoin : présenter clairement votre activité,
+      gagner en autonomie sur vos contenus, ou ajouter des fonctionnalités métier simples.
       Le périmètre exact est confirmé après un premier cadrage.
     </p>
     <div class="divider"></div>
@@ -26,52 +27,54 @@ render('hero', [
       <thead>
         <tr>
           <th>Critère</th>
-          <th><i data-lucide="leaf"></i><strong>Essence</strong><br>1 500 – 2 000 €</th>
-          <th><i data-lucide="star"></i><strong>Signature</strong><br>2 200 – 2 800 €</th>
-          <th><i data-lucide="globe"></i><strong>Univers</strong><br>3 000 – 3 800 €</th>
+          <th><i data-lucide="leaf"></i><strong>Essence</strong><br>à partir de 1&nbsp;500 – 2&nbsp;000 €</th>
+          <th><i data-lucide="star"></i><strong>Signature</strong><br>à partir de 2&nbsp;200 – 2&nbsp;800 €</th>
+          <th><i data-lucide="globe"></i><strong>Univers</strong><br>à partir de 3&nbsp;000 – 3&nbsp;800 €</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><strong>Objectif</strong></td>
-          <td>Avoir une vitrine simple, rapide et professionnelle</td>
-          <td>Valoriser son savoir-faire et partager régulièrement du contenu</td>
-          <td>Ajouter des outils pratiques (réservations ou petites ventes en ligne)</td>
+          <td>Présenter votre activité avec un site clair, professionnel et bien structuré.</td>
+          <td>Valoriser votre savoir-faire avec plus de contenus, de pages et d’autonomie.</td>
+          <td>Ajouter des usages précis : catalogue, demandes qualifiées, réservation ou outil connecté.</td>
         </tr>
         <tr>
-          <td><strong>Structure du site</strong></td>
-          <td>5 pages principales</td>
-          <td>6 à 8 pages avec section Actualités</td>
-          <td>Jusqu’à 8 pages avec section Actualités + espace réservations ou petites ventes</td>
+          <td><strong>Structure</strong></td>
+          <td>Environ 5 pages principales.</td>
+          <td>Jusqu’à 8 pages, avec galerie, actualités ou contenus administrables selon le besoin.</td>
+          <td>Jusqu’à 12 pages, avec un module métier cadré et un parcours plus complet.</td>
         </tr>
         <tr>
           <td><strong>Technologie</strong></td>
-          <td>Site maison statique (léger, rapide, sécurisé)</td>
-          <td>Site maison statique ou WordPress selon vos habitudes</td>
-          <td>WordPress + outils pour réservations ou petites ventes</td>
+          <td>Site maison léger, rapide et sécurisé.</td>
+          <td>Site maison ou WordPress selon le niveau d’autonomie attendu.</td>
+          <td>WordPress ou solution hybride avec outil externe connecté si nécessaire.</td>
         </tr>
         <tr>
-          <td><strong>Autonomie sur le contenu</strong></td>
-          <td>Modification limitée à certains textes et photos</td>
-          <td>Vous gérez vous-même les actualités et photos</td>
-          <td>Vous gérez vous-même actualités, photos, réservations ou produits</td>
+          <td><strong>Autonomie</strong></td>
+          <td>Modifications ponctuelles possibles sur certains contenus cadrés.</td>
+          <td>Gestion autonome des actualités, images ou contenus récurrents.</td>
+          <td>Gestion autonome de contenus structurés : catalogue, demandes, réservations ou modules dédiés.</td>
         </tr>
         <tr>
-          <td><strong>Maintenance technique</strong></td>
-          <td>1 mois de support après mise en ligne (corrections, ajustements, conseils)</td>
-          <td colspan="2">2 mois de support après mise en ligne (corrections, ajustements, conseils)</td>
+          <td><strong>Fonctionnalités</strong></td>
+          <td>Pages, formulaire de contact, carte, liens sociaux, galerie simple si utile.</td>
+          <td>Socle + actualités, galerie administrable ou module de contenu simple.</td>
+          <td>Signature + module métier cadré : catalogue, réservation ou outil connecté.</td>
         </tr>
         <tr>
-          <td><strong>Support annuel en option</strong></td>
-          <td colspan="3">400 € TTC / an</td>
+          <td><strong>Support après mise en ligne</strong></td>
+          <td>1 mois de support simple.</td>
+          <td colspan="2">2 mois de support simple.</td>
         </tr>
         <tr>
-          <td><strong>Hébergement</strong></td>
-          <td colspan="3">À votre charge, avec guide fourni pour choisir et configurer un hébergement adapté</td>
+          <td><strong>Frais externes</strong></td>
+          <td colspan="3">Hébergement, nom de domaine, outils tiers, licences ou abonnements restent à votre charge.</td>
         </tr>
         <tr>
           <td><strong>Délais</strong></td>
-          <td colspan="3">Environ 3 à 6 semaines après validation du devis et réception des éléments nécessaires</td>
+          <td colspan="3">Environ 3 à 6 semaines après validation du devis et réception des éléments nécessaires.</td>
         </tr>
       </tbody>
     </table>
@@ -81,65 +84,191 @@ render('hero', [
 <!-- INCLUS -->
 <section class="section">
   <div class="container no-padding">
-    <h2 class="h2--moderne">Un site est un vrai projet</h2>
+    <h2 class="h2--moderne">Ce qui est inclus dans le site</h2>
+    <p class="section-intro">
+      Le site couvre le socle nécessaire pour présenter votre activité, rassurer vos visiteurs
+      et recevoir des demandes. Les outils de communication, de vente ou de gestion client sont ajoutés
+      uniquement lorsqu’ils répondent à un besoin réel.
+    </p>
+
     <div class="split">
       <div class="split__item">
-        <p>
-          Chaque site est cadré comme un projet à part entière : analyse des besoins, structuration des contenus, définition précise des fonctionnalités.
-          Cette approche issue des environnements grands comptes permet d’éviter l’approximation et de construire un site cohérent, pensé dans sa globalité.
-        </p>
-        <h3>Éléments inclus dans toutes les offres</h3>
+        <h3>Le socle commun</h3>
         <ul class="ul-icon">
-          <li><i data-lucide="leaf"></i>Cadrage du projet avec une méthode issue de l’AMOA</li>
-          <li><i data-lucide="leaf"></i>Design sobre et élégant réalisé sur mesure avec vos photos et votre univers</li>
-          <li><i data-lucide="leaf"></i>Galerie photos avec agrandissement au clic et légendes</li>
-          <li><i data-lucide="leaf"></i>Formulaire de contact + carte de localisation + liens vers vos réseaux sociaux</li>
-          <li><i data-lucide="leaf"></i>Développement complet, tests sur tous les appareils et optimisation pour un chargement rapide</li>
-          <li><i data-lucide="leaf"></i>Mise en ligne sur votre nom de domaine</li>
-          <li><i data-lucide="leaf"></i>Dossier de livraison du site</li>
+          <li><i data-lucide="leaf"></i>Cadrage du projet : besoin, pages, contenus, parcours et priorités.</li>
+          <li><i data-lucide="leaf"></i>Structure claire des pages et organisation des informations.</li>
+          <li><i data-lucide="leaf"></i>Direction visuelle personnalisée à partir de votre univers existant.</li>
+          <li><i data-lucide="leaf"></i>Intégration des textes, images et éléments fournis.</li>
+          <li><i data-lucide="leaf"></i>Formulaire de contact, carte de localisation et liens utiles.</li>
+          <li><i data-lucide="leaf"></i>Développement responsive, tests principaux et optimisation du chargement.</li>
+          <li><i data-lucide="leaf"></i>Mise en ligne sur votre nom de domaine.</li>
+          <li><i data-lucide="leaf"></i>Dossier de livraison : structure du site, choix réalisés et consignes d’usage.</li>
         </ul>
-        <p><a href=<?= route('methode') ?> class="btn">Connaître l'approche dans le détail</a></p>
+
+        <p><a href="<?= route('methode') ?>" class="btn">Connaître l'approche dans le détail</a></p>
       </div>
+
       <div class="split__item">
         <img src="<?= img('desk-process.png') ?>" alt="Bureau de travail avec schémas, carnet et jus de fruit">
       </div>
     </div>
+  </div>
 </section>
 
-<!-- OPTIONS -->
+<!-- SOCLE / MODULES / HORS SITE -->
 <section class="section">
-  <div class="container no-padding ">
-    <h2 class="h2--moderne">Socle inclus et renforts possibles</h2>
+  <div class="container no-padding">
+    <h2 class="h2--moderne">Socle, modules et prestations séparées</h2>
+
     <p class="section-intro">
-      Chaque site intègre les bases nécessaires pour être clair, rapide, consultable sur tous les appareils et correctement structuré.
-      Certains besoins peuvent demander un accompagnement complémentaire, notamment pour le référencement, l’identité visuelle, la photographie ou le suivi des performances.
+      Un site web n’est pas automatiquement un outil de communication complet.
+      Certains besoins relèvent du site lui-même, d’autres d’outils connectés,
+      et d’autres encore d’un accompagnement séparé.
     </p>
+
+    <table class="table--simple">
+      <thead>
+        <tr>
+          <th>Besoin</th>
+          <th>Réponse proposée</th>
+          <th>Position</th>
+          <th>Repère de prix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Présenter l’activité</td>
+          <td>Pages principales, structure, design, formulaire, mise en ligne.</td>
+          <td><strong>Inclus dans le site</strong></td>
+          <td>Inclus</td>
+        </tr>
+        <tr>
+          <td>Montrer des réalisations</td>
+          <td>Galerie simple, portfolio ou sélection de projets.</td>
+          <td><strong>Module du site</strong></td>
+          <td>Inclus selon formule ou +150 à 400 €</td>
+        </tr>
+        <tr>
+          <td>Administrer des contenus</td>
+          <td>Actualités, galerie administrable, contenus récurrents.</td>
+          <td><strong>Module du site</strong></td>
+          <td>+400 à 800 €</td>
+        </tr>
+        <tr>
+          <td>Présenter un catalogue sans vendre en ligne</td>
+          <td>Fiches, catégories, statuts, filtres simples.</td>
+          <td><strong>Module métier</strong></td>
+          <td>+700 à 1 500 €</td>
+        </tr>
+        <tr>
+          <td>Collecter des contacts</td>
+          <td>Formulaire newsletter relié à un outil externe.</td>
+          <td><strong>Option connectée</strong></td>
+          <td>+200 à 400 €</td>
+        </tr>
+        <tr>
+          <td>Informer certains clients</td>
+          <td>Listes, tags, modèle d’email, paramétrage initial.</td>
+          <td><strong>Prestation séparée</strong></td>
+          <td>+400 à 800 €</td>
+        </tr>
+        <tr>
+          <td>Prendre rendez-vous</td>
+          <td>Intégration d’un outil de réservation adapté.</td>
+          <td><strong>Option connectée</strong></td>
+          <td>+300 à 700 €</td>
+        </tr>
+        <tr>
+          <td>Vendre en ligne</td>
+          <td>Paiement, produits, livraison, emails, conditions de vente.</td>
+          <td><strong>Projet spécifique</strong></td>
+          <td>Sur devis</td>
+        </tr>
+        <tr>
+          <td>Développer la visibilité</td>
+          <td>SEO avancé, contenus réguliers, publicité ou réseaux sociaux.</td>
+          <td><strong>Prestation séparée</strong></td>
+          <td>Sur devis</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- LIMITES CLAIRES -->
+<section class="section">
+  <div class="container no-padding">
+    <h2 class="h2--moderne">Des limites claires dès le départ</h2>
+
     <div class="grid grid--3">
       <div class="card">
-        <i data-lucide="search" class="card-icon"></i>
-        <h3>Référencement</h3>
+        <i data-lucide="layout-template" class="card-icon"></i>
+        <h3>Le site</h3>
         <p>
-          Les bases techniques et structurelles sont intégrées au site : titres, hiérarchie des contenus, performance, responsive et pages indexables.
-          Une stratégie SEO plus avancée peut être ajoutée si l’objectif est de travailler la visibilité dans la durée.
+          Il sert à présenter, structurer, rassurer et recevoir des demandes.
+          C’est le cœur de l’offre.
         </p>
       </div>
+
       <div class="card">
-        <i data-lucide="palette" class="card-icon"></i>
-        <h3>Identité visuelle</h3>
+        <i data-lucide="plug" class="card-icon"></i>
+        <h3>Les modules</h3>
         <p>
-          Le site est conçu avec une direction sobre et cohérente à partir de votre univers existant.
-          Un travail graphique plus poussé peut être prévu si l’identité visuelle doit être créée ou retravaillée.
+          Galerie, actualités, catalogue, réservation ou newsletter peuvent être ajoutés
+          selon l’usage attendu.
         </p>
       </div>
+
       <div class="card">
-        <i data-lucide="bar-chart-2" class="card-icon"></i>
-        <h3>Suivi & mesure</h3>
+        <i data-lucide="megaphone" class="card-icon"></i>
+        <h3>L’exploitation</h3>
         <p>
-          Les outils de suivi peuvent être installés pour comprendre les visites, les prises de contact et les pages consultées.
-          Une lecture régulière des résultats peut être ajoutée après la mise en ligne.
+          Emailing, SEO avancé, publicité, réseaux sociaux ou communication régulière
+          sont des prestations séparées.
         </p>
       </div>
     </div>
+
+    <p class="section-intro">
+      Cette séparation permet de construire un site utile sans transformer le projet
+      en dispositif trop lourd. Le devis précise ce qui est inclus, ce qui est optionnel,
+      et ce qui relève d’un accompagnement complémentaire.
+    </p>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section class="section">
+  <div class="container no-padding">
+    <h2 class="h2--moderne">Support et maintenance</h2>
+
+    <p class="section-intro">
+      Après la mise en ligne, un support simple est inclus pendant la période indiquée dans la formule.
+      Un support annuel peut ensuite être ajouté pour garder le site propre et éviter les petits blocages.
+    </p>
+
+    <table class="table--simple">
+      <thead>
+        <tr>
+          <th>Support annuel</th>
+          <th>Ce qui est compris</th>
+          <th>Limites</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>500 € / an</strong></td>
+          <td>
+            Vérifications techniques, sauvegardes, mises à jour si nécessaire,
+            test du formulaire, petites corrections et assistance simple.
+          </td>
+          <td>
+            Les nouvelles pages, nouvelles fonctionnalités, refontes, campagnes email,
+            contenus réguliers ou SEO avancé font l’objet d’un devis séparé.
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
@@ -155,7 +284,7 @@ render('hero', [
       <div class="split__item">
         <h2>Prochaine étape</h2>
         <p>
-        Un premier échange permet de clarifier le besoin, le niveau d’accompagnement nécessaire et la formule la plus adaptée.
+          Un premier échange permet de clarifier le besoin, le niveau d’accompagnement nécessaire et la formule la plus adaptée.
         </p>
         <div>
           <?php render('btn', [
@@ -164,7 +293,6 @@ render('hero', [
           ]); ?>
         </div>
       </div>
-
     </div>
   </div>
 </section>

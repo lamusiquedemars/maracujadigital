@@ -12,7 +12,7 @@ render('hero', [
 <!-- VALEUR -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Un premier échange pour cadrer le besoin</h2>
+    <h2 class="h2--moderne">Un premier échange pour étudier le besoin</h2>
     <div class="grid grid--2-3">
       <div class="card card--ghost">
         <p>
