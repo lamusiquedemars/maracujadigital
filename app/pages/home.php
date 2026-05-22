@@ -130,7 +130,7 @@ render('hero', [
 
           <li>
             <strong>Déployer</strong> — mettre en ligne un outil aligné avec l’activité
-            et pensé pour son usage réel
+            et l‘usage réel
           </li>
         </ul>
       </div>
