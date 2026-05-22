@@ -20,7 +20,7 @@ render('hero', [
     </p>
     <p>
       Avant de parler design ou développement, il faut comprendre ce que le site doit faire :
-      expliquer une activité, rendre une offre lisible, rassurer un visiteur, répondre à ses hésitations,
+      expliquer une activité, rendre une offre cohérente, rassurer un visiteur, répondre à ses hésitations,
       puis l’orienter vers une action claire.
     </p>
     <p>
@@ -96,7 +96,7 @@ render('hero', [
   <div class="container">
     <h2 class="h2--moderne">Les 4 grandes briques d’un projet</h2>
     <p class="lead">
-      Pour rendre la démarche lisible, les étapes sont regroupées en 4 grandes briques.
+      Pour rendre la démarche accessible, les étapes sont regroupées en 4 grandes briques.
     </p>
     <table class="table--featured">
       <thead>
@@ -315,7 +315,7 @@ render('hero', [
         <i data-lucide="leaf" class="card-icon"></i>
         <h3><strong>Essence</strong></h3>
         <p>
-          Le projet aboutit à un site propre, lisible et crédible,
+          Le projet aboutit à un site propre et crédible,
           avec une structure simple, des contenus fournis ou légèrement retravaillés, et une mise en ligne solide.
         </p>
       </div>

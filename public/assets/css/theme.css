@@ -229,8 +229,9 @@ h2.h2--moderne::before {
 }
 
 @media (max-width: 768px) {
-  .hero--maracuja {
-    background-size: contain;
+  .hero--image.hero--maracuja {
+    background-attachment: scroll;
+    background-size: 80vh;
   }
 }
 /* overlay doux (lisibilité + identité) */

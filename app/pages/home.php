@@ -62,7 +62,7 @@ render('hero', [
       'items' => $realisations,
     ]);
     ?>
-  </div>
+  </div> 
 </section>
 
 <!-- APPROCHE / POSITIONNEMENT -->

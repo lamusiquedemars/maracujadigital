@@ -25,7 +25,7 @@ render('hero', [
     </p>
     <p>
       Le site web moderne n’est plus une simple présence en ligne.
-      C’est l’endroit où une activité devient lisible, où une offre prend forme,
+      C’est l’endroit où une activité devient compréhensible, où une offre prend forme,
       et où une décision commence à se construire.
     </p>
     <div class="divider"></div>
