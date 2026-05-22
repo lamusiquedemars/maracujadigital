@@ -110,7 +110,7 @@ render('hero', [
         <i data-lucide="settings" class="card-icon"></i>
         <h3>Méthode</h3>
         <p>
-          La méthode de travail suit 4 étapes : cadrer, structurer, réaliser et déployer.
+          La <a href="<?= route('methode') ?>">méthode de travail</a> suit 4 étapes : cadrer, structurer, réaliser et déployer.
         </p>
         <ul>
           <li>

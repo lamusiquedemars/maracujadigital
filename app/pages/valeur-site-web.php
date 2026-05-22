@@ -60,10 +60,10 @@ render('hero', [
         </tr>
 
         <tr>
-          <td>Votre offre est floue</td>
+          <td>Votre offre difficile à comprendre</td>
           <td>Difficile de se projeter</td>
           <td>Hésitation ou abandon</td>
-          <td><strong>Offre claire et lisible immédiatement</strong></td>
+          <td><strong>Offre claire et compréhensible</strong></td>
         </tr>
 
         <tr>
@@ -92,7 +92,7 @@ render('hero', [
       <ul class="ul-icon">
         <li class="spacing-sm"><i data-lucide="target"></i>Clarifier ce que vous faites réellement</li>
         <li class="spacing-sm"><i data-lucide="layers"></i>Structurer votre offre pour qu’elle soit comprise</li>
-        <li class="spacing-sm"><i data-lucide="layout"></i>Construire un site lisible et cohérent</li>
+        <li class="spacing-sm"><i data-lucide="layout"></i>Construire un site structuré et cohérent</li>
         <li><i data-lucide="user-check"></i>Faciliter la décision du client</li>
       </ul>
     </div>
@@ -118,7 +118,7 @@ render('hero', [
       </div>
       <div class="card">
         <h3>Réaliser</h3>
-        <p>Créer un site clair, cohérent et lisible</p>
+        <p>Créer un site clair, cohérent et structuré</p>
       </div>
       <div class="card">
         <h3>Déployer</h3>

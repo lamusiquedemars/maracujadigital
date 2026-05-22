@@ -25,7 +25,7 @@ render('hero', [
         <h3>Clarifier pour décider</h3>
         <p class="service-duration">Format court — quelques jours selon le contexte</p>
         <p>
-          Pour les projets où la situation manque de clarté : objectifs flous, décisions difficiles,
+          Pour les projets où la situation manque de clarté : objectifs mal définis, indécision,
           priorités instables ou acteurs non alignés.
         </p>
         <p><strong>Ce que l’accompagnement permet</strong></p>
@@ -69,12 +69,12 @@ render('hero', [
         <h3>Recadrer pour piloter</h3>
         <p class="service-duration">Format suivi — mission courte ou accompagnement sur plusieurs semaines</p>
         <p>
-          Pour les projets déjà lancés qui manquent de pilotage : retards, responsabilités floues,
+          Pour les projets déjà lancés qui manquent de pilotage : retards, responsabilités mal définies,
           décisions dispersées, suivi irrégulier ou perte de vision d’ensemble.
         </p>
         <p><strong>Ce que l’accompagnement permet</strong></p>
         <ul>
-          <li>Analyser l’existant</li>
+          <li>Analyser l‘existant</li>
           <li>Identifier les dérives</li>
           <li>Clarifier les rôles</li>
           <li>Remettre en place un cadre de suivi</li>
