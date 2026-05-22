@@ -104,8 +104,8 @@ render('hero', [
   <div class="container">
     <h2 class="h2--moderne">Du besoin à la mise en ligne</h2>
     <p class="section-intro">
-      Le projet avance étape par étape, avec une méthode claire pour organiser les besoins,
-      structurer le contenu et construire un site cohérent.
+      Le projet avance par étapes : comprendre le besoin, choisir les contenus utiles,
+      puis construire les pages qui vont les porter.
     </p>
     <div class="grid grid--4">
       <div class="card">
@@ -139,7 +139,7 @@ render('hero', [
     <div class="grid grid--3">
       <div class="card">
         <i data-lucide="eye" class="card-icon"></i>
-        <h3>Compréhension immédiate</h3>
+        <h3>Comprendre l’offre</h3>
         <p>Le visiteur comprend ce que vous faites sans effort</p>
       </div>
 

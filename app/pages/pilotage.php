@@ -13,7 +13,7 @@ render('hero', [
   <div class="container">
     <h2 class="h2--moderne">Les trois offres d’accompagnement</h2>
     <p class="section-intro">
-      Ces accompagnements s’adressent aux projets qui ont besoin d’être clarifiés, structurés ou remis sous contrôle.
+      Ces accompagnements s’adressent aux projets qui hésitent encore sur leur direction, leur périmètre ou leur façon d’avancer.
       Le format exact dépend du contexte, du niveau d’avancement et du nombre d’acteurs impliqués.
     </p>
     <div class="divider"></div>

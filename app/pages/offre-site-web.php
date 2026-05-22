@@ -56,12 +56,12 @@ render('hero', [
         </tr>
         <tr>
           <td><strong>Structure éditoriale</strong></td>
-          <td>Organisation claire des informations pour rendre le site lisible et cohérent.</td>
+          <td>Hiérarchie des informations pour que le visiteur sache quoi lire et où aller ensuite.</td>
           <td>Sections, titres, hiérarchie de contenu et parcours de lecture.</td>
         </tr>
         <tr>
           <td><strong>Direction visuelle</strong></td>
-          <td>Interface sobre, cohérente et adaptée à l’univers existant du client.</td>
+          <td>Interface soignée, cohérente et adaptée à l’univers existant du client.</td>
           <td>Styles, composants, typographies, couleurs, mise en page responsive.</td>
         </tr>
         <tr>

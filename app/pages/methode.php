@@ -6,7 +6,7 @@ $title = "Méthode";
 <?php
 render('hero', [
   'title' => 'Méthode',
-  'subtitle' => 'Une méthode pour concevoir des sites clairs, structurés et orientés décision.',
+  'subtitle' => 'Une méthode pour construire un site qui explique votre offre et aide vos visiteurs à choisir.',
   'class' => ['hero--page', 'hero--center']
 ]);
 ?>
@@ -68,7 +68,7 @@ render('hero', [
         </tr>
         <tr>
           <td><strong>Designer</strong></td>
-          <td>Donner une forme visuelle claire, cohérente et adaptée au niveau de gamme</td>
+          <td>Traduire le niveau de votre offre dans la mise en page, les images et les détails visuels</td>
           <td>Pour créer confiance et qualité perçue</td>
         </tr>
         <tr>
@@ -345,9 +345,8 @@ render('hero', [
         À la fin du projet, vous n’avez pas seulement un site mis en ligne.
       </p>
       <p>
-        Vous avez une structure claire, des pages qui ont chacune un rôle,
-        des contenus organisés, un parcours utilisateur cohérent, un design adapté à votre positionnement,
-        et une base technique propre.
+        Vous repartez avec des pages qui ont chacune leur rôle, des contenus rangés au bon endroit,
+        un design fidèle à votre positionnement et une base technique saine.
       </p>
       <p>
         Le site devient alors un vrai support commercial :
@@ -369,7 +368,7 @@ render('hero', [
       <div class="split__item">
         <h2>Prochaine étape</h2>
         <p>
-          Besoin d’un site plus clair, plus structuré, plus utile&nbsp;?
+          Votre site doit mieux expliquer ce que vous faites&nbsp;?
         </p>
         <div>
           <?php render('btn', [
