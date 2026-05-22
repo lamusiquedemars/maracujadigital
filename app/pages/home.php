@@ -76,7 +76,7 @@ render('hero', [
         <h3>Valeurs</h3>
         <p>
           Chaque projet est abordé avec la même exigence qu’un projet stratégique :
-          décisions posées, choix argumentés, cadre clair.
+          cadre posé, choix justifiés, étapes claires.
         </p>
         <p>
           Un site engage l’image et l’activité d’un client.
