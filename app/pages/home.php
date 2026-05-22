@@ -16,7 +16,7 @@ render('hero', [
   <div class="container">
     <h2 class="h2--moderne">Création de sites & projets digitaux</h2>
     <p class="section-intro">
-      Des solutions web pensées pour présenter une activité clairement, structurer les contenus et proposer un outil simple à utiliser au quotidien.
+      Des solutions web conçues pour présenter une activité clairement, structurer les contenus et proposer un outil simple à utiliser au quotidien.
     </p>
 
     <div class="grid grid--2">
@@ -25,12 +25,12 @@ render('hero', [
         <i data-lucide="layout-template" class="card-icon"></i>
         <h3>Création de site internet</h3>
         <p>
-          Un site web conçu pour présenter une activité de manière claire, fluide et accessible.
+          Un site web construit pour présenter une activité de manière claire, fluide et accessible.
         </p>
         <p>
-          Chaque projet est construit autour des contenus, des usages et des besoins réels du client.
+          Chaque projet est réalisé autour des contenus, des usages et des besoins réels du client.
         </p>
-        <span class="btn btn-ghost">Voir le service</span>
+        <span class="btn btn-ghost">Création de sites</span>
       </a>
 
       <!-- Carte 2 : Structuration / Accompagnement -->
@@ -43,7 +43,7 @@ render('hero', [
         <p>
           L’objectif est de garder un cadre clair et des décisions compréhensibles à chaque étape.
         </p>
-        <span class="btn btn-ghost">Découvrir le service</span>
+        <span class="btn btn-ghost">Pilotage de projets</span>
       </a>
     </div>
   </div>
