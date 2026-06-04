@@ -31,7 +31,7 @@ render('hero', [
             Indiquez simplement le contexte, le besoin et l’état d’avancement du projet.
           </p>
           <p>
-            <a href="mailto:contact@maracujaconsulting.fr" class="btn btn-primary">Écrire un message</a>
+            <a href="mailto:contact@maracujadigital.fr" class="btn btn-primary">Écrire un message</a>
           </p>
         </div>
       </div>
