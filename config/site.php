@@ -30,7 +30,7 @@ return [
     // Navigation
     'navigation' => [
         ['label' => 'Site web', 'route' => 'site-web'],
-        ['label' => 'AMOA & Pilotage', 'route' => 'pilotage'],
+        ['label' => 'Cadrage & Pilotage', 'route' => 'pilotage'],
         ['label' => 'Contact', 'route' => 'contact'],
     ],
 
