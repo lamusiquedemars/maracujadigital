@@ -9,10 +9,23 @@
   <link rel="stylesheet" href="../assets/css/fonts.css">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/theme.css">
-  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="document.css" media="screen">
+  <link rel="stylesheet" href="document-print.css" media="print">
 </head>
 <body class="proposal-preview">
-  <main class="document" aria-label="Proposta Politeama Verdi">
+  <header class="site-header proposal-site-header">
+    <div class="container container--wide header-inner">
+      <a href="../" aria-label="Maracuja Digital">
+        <img src="../assets/images/logo.png" alt="Maracuja Digital" class="brand-logo">
+      </a>
+      <nav class="proposal-header-actions" aria-label="Azioni della proposta">
+        <a href="../" class="btn btn-ghost">Sito</a>
+        <a href="https://maracujadigital.fr/proposta-politeama/Proposta-Politeama-Maracuja-Digital.pdf" class="btn btn-primary">PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="document container" aria-label="Proposta Politeama Verdi">
 
     <!-- Pagina 1 - Copertina -->
     <section class="document-page document-page--cover" aria-labelledby="page-1-title">
@@ -549,5 +562,17 @@
       <footer class="page-footer"><span>Maracuja Digital</span><span>10</span></footer>
     </section>
   </main>
+
+  <footer class="site-footer proposal-site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name">&copy; 2026 Maracuja Digital</p>
+        <p class="footer-baseline">Creazione di siti web e pilotaggio di progetti digitali.</p>
+      </div>
+      <nav class="footer-nav small" aria-label="Navigazione del piè di pagina">
+        <a href="../">Sito</a><span>•</span><a href="../contact">Contatti</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
