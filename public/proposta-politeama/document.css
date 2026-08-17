@@ -163,7 +163,7 @@ body.proposal-preview {
   top: 88mm;
   right: -8mm;
   width: 82mm;
-  opacity: 0.65;
+  opacity: 0.4;
   filter: saturate(0.96) contrast(1);
   mix-blend-mode: multiply;
   -webkit-mask-image: radial-gradient(ellipse at 72% 50%, #000 0 62%, rgba(0, 0, 0, 0.85) 74%, transparent 100%);
