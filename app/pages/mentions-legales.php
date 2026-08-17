@@ -8,9 +8,11 @@
       <p>
         Maracuja Digital<br>
         Responsable de la publication : Ivo Correia de Melo<br>
-        Statut : Entrepreneur individuel<br>
-        Adresse : Collonges-au-Mont-d’Or, France<br>
-        E-mail : contact@maracujadigital.fr
+        Entreprise individuelle — SIREN nº 894 976 133<br>
+        Adresse : 30 chemin de l’Écully, 69660 Collonges-au-Mont-d’Or, France<br>
+        Téléphone : <a href="tel:+33786431583">+33 7 86 43 15 83</a><br>
+        E-mail : <a href="mailto:contact@maracujadigital.fr">contact@maracujadigital.fr</a><br>
+        Site : <a href="https://maracujadigital.fr">maracujadigital.fr</a>
       </p>
 
       <h3>2. Hébergeur</h3>
