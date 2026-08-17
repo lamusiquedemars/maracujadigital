@@ -38,7 +38,7 @@ body.proposal-preview {
   break-after: page;
 }
 .document-page:last-child { break-after: auto; }
-.document-page > :not(.page-flower):not(.cover-cremona) {
+.document-page > :not(.page-flower) {
   position: relative;
   z-index: 1;
 }
@@ -157,26 +157,12 @@ body.proposal-preview {
   pointer-events: none;
   user-select: none;
 }
-.cover-cremona {
-  position: absolute;
-  z-index: 0;
-  top: 88mm;
-  right: -8mm;
-  width: 82mm;
-  opacity: 0.4;
-  filter: saturate(0.96) contrast(1);
-  mix-blend-mode: multiply;
-  -webkit-mask-image: radial-gradient(ellipse at 72% 50%, #000 0 62%, rgba(0, 0, 0, 0.85) 74%, transparent 100%);
-  mask-image: radial-gradient(ellipse at 72% 50%, #000 0 62%, rgba(0, 0, 0, 0.85) 74%, transparent 100%);
-  pointer-events: none;
-  user-select: none;
-}
-.page-flower--summary {
-  right: -38mm;
-  bottom: -23mm;
-  width: 96mm;
-  opacity: 0.08;
-  transform: rotate(8deg);
+.page-flower--cover {
+  top: 20mm;
+  right: -47mm;
+  width: 128mm;
+  opacity: 0.16;
+  transform: rotate(-7deg);
 }
 .page-flower--about {
   right: -37mm;
