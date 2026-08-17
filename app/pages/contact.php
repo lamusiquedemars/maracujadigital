@@ -1,79 +1,80 @@
 <!-- HERO -->
 <?php
 render('hero', [
-  'title' => 'Entrons en contact.',
-  'subtitle' => 'Pour parler d’un site web, d’un projet digital ou d’une collaboration.',
+  'title' => 'Contact',
+  'subtitle' => 'Maracuja Digital, studio digital indépendant basé à Collonges-au-Mont-d’Or.',
   'class' => ['hero--page', 'hero--center'],
   'link' => '',
   'label' => ''
 ]);
 ?>
 
-<!-- COORDONNEES -->
+<!-- PRESENTATION -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Un projet, une mission, une idée&nbsp;?</h2>
+    <h2 class="h2--moderne">Maracuja Digital</h2>
 
-    <p class="text-muted">
-      Maracuja Digital est une structure indépendante basée près de Lyon, portée par Ivo Correia de Melo.
-      Pour un site web, une refonte ou un accompagnement de projet digital, vous pouvez envoyer un message directement par email.
-    </p>
-    <div class="split">
-      <div class="split__item">
-        <img src="<?= e(img('desk-maracuja.png')) ?>" alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
-      </div>
-      <div class="split__item">
-        <div class="card card--featured card--maracuja">
-          <i data-lucide="mail" class="card-icon"></i>
-          <h3>Contacter Maracuja Digital</h3>
-          <p>
-            Votre message sera lu directement par Ivo Correia de Melo.
-            Indiquez simplement le contexte, le besoin et l’état d’avancement du projet.
-          </p>
-          <p>
-            <a href="mailto:contact@maracujadigital.fr" class="btn btn-primary">Écrire un message</a>
-          </p>
-        </div>
+    <div class="contact-about">
+      <figure class="contact-about__portrait">
+        <img src="<?= e(img('ivo.png')) ?>" alt="Portrait d’Ivo Correia de Melo">
+        <figcaption>Ivo Correia de Melo, fondateur de Maracuja Digital</figcaption>
+      </figure>
+
+      <div class="contact-about__content">
+        <p>
+          Maracuja Digital est un studio digital indépendant fondé en 2025, spécialisé dans
+          la conception et le développement de solutions digitales sur mesure pour les entreprises,
+          les professionnels et les organisations.
+        </p>
+        <p>
+          Le studio réunit conseil, cadrage, conception et développement, avec un interlocuteur
+          unique pour accompagner le projet de sa définition à sa mise en ligne.
+        </p>
+
+        <h3>Ivo Correia de Melo</h3>
+        <p>
+          Fondateur de Maracuja Digital, Ivo Correia de Melo est développeur, consultant et chef de projet.
+        </p>
+        <p>
+          Il travaille dans le numérique et les systèmes d’information depuis 2010, avec une expérience
+          dans la conception web, la transformation des processus et la gestion de projets complexes.
+        </p>
+        <p>
+          Il a travaillé pour des entreprises telles qu’Orange, Saint-Gobain, EDF, Engie, Criteo,
+          Groupe SEB et GL Events, en coordonnant enjeux opérationnels, technologie et réalisation.
+        </p>
+        <p>
+          Parallèlement, il est violoniste et archetier, avec un parcours musical entre Recife,
+          Rome, Lyon et Paris. Cette double culture, digitale et musicale, nourrit une approche
+          attentive aux usages, aux métiers et à l’identité de chaque projet.
+        </p>
       </div>
     </div>
   </div>
 </section>
-<!-- VALEUR -->
-<section class="section">
+
+<!-- COORDONNEES -->
+<section class="section contact-section">
   <div class="container">
-    <h2 class="h2--moderne">Un premier échange pour étudier le besoin</h2>
-    <div class="grid grid--2-3">
-      <div class="card card--ghost">
-        <p>
-          Un projet web commence rarement par une solution toute faite.
-          Il faut d’abord comprendre l’activité, les objectifs, les contenus disponibles, les contraintes et le niveau d’accompagnement nécessaire.
-        </p>
+    <h2 class="h2--moderne">Coordonnées</h2>
 
-        <p>
-          Cette étape permet de vérifier si le besoin relève d’un site vitrine, d’un accompagnement plus structuré, d’une refonte, ou d’un projet digital plus large.
-        </p>
-
-        <p>
-          Maracuja Digital fonctionne avec un interlocuteur principal, une méthode de cadrage issue de l’AMOA, et la possibilité de mobiliser des compétences complémentaires selon le projet : photographie, graphisme, référencement ou communication.
-        </p>
-
-        <p class="lead">
-          Avant de produire, le besoin est clarifié.
-          Avant de développer, la structure est posée.
-          Avant de mettre en ligne, les choix sont validés.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Ce premier échange permet de vérifier</h3>
-        <ul class="ul-icon">
-          <li><i data-lucide="check"></i>le type de projet à engager</li>
-          <li><i data-lucide="check"></i>le niveau de cadrage nécessaire</li>
-          <li><i data-lucide="check"></i>les contenus déjà disponibles</li>
-          <li><i data-lucide="check"></i>les compétences complémentaires à prévoir</li>
-          <li><i data-lucide="check"></i>la formule ou l’approche la plus adaptée</li>
-        </ul>
-      </div>
-    </div>
+    <address class="contact-details">
+      <a class="contact-detail" href="mailto:contact@maracujadigital.fr">
+        <i data-lucide="mail" class="card-icon"></i>
+        <span><strong>E-mail</strong>contact@maracujadigital.fr</span>
+      </a>
+      <a class="contact-detail" href="tel:+33786431583">
+        <i data-lucide="phone" class="card-icon"></i>
+        <span><strong>Téléphone</strong>+33 7 86 43 15 83</span>
+      </a>
+      <a class="contact-detail" href="https://maracujadigital.fr">
+        <i data-lucide="globe" class="card-icon"></i>
+        <span><strong>Site</strong>maracujadigital.fr</span>
+      </a>
+      <p class="contact-detail">
+        <i data-lucide="map-pin" class="card-icon"></i>
+        <span><strong>Adresse</strong>30 chemin de l’Écully<br>69660 Collonges-au-Mont-d’Or</span>
+      </p>
+    </address>
   </div>
 </section>

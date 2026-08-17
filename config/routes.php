@@ -51,7 +51,8 @@ return [
     'path' => 'contact',
     'view' => 'contact',
     'title' => 'Contact',
-    'controller' => 'contact'
+    'controller' => 'contact',
+    'styles' => ['contact.css']
   ],
   'mentions-legales' => [
     'path' => 'mentions-legales',

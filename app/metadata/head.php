@@ -21,6 +21,9 @@
 <link rel="stylesheet" href="<?= asset('css/base.css') ?>">
 <link rel="stylesheet" href="<?= asset('css/theme.css') ?>">
 <link rel="stylesheet" href="<?= asset('css/fonts.css') ?>">
+<?php foreach (($route['styles'] ?? []) as $stylesheet): ?>
+<link rel="stylesheet" href="<?= e(asset('css/' . ltrim((string) $stylesheet, '/'))) ?>">
+<?php endforeach; ?>
 <!--fancybox-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css">
