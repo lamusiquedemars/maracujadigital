@@ -364,8 +364,11 @@ body.proposal-preview {
   height: 100%;
   object-fit: cover;
 }
-.profile-visual--logo img { object-position: 50% 42%; }
-.profile-visual--portrait img { object-position: 50% 28%; }
+.profile-visual--logo img {
+  object-fit: contain;
+  padding: 7mm;
+}
+.profile-visual--portrait img { object-position: 50% 16%; }
 .profile-card h3 {
   color: var(--color-accent);
   text-transform: uppercase;

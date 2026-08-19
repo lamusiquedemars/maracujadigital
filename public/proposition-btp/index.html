@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proposition Tomé Guerreiro - Maracuja Digital</title>
+  <meta name="description" content="Proposition de visibilité et d’outils évolutifs pour l’entreprise de maçonnerie Tomé Guerreiro.">
+  <link rel="icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../proposta-politeama/document.css" media="screen">
+  <link rel="stylesheet" href="../proposta-politeama/document-print.css" media="print">
+  <style>
+    .document .card-icon{fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .pricing-summary{margin-top:var(--space-xl)}
+    .pricing-summary table{margin:0;font-size:0.9rem}
+    .pricing-summary th:not(:first-child),.pricing-summary td:not(:first-child){text-align:right;white-space:nowrap}
+    .pricing-total td{font-weight:700;color:var(--color-accent);background:var(--color-accent-soft)}
+    .btp-schedule .compact-card--follow-up{grid-column:1 / -1}
+    .proposal-section-title{margin:0 0 var(--space-m);color:var(--color-accent);font-size:1.25rem;font-weight:700}
+    .pricing-block{margin-top:var(--space-2xl)}
+    .campaign-example{margin-top:var(--space-xl)}
+    .campaign-example h3,.campaign-example strong{color:var(--color-accent)}
+    .campaign-example .grid{margin-top:var(--space-m)}
+    .campaign-example .grid p,.campaign-example__result{margin:0}
+    .campaign-example .grid strong{display:block;margin-bottom:var(--space-xs)}
+    .campaign-example__result{margin-top:var(--space-m);padding-top:var(--space-m);border-top:1px solid var(--color-border)}
+    .follow-up-note strong{color:var(--color-accent)}
+    @media print{
+      .btp-schedule .compact-card{min-height:0}
+      .btp-schedule .compact-card--follow-up{min-height:27mm}
+      .proposal-section-title{margin-bottom:3mm;font-size:13pt}
+      .pricing-block{margin-top:9mm}
+      .pricing-summary{margin-top:0}
+      .pricing-summary table{font-size:9pt}
+      .pricing-summary th,.pricing-summary td{padding:2.5mm 3mm}
+      .campaign-example{margin-top:6mm;padding:4mm 5mm}
+      .campaign-example h3{margin-bottom:2mm}
+      .campaign-example .grid{margin-top:3mm;gap:4mm}
+      .campaign-example .grid p,.campaign-example__result{font-size:9.5pt}
+      .campaign-example__result{margin-top:3mm;padding-top:3mm}
+      .follow-up-note{margin-top:4mm;font-size:9pt}
+    }
+  </style>
+</head>
+<body class="proposal-preview">
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3Z"/><path d="M11.6 16.8A3 3 0 1 1 5.8 15"/></symbol>
+    <symbol id="icon-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1a1.7 1.7 0 0 0 1.9.3A1.7 1.7 0 0 0 10 3V2.8h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="18" rx="2"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect width="18" height="14" x="3" y="5" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  </defs></svg>
+
+  <header class="site-header proposal-site-header">
+    <div class="container container--wide header-inner">
+      <a href="../" aria-label="Maracuja Digital"><img src="../assets/images/logo.png" alt="Maracuja Digital" class="brand-logo"></a>
+      <nav class="proposal-header-actions" aria-label="Actions de la proposition"><a href="../" class="btn btn-ghost">Site</a><a href="#" class="btn btn-primary" onclick="window.print();return false">PDF</a></nav>
+    </div>
+  </header>
+
+  <main class="document container" aria-label="Proposition Tomé Guerreiro">
+    <!-- Page 1 - Couverture -->
+    <section class="document-page document-page--cover" aria-labelledby="page-1-title">
+      <img class="page-flower page-flower--cover" src="../assets/images/passiflora-rameau.png" alt="">
+      <header class="cover-header"><img class="cover-logo" src="../assets/images/logo.png" alt="Maracuja Digital"><p class="eyebrow">Entreprise de maçonnerie Tomé Guerreiro</p></header>
+      <div class="cover-content"><h1 id="page-1-title">Développer votre<br>visibilité en ligne</h1><p class="lead">Être trouvé localement, inspirer confiance, recevoir des demandes et préparer les futurs gains de temps de l’entreprise.</p></div>
+      <footer class="cover-footer"><p class="brand-name">Maracuja Digital</p><p>Créer le site, développer la présence locale et préparer la suite</p><p>contact@maracujadigital.fr · +33 7 86 43 15 83</p><p>Lyon, août 2026</p></footer>
+    </section>
+
+    <!-- Page 2 - Proposition -->
+    <section class="document-page" aria-labelledby="page-2-title">
+      <header class="page-header"><p class="eyebrow">Ce que nous mettons en place</p><h2 id="page-2-title" class="page-title h2--moderne">Créer une présence qui donne confiance et génère des demandes</h2><p class="page-intro">Le site devient le point de référence vers lequel orienter Google, les réseaux sociaux, les recommandations et les publicités.</p></header>
+      <section class="page-content grid grid--2 proposal-grid" aria-label="Les actions comprises dans la proposition">
+        <article class="card numbered-card"><p class="card-number">01</p><h3>Créer un site qui présente l’entreprise</h3><p>Accueil, services, zones d’intervention, réalisations et coordonnées : tout ce qu’un futur client doit voir avant de prendre contact.</p></article>
+        <article class="card numbered-card"><p class="card-number">02</p><h3>Faire apparaître l’entreprise localement</h3><p>Google Business Profile et Google Maps, puis Facebook, Instagram et WhatsApp correctement reliés au site et aux moyens de contact.</p></article>
+        <article class="card numbered-card"><p class="card-number">03</p><h3>Lancer puis améliorer la publicité</h3><p>Des annonces locales à partir de vrais chantiers, suivies et ajustées selon les messages, les zones et les demandes reçues.</p></article>
+        <article class="card numbered-card"><p class="card-number">04</p><h3>Préparer les prochains gains de temps</h3><p>Lorsque cela deviendra utile : centraliser les demandes, suivre les clients et les devis, puis organiser les relances sans alourdir le quotidien.</p></article>
+      </section>
+      <aside class="callout"><p><strong>Pourquoi commencer par le site ?</strong> La publicité attire l’attention ; le site donne les preuves qui la transforment en confiance : activité claire, vrais chantiers, coordonnées et contact immédiat. L’entreprise reste concentrée sur ses chantiers ; Maracuja prépare et pilote le numérique.</p></aside>
+      <footer class="page-footer"><span>Maracuja Digital</span><span>2</span></footer>
+    </section>
+
+    <!-- Page 3 - Déroulement, tarifs et contact -->
+    <section class="document-page document-page--dense" aria-labelledby="page-3-title">
+      <header class="page-header"><p class="eyebrow">Déroulement et investissement</p><h2 id="page-3-title" class="page-title h2--moderne">Préparer, mettre en ligne, puis suivre les premiers résultats</h2><p class="page-intro">Exemple pour un démarrage en septembre : le lancement publicitaire est suivi pendant six semaines afin de disposer d’éléments concrets avant de décider de la suite.</p></header>
+      <section class="page-content" aria-labelledby="calendar-title">
+        <h3 id="calendar-title" class="proposal-section-title">Calendrier indicatif</h3>
+        <div class="grid grid--3 btp-schedule">
+        <article class="card compact-card"><header class="card-heading"><svg class="card-icon" aria-hidden="true"><use href="#icon-calendar"/></svg><h3>Septembre · Semaine 1</h3></header><p>Rassembler l’activité, les services, les zones, les photos et les accès déjà existants.</p></article>
+        <article class="card compact-card"><header class="card-heading"><svg class="card-icon" aria-hidden="true"><use href="#icon-settings"/></svg><h3>Septembre · Semaines 2–3</h3></header><p>Créer le site puis configurer Google, Meta, WhatsApp et la mesure des demandes.</p></article>
+        <article class="card compact-card"><header class="card-heading"><svg class="card-icon" aria-hidden="true"><use href="#icon-megaphone"/></svg><h3>Fin septembre · Semaine 4</h3></header><p>Mettre le site en ligne et lancer les premières annonces dans les zones choisies.</p></article>
+        <article class="card compact-card compact-card--follow-up"><header class="card-heading"><svg class="card-icon" aria-hidden="true"><use href="#icon-settings"/></svg><h3>Octobre · Suivre et ajuster</h3></header><p>Suivre les premières demandes pendant la phase de lancement, puis ajuster les annonces, les messages ou les zones si nécessaire. Début novembre, le bilan des six premières semaines permet de poursuivre, d’arrêter ou d’étendre la campagne.</p></article>
+        </div>
+      </section>
+
+      <section class="pricing-block" aria-labelledby="pricing-title"><h3 id="pricing-title" class="proposal-section-title">Coût de la mise en place</h3><div class="card pricing-summary"><table><thead><tr><th>Prestation</th><th>Prix d’ami</th></tr></thead><tbody>
+        <tr><td>Créer le site professionnel évolutif</td><td><s>1 400 €</s> <strong>1 000 €</strong></td></tr>
+        <tr><td>Configurer Google, les réseaux et le suivi</td><td><s>450 €</s> <strong>250 €</strong></td></tr>
+        <tr><td>Préparer et lancer la publicité</td><td><s>300 €</s> <strong>180 €</strong></td></tr>
+        <tr class="pricing-total"><td>Total de la mise en place</td><td><s>2 150 €</s> <strong>1 430 €</strong></td></tr>
+      </tbody></table></div></section>
+      <section class="card campaign-example" aria-labelledby="campaign-example-title"><h3 id="campaign-example-title">Exemple concret : tester avec 150 € de publicité</h3><div class="grid grid--3">
+        <p><strong>Diffuser</strong>Montrer 2 ou 3 réalisations autour de Lyon et dans les zones où l’entreprise souhaite travailler.</p>
+        <p><strong>Recevoir</strong>Diriger les personnes intéressées vers WhatsApp, le téléphone ou le formulaire du site.</p>
+        <p><strong>Décider</strong>Après 4 à 6 semaines, compter les demandes sérieuses et vérifier si elles correspondent à de vrais chantiers.</p>
+      </div><p class="campaign-example__result">Le budget de 100 à 150 € / mois est payé directement à Facebook / Instagram et peut être arrêté à tout moment. Si trois demandes sérieuses produisent un seul chantier, l’essai peut déjà être largement rentable ; sinon, on ajuste ou on arrête.</p></section>
+      <p class="page-note follow-up-note"><svg class="card-icon" aria-hidden="true"><use href="#icon-settings"/></svg><span><strong>Après le lancement :</strong> le suivi initial est inclus et aucun abonnement mensuel n’est obligatoire. Une modification ponctuelle de campagne est proposée à partir de 50 € ; un suivi régulier seulement si le volume le justifie.</span></p>
+      <footer class="page-footer"><span>Maracuja Digital</span><span>3</span></footer>
+    </section>
+  </main>
+
+  <footer class="site-footer proposal-site-footer"><div class="container footer-inner"><div class="footer-brand"><p class="footer-name">&copy; 2026 Maracuja Digital</p><p class="footer-baseline">Création de sites web et pilotage de projets digitaux.</p></div><nav class="footer-nav small" aria-label="Navigation du pied de page"><a href="../">Site</a><span>•</span><a href="../contact">Contact</a></nav></div></footer>
+</body>
+</html>
