@@ -366,7 +366,6 @@ body.proposal-preview {
 }
 .profile-visual--logo img {
   object-fit: contain;
-  padding: 7mm;
 }
 .profile-visual--portrait img { object-position: 50% 16%; }
 .profile-card h3 {
