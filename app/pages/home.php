@@ -61,7 +61,7 @@ render('hero', [
     render('showcase', [
       'title' => 'Des réalisations concrètes',
       'intro' => 'Chaque solution est conçue à partir d’un métier, de ses habitudes et de ses besoins réels.',
-      'layout' => 'grid',
+      'layout' => 'carousel',
       'items' => $realisations,
     ]);
     ?>
