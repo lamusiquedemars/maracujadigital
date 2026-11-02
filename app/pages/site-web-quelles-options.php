@@ -239,7 +239,7 @@ render('hero', [
             Si l’objectif est d’avoir un site clair, cohérent, évolutif et aligné avec son activité, l’accompagnement prend tout son sens.
           </p>
           <p>
-            <a href="<?= route('contact') ?>" class="btn">Présenter un projet</a>
+            <a href="<?= route('site-web') ?>" class="btn">Découvrir les solutions sur mesure</a>
           </p>
         </div>
       </div>

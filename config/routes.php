@@ -26,10 +26,9 @@ return [
   ],
   'pilotage' => [
     'path' => 'pilotage',
-    'view' => 'pilotage',
-    'title' => 'Accompagnement de projets numériques | Maracuja Digital',
-    'description' => 'Clarifier, structurer ou suivre un projet web ou numérique avec un accompagnement adapté à son avancement.',
-    'controller' => 'pilotage'
+    'view' => '404',
+    'redirect' => 'methode',
+    'redirect_status' => 301,
   ],
   'methode' => [
     'path' => 'methode',
@@ -75,18 +74,21 @@ return [
     'path' => 'pourquoi-site-web',
     'view' => 'pourquoi-site-web',
     'title' => 'Pourquoi un site web ?',
+    'description' => 'Pourquoi un site professionnel reste un outil utile pour présenter son activité, inspirer confiance et faciliter les prises de contact.',
     'controller' => 'pourquoi-site-web'
   ],
   'valeur-site-web' => [
     'path' => 'valeur-site-web',
     'view' => 'valeur-site-web',
     'title' => "Quelle est la valeur d'un site web ?",
+    'description' => 'Comprendre ce qu’un site web bien conçu apporte à la clarté de votre offre, à votre crédibilité et à vos demandes clients.',
     'controller' => 'valeur-site-web'
   ],
   'site-web-quelles-options' => [
     'path' => 'site-web-quelles-options',
     'view' => 'site-web-quelles-options',
     'title' => "Site web : quelles options ?",
+    'description' => 'Builder, WordPress, Webflow, Shopify ou sur mesure : comparer les solutions pour choisir une approche adaptée à votre besoin.',
     'controller' => 'site-web-quelles-options'
   ]
 ];

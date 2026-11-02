@@ -178,8 +178,8 @@ render('hero', [
       </p>
         <div>
           <?php render('btn', [
-            'route' => 'contact',
-            'label' => 'Présenter un projet'
+            'route' => 'offre-site-web',
+            'label' => 'Voir les prestations et tarifs'
           ]); ?>
         </div>
       </div>

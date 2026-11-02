@@ -432,8 +432,8 @@ render('hero', [
       </p>
         <div>
           <?php render('btn', [
-            'route' => 'contact',
-            'label' => 'Présenter un projet'
+            'route' => 'site-web',
+            'label' => 'Découvrir les solutions sur mesure'
           ]); ?>
         </div>
       </div>

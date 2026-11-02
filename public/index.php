@@ -21,6 +21,14 @@ require_once ROOT . '/core/router.php';
 $route = resolveRoute(currentPath(), $ROUTES);
 
 /*
+ * Redirections déclarées dans la configuration des routes.
+ */
+if (!empty($route['redirect'])) {
+    header('Location: ' . route((string) $route['redirect']), true, (int) ($route['redirect_status'] ?? 302));
+    exit;
+}
+
+/*
  * Code HTTP retourné par le router.
  */
 http_response_code($route['status'] ?? 200);
