@@ -39,7 +39,8 @@ return [
   'offre-site-web' => [
     'path' => 'offre-site-web',
     'view' => 'offre-site-web',
-    'title' => 'Détail de l’offre de site web',
+    'title' => 'Prestations & tarifs',
+    'description' => 'Découvrez les prestations Maracuja Digital : site professionnel, fonctionnalités complémentaires, accompagnement et repères de prix.',
     'controller' => 'offre-site-web'
   ],
   'a_propos' => [
