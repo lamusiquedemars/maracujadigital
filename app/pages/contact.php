@@ -1,11 +1,9 @@
 <!-- HERO -->
 <?php
 render('hero', [
-  'title' => 'Contact',
-  'subtitle' => 'Maracuja Digital, studio digital indépendant basé à Collonges-au-Mont-d’Or.',
+  'title' => 'Parlons de votre projet.',
+  'subtitle' => 'Vous souhaitez créer un site, développer votre clientèle ou simplifier la gestion de votre activité ? Présentez votre besoin, même s’il n’est pas encore précisément défini. Maracuja Digital vous accompagne pour identifier une solution adaptée, sans complexité inutile.',
   'class' => ['hero--page', 'hero--center'],
-  'link' => '',
-  'label' => ''
 ]);
 ?>
 
@@ -22,13 +20,13 @@ render('hero', [
 
       <div class="contact-about__content">
         <p>
-          Maracuja Digital est un studio digital indépendant fondé en 2025, spécialisé dans
-          la conception et le développement de solutions digitales sur mesure pour les entreprises,
-          les professionnels et les organisations.
+          Maracuja Digital est une agence numérique indépendante, spécialisée dans la conception
+          de solutions modulaires et personnalisables pour les artisans, les indépendants et les petites entreprises.
         </p>
         <p>
-          Le studio réunit conseil, cadrage, conception et développement, avec un interlocuteur
-          unique pour accompagner le projet de sa définition à sa mise en ligne.
+          Chaque projet associe proximité, développement sur mesure et accompagnement direct, pour identifier
+          une solution adaptée sans complexité inutile. Un interlocuteur unique accompagne le projet de sa définition
+          à sa mise en service, puis dans ses évolutions lorsque cela est nécessaire.
         </p>
 
         <h3>Ivo Correia de Melo</h3>

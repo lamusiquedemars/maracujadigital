@@ -53,7 +53,8 @@ return [
   'contact' => [
     'path' => 'contact',
     'view' => 'contact',
-    'title' => 'Contact',
+    'title' => 'Contact | Maracuja Digital',
+    'description' => 'Parlez-nous de votre projet : site professionnel, développement de clientèle ou solution numérique adaptée à votre activité.',
     'controller' => 'contact',
     'styles' => ['contact.css']
   ],

@@ -14,10 +14,10 @@ return [
     'base' => $_ENV['APP_BASE'] ?? '',
 
     // SEO
-    'description' => 'Artisan de sites web modernes.',
+    'description' => 'Solutions numériques sur mesure pour les artisans, indépendants et petites entreprises.',
     'seo' => [
         'default_title' => 'Maracuja Digital',
-        'default_description' => 'Artisan de sites web modernes.',
+        'default_description' => 'Solutions numériques sur mesure pour les artisans, indépendants et petites entreprises.',
     ],
 
     // Assets
@@ -36,7 +36,7 @@ return [
 
     // Footer
     'footer' => [
-        'baseline' => 'Création de sites web et pilotage de projets digitaux.',
+        'baseline' => 'Solutions numériques sur mesure pour les artisans, indépendants et petites entreprises.',
         'links' => [
             ['label' => 'Mentions légales', 'route' => 'mentions-legales'],
             ['label' => 'CGV', 'route' => 'cgv'],
