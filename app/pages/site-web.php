@@ -99,13 +99,14 @@ render('hero', [
 <section class="section">
   <div class="container">
     <div class="card card--featured card--maracuja">
-      <h2 class="h2--moderne">Des repères pour comprendre le budget</h2>
-      <p>Un site professionnel simple peut démarrer à partir de 1&nbsp;500&nbsp;€. Les fonctionnalités supplémentaires et les solutions de gestion intégrées sont chiffrées selon leur périmètre.</p>
-      <p>Le devis distingue clairement la conception et la mise en place, les fonctionnalités retenues, les prestations complémentaires et les éventuels frais récurrents.</p>
+      <h2 class="h2--moderne">Un site professionnel à partir de 1&nbsp;000&nbsp;€</h2>
+      <p>Un site conçu autour de votre activité, avec un véritable travail de cadrage, une identité graphique soignée, des contenus structurés et un référencement naturel optimisé dès la conception.</p>
+      <p><strong>Hébergement, adaptation mobile et mise en ligne inclus</strong>, pour une présence professionnelle sans complexité inutile.</p>
+      <p>Le périmètre est défini ensemble, et votre solution peut évoluer avec vos besoins.</p>
       <?php render('btn', [
         'route' => 'offre-site-web',
-        'class' => 'btn btn-ghost',
-        'label' => 'Consulter les prestations et les repères de prix',
+        'class' => 'btn btn-primary',
+        'label' => 'Découvrir les prestations et les tarifs →',
       ]); ?>
     </div>
   </div>
