@@ -35,6 +35,10 @@ render('hero', [
       </article>
     </div>
 
+    <p class="home-solutions-cta">
+      <a href="<?= e(route('site-web')) ?>" class="btn btn-primary">Découvrir nos solutions</a>
+    </p>
+
   </div>
 </section>
 

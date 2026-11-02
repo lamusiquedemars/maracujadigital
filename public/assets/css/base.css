@@ -721,7 +721,7 @@ tr:last-child td {
 
 .showcase--carousel .showcase__item {
   width: min(360px, 85vw);
-  margin-right: 1.5rem;
+  margin-right: 2.5rem;
 }
 
 .showcase--carousel .f-carousel__slide {
@@ -767,8 +767,13 @@ tr:last-child td {
 
   .showcase--carousel .showcase__item {
     width: 82vw;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
+}
+
+.home-solutions-cta {
+  margin: 2.5rem 0 0;
+  text-align: center;
 }
 /* =========================
 9. STATES (minimal, propre)

@@ -22,7 +22,7 @@ return [
         'linkLabel' => '',
     ],
     [
-        'meta' => 'Marcos Túlio',
+        'meta' => 'Marcos Túlio avocat',
         'title' => 'Un accompagnement commercial sur mesure',
         'text' => 'Un site professionnel enrichi par un assistant IA et accompagné par des campagnes Google Ads.',
         'image' => 'site-marcos-tulio.webp',
