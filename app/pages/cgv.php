@@ -11,6 +11,10 @@
         conception de sites web, solutions numériques et outils de gestion intégrés, modules, développements
         personnalisés, accompagnement, hébergement, maintenance et services associés.
       </p>
+      <p>
+        Les prestations sont proposées exclusivement à des clients agissant pour les besoins de leur activité
+        professionnelle. Le client déclare contracter en cette qualité.
+      </p>
     </div>
 
     <!-- 2 -->
@@ -102,39 +106,7 @@
 
     <!-- 7 -->
     <div class="card">
-      <h2>7. Droit de rétractation</h2>
-      <p>
-        Lorsqu’il agit en qualité de consommateur et que le contrat est conclu à distance ou hors établissement,
-        le client dispose d’un délai de rétractation de 14 jours, dans les conditions prévues par la loi.
-      </p>
-      <p>
-        Si le client demande expressément que l’exécution de la prestation commence avant la fin de ce délai,
-        il reste redevable du montant correspondant au service déjà exécuté jusqu’à sa rétractation. Lorsque
-        la prestation a été intégralement exécutée avec son accord exprès et sa reconnaissance de la perte du droit,
-        le droit de rétractation ne peut plus être exercé.
-      </p>
-      <p>
-        La rétractation peut être notifiée par toute déclaration dénuée d’ambiguïté, adressée à
-        <a href="mailto:contact@maracujadigital.fr">contact@maracujadigital.fr</a> ou par courrier à l’adresse
-        indiquée dans les mentions légales.
-      </p>
-      <h3>Formulaire type de rétractation</h3>
-      <p>
-        À l’attention de Maracuja Digital, 30 chemin de l’Écully, 69660 Collonges-au-Mont-d’Or,
-        <a href="mailto:contact@maracujadigital.fr">contact@maracujadigital.fr</a>.<br>
-        Je/nous vous notifie/notifions par la présente ma/notre rétractation du contrat portant sur la prestation
-        de services suivante&nbsp;: [à compléter].<br>
-        Commandée le&nbsp;: [à compléter].<br>
-        Nom du/des consommateur(s)&nbsp;: [à compléter].<br>
-        Adresse du/des consommateur(s)&nbsp;: [à compléter].<br>
-        Signature du/des consommateur(s), uniquement en cas de notification sur papier&nbsp;: [à compléter].<br>
-        Date&nbsp;: [à compléter].
-      </p>
-    </div>
-
-    <!-- 8 -->
-    <div class="card">
-      <h2>8. Suspension et résiliation</h2>
+      <h2>7. Suspension et résiliation</h2>
       <p>
         En cas d’absence de réponse ou de collaboration du client pendant une période de 4 semaines consécutives,
         le projet pourra être considéré comme suspendu.
@@ -147,9 +119,9 @@
       </p>
     </div>
 
-    <!-- 9 -->
+    <!-- 8 -->
     <div class="card">
-      <h2>9. Responsabilité</h2>
+      <h2>8. Responsabilité</h2>
       <p>
         Maracuja Digital s’engage à mobiliser tous les moyens nécessaires à la conception, la réalisation
         et au bon fonctionnement des solutions livrées.
@@ -167,9 +139,9 @@
       </ul>
     </div>
 
-    <!-- 10 -->
+    <!-- 9 -->
     <div class="card">
-      <h2>10. Propriété intellectuelle</h2>
+      <h2>9. Propriété intellectuelle</h2>
       <p>
         Sauf mention contraire, et après paiement complet, le client devient propriétaire des livrables
         remis dans le cadre de la prestation.
@@ -184,9 +156,9 @@
       </p>
     </div>
 
-    <!-- 11 -->
+    <!-- 10 -->
     <div class="card">
-      <h2>11. Données personnelles</h2>
+      <h2>10. Données personnelles</h2>
       <p>
         Le site ne comporte ni espace client ni formulaire enregistrant des données dans une base de données.
         Les données communiquées directement par e-mail ou téléphone sont utilisées uniquement pour répondre à
