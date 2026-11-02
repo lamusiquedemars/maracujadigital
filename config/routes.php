@@ -33,7 +33,8 @@ return [
   'methode' => [
     'path' => 'methode',
     'view' => 'methode',
-    'title' => 'Méthode',
+    'title' => 'Méthode de conception numérique | Maracuja Digital',
+    'description' => 'Une méthode de conception numérique sur mesure, de la compréhension de votre métier à la mise en service et à l’accompagnement.',
     'controller' => 'methode'
   ],  
   'offre-site-web' => [
