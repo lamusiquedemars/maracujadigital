@@ -1,13 +1,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title><?= e($page_title ?? $SEO['default_title']) ?></title>
+<title><?= e($page_title ?? $route['title'] ?? $SEO['default_title']) ?></title>
 
-<meta name="description" content="<?= e($page_description ?? $SEO['default_description']) ?>">
+<meta name="description" content="<?= e($page_description ?? $route['description'] ?? $SEO['default_description']) ?>">
 
 <!-- Open Graph -->
-<meta property="og:title" content="<?= e($page_title ?? $SEO['default_title']) ?>">
-<meta property="og:description" content="<?= e($page_description ?? $SEO['default_description']) ?>">
+<meta property="og:title" content="<?= e($page_title ?? $route['title'] ?? $SEO['default_title']) ?>">
+<meta property="og:description" content="<?= e($page_description ?? $route['description'] ?? $SEO['default_description']) ?>">
 <meta property="og:image" content="<?= url($page_image ?? $ASSETS['default_image']) ?>">
 <meta property="og:url" content="<?= url($uri ?? '') ?>">
 <meta property="og:type" content="website">

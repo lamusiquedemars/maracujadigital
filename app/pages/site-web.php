@@ -1,276 +1,134 @@
 <?php
-$title = "Création de sites web";
-?>
+$title = 'Solutions sur mesure';
 
-<!-- HERO -->
-<?php
 render('hero', [
-  'title' => 'Création de sites web',
-  'subtitle' => 'Des sites sur mesure : vitrine claire ou site administrable avec Maracuja CMS, selon le besoin réel.',
-  'class' => ['hero--page', 'hero--center']
+  'title' => 'Une solution numérique construite autour de votre métier',
+  'subtitle' => 'Un environnement simple et adapté à vos usages, pour présenter votre activité, développer votre clientèle ou simplifier votre gestion quotidienne.',
+  'class' => ['hero--page', 'hero--center'],
+  'link' => route('contact'),
+  'label' => 'Parlons de votre projet',
 ]);
 ?>
 
-<!-- FORMULES -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Nos trois formules</h2>
-
-    <p class="section-intro">
-      Chaque formule correspond à un niveau de besoin : présenter clairement votre activité,
-      gagner en autonomie sur certains contenus, ou ajouter un usage métier adapté.
-      Le choix ne part pas d’une technologie imposée, mais de ce que votre site doit vraiment permettre.
-    </p>
-
-    <div class="divider"></div>
-
-    <table class="table--featured">
-      <thead>
-        <tr>
-          <th>Critère</th>
-          <th>
-            <i data-lucide="leaf"></i>
-            <strong>Essence</strong><br>
-            à partir de 1&nbsp;500 – 2&nbsp;000 €
-          </th>
-          <th>
-            <i data-lucide="star"></i>
-            <strong>Signature</strong><br>
-            à partir de 2&nbsp;200 – 2&nbsp;800 €
-          </th>
-          <th>
-            <i data-lucide="globe"></i>
-            <strong>Univers</strong><br>
-            à partir de 3&nbsp;000 – 3&nbsp;800 €
-          </th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td><strong>Objectif</strong></td>
-          <td>Présenter votre activité avec un site clair, professionnel et bien structuré.</td>
-          <td>Valoriser votre savoir-faire avec plus de contenus, de pages et d’autonomie si utile.</td>
-          <td>Construire un site plus complet avec des usages métier précis.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Format</strong></td>
-          <td>Environ 5 pages principales.</td>
-          <td>Jusqu’à 8 pages, avec contenus plus riches.</td>
-          <td>Jusqu’à 12 pages, avec parcours ou module métier cadré.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Solution</strong></td>
-          <td>Maracuja Site : vitrine simple, rapide et sur mesure.</td>
-          <td>Maracuja Site enrichi ou Maracuja CMS léger.</td>
-          <td>Maracuja CMS : site administrable métier avec modules adaptés.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Autonomie</strong></td>
-          <td>Contenus stables, avec modifications ponctuelles si nécessaire.</td>
-          <td>Actualités, galerie ou contenus récurrents selon le besoin.</td>
-          <td>Catalogue, demandes qualifiées, réservations ou contenus structurés.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Pour qui ?</strong></td>
-          <td>Une activité qui veut une présence claire et durable.</td>
-          <td>Une activité qui doit montrer davantage de réalisations ou de contenus.</td>
-          <td>Une activité qui a besoin d’un véritable outil de travail.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Support inclus</strong></td>
-          <td>1 mois après mise en ligne.</td>
-          <td colspan="2">2 mois après mise en ligne.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Frais externes</strong></td>
-          <td colspan="3">
-            Hébergement, nom de domaine, outils tiers, licences ou abonnements restent à votre charge.
-          </td>
-        </tr>
-
-        <tr>
-          <td><strong>Délais</strong></td>
-          <td colspan="3">
-            Environ 3 à 6 semaines après validation du devis et réception des éléments nécessaires.
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <p class="section-intro">Chaque activité a ses besoins. Certains professionnels souhaitent présenter leur savoir-faire et recevoir des demandes. D’autres doivent suivre leurs clients, organiser leurs prestations, gérer leurs documents ou développer leur clientèle.</p>
+    <p class="section-intro">Maracuja permet de réunir les fonctions nécessaires sans imposer un logiciel complexe. Un site web peut en être le point de départ, mais il n’est ni une obligation ni une limite.</p>
   </div>
 </section>
 
-<!-- PRODUITS -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Maracuja Site ou Maracuja CMS</h2>
+    <h2 class="h2--moderne">Des besoins différents, une solution adaptable</h2>
+    <div class="grid grid--3">
+      <article class="card">
+        <i data-lucide="hammer" class="card-icon"></i>
+        <h3>Pour un artisan ou un atelier</h3>
+        <p>Présentez votre travail, vos réalisations ou votre catalogue, recevez des demandes et suivez vos interventions.</p>
+        <p>Selon votre activité, l’espace de gestion peut aussi intégrer les devis, les produits, les stocks, les contrats ou les locations.</p>
+      </article>
+      <article class="card">
+        <i data-lucide="briefcase-business" class="card-icon"></i>
+        <h3>Pour un indépendant ou une profession libérale</h3>
+        <p>Présentez vos services, facilitez la prise de contact et retrouvez vos clients et vos échanges.</p>
+        <p>Un assistant IA, des campagnes Google Ads ou des outils de communication peuvent accompagner le développement de votre clientèle.</p>
+      </article>
+      <article class="card">
+        <i data-lucide="package-search" class="card-icon"></i>
+        <h3>Pour une activité qui présente des produits</h3>
+        <p>Un catalogue peut présenter des références, leurs caractéristiques et leurs disponibilités.</p>
+        <p>Il peut aussi être relié à un espace de gestion pour accompagner les devis, les prestations et la facturation.</p>
+      </article>
+    </div>
+    <p class="section-intro">La vente en ligne avec panier et paiement relève d’un projet spécifique, étudié selon vos besoins.</p>
+  </div>
+</section>
 
-    <p class="section-intro">
-      Tous les projets n’ont pas besoin du même niveau d’outil.
-      Un site simple suffit parfois. Dans d’autres cas, une administration ciblée devient utile.
-    </p>
+<section class="section">
+  <div class="container">
+    <h2 class="h2--moderne">Les fonctionnalités qui travaillent ensemble</h2>
+    <p class="section-intro">Les fonctions sont sélectionnées et configurées selon votre projet. Elles ne sont pas toutes incluses ni nécessaires dans chaque environnement.</p>
+    <div class="grid grid--3">
+      <article class="card">
+        <i data-lucide="monitor-smartphone" class="card-icon"></i>
+        <h3>Présence numérique</h3>
+        <p>Sites professionnels, contenus administrables, galeries, catalogues, formulaires et référencement.</p>
+      </article>
+      <article class="card">
+        <i data-lucide="messages-square" class="card-icon"></i>
+        <h3>Relation client et communication</h3>
+        <p>Contacts, demandes, échanges, rendez-vous, tâches, assistant IA, campagnes Google Ads et communication e-mail.</p>
+      </article>
+      <article class="card">
+        <i data-lucide="folder-cog" class="card-icon"></i>
+        <h3>Gestion quotidienne</h3>
+        <p>Devis, documents, factures, règlements, dossiers métier, stocks, contrats et locations.</p>
+      </article>
+    </div>
 
-    <div class="grid grid--2">
-      <div class="card">
-        <i data-lucide="layout-template" class="card-icon"></i>
-        <h3>Maracuja Site</h3>
-        <p>
-          Pour les sites vitrines simples : pages sur mesure, structure claire,
-          formulaire de contact, direction visuelle et mise en ligne.
-        </p>
-        <p>
-          Il n’impose pas d’administration inutile lorsque le site n’a pas vocation
-          à changer souvent.
-        </p>
+    <div class="divider"></div>
+    <?php
+    $realisations = require app_path('data/showcase.php');
+    render('showcase', [
+      'title' => 'Quelques réalisations',
+      'intro' => 'Des captures de projets réels, conçus pour des usages et des métiers différents.',
+      'layout' => 'carousel',
+      'lightbox' => true,
+      'items' => $realisations,
+    ]);
+    ?>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="split__item">
+        <h2 class="h2--moderne">Un périmètre clair, des fonctionnalités choisies</h2>
+        <p>Chaque projet commence par une base adaptée à son objectif : un site professionnel, un espace de gestion ou un ensemble connecté.</p>
+        <p>À cette base s’ajoutent uniquement les fonctions nécessaires. Une galerie, un catalogue, le suivi des clients ou la gestion des devis n’impliquent pas les mêmes développements.</p>
+        <p>Certaines prestations, comme les campagnes publicitaires, l’hébergement, la maintenance ou l’accompagnement régulier, sont définies séparément.</p>
       </div>
-
-      <div class="card">
-        <i data-lucide="panel-top" class="card-icon"></i>
-        <h3>Maracuja CMS</h3>
-        <p>
-          Pour les sites qui doivent vivre dans le temps : actualités, galerie,
-          catalogue, demandes qualifiées, réservation simple ou modules métier.
-        </p>
-        <p>
-          L’administration reste volontairement ciblée : vous ne voyez que les contenus
-          utiles à votre activité.
-        </p>
+      <div class="split__item">
+        <img src="<?= e(img('desk-laptop-sheets.png')) ?>" alt="Bureau avec ordinateur et documents de travail">
       </div>
     </div>
   </div>
 </section>
 
-<!-- PERIMETRE -->
 <section class="section">
-  <div class="container no-padding">
-    <h2 class="h2--moderne">Base web, modules et prestations complémentaires</h2>
-    <p>
-      Le projet est découpé clairement : ce qui constitue la base du site,
-      ce qui peut être ajouté comme module, et ce qui relève d’un accompagnement séparé.
-    </p>
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Base web</th>
-          <th>Modules</th>
-          <th>Prestations complémentaires</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Rôle</strong></td>
-          <td>Construire le site : structure, pages, design, formulaire, mise en ligne.</td>
-          <td>Ajouter un usage précis au site.</td>
-          <td>Accompagner l’exploitation du site après ou autour du projet.</td>
-        </tr>
-        <tr>
-          <td><strong>Exemples</strong></td>
-          <td>
-            Cadrage, pages principales, intégration des contenus fournis,
-            responsive, tests principaux.
-          </td>
-          <td>
-            Galerie, actualités, contenus administrables, catalogue simple,
-            formulaire qualifié, réservation.
-          </td>
-          <td>
-            SEO avancé, rédaction régulière, emailing, publicité,
-            réseaux sociaux, e-commerce complet.
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Quand ?</strong></td>
-          <td>Inclus dans chaque formule.</td>
-          <td>Ajoutés uniquement s’ils répondent à un vrai besoin.</td>
-          <td>Chiffrées séparément selon le niveau d’accompagnement demandé.</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>
-      L’objectif n’est pas de tout rendre modifiable. L’objectif est de donner de l’autonomie
-      là où elle est utile, tout en gardant le site clair, stable et maintenable.
-    </p>
-        <div>
+  <div class="container">
+    <div class="card card--featured card--maracuja">
+      <h2 class="h2--moderne">Des repères pour comprendre le budget</h2>
+      <p>Un site professionnel simple peut démarrer à partir de 1&nbsp;500&nbsp;€. Les fonctionnalités supplémentaires et les solutions de gestion intégrées sont chiffrées selon leur périmètre.</p>
+      <p>Le devis distingue clairement la conception et la mise en place, les fonctionnalités retenues, les prestations complémentaires et les éventuels frais récurrents.</p>
       <?php render('btn', [
         'route' => 'offre-site-web',
-        'label' => 'Découvrir le détail de l’offre de site web'
+        'class' => 'btn btn-ghost',
+        'label' => 'Consulter les prestations et les repères de prix',
       ]); ?>
     </div>
   </div>
 </section>
 
-<!-- SUPPORT -->
 <section class="section">
-  <div class="container no-padding">
-    <h2 class="h2--moderne">Support et maintenance</h2>
-
-    <table class="table--simple">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Ce qui est compris</th>
-          <th>Limites</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td><strong>Support inclus</strong></td>
-          <td>
-            Assistance simple après la mise en ligne, pendant la durée prévue dans la formule.
-          </td>
-          <td>
-            Corrections mineures et aide à la prise en main, sans ajout de nouvelles fonctionnalités.
-          </td>
-        </tr>
-
-        <tr>
-          <td><strong>Support annuel</strong><br>500 € / an</td>
-          <td>
-            Vérifications techniques, sauvegardes, mises à jour si nécessaire,
-            test du formulaire, petites corrections et assistance simple.
-          </td>
-          <td>
-            Les nouvelles pages, refontes, campagnes email, contenus réguliers
-            ou SEO avancé font l’objet d’un devis séparé.
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="container">
+    <h2 class="h2--moderne">Une solution qui évolue avec votre activité</h2>
+    <p class="section-intro">Vous pouvez commencer avec un besoin précis et faire évoluer votre environnement lorsque votre activité le nécessite.</p>
+    <p class="section-intro">Les fonctions sont configurées et personnalisées selon vos usages, avec la possibilité de développer des adaptations spécifiques. Maracuja Digital assure directement la conception, l’intégration et l’accompagnement : vous n’avez pas à coordonner plusieurs prestataires pour faire fonctionner l’ensemble.</p>
   </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="section">
+<section class="section home-final-cta">
   <div class="container">
     <div class="split">
       <div class="split__item">
-        <img
-          src="<?= e(img('desk-sunlight.png')) ?>"
-          alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+        <img src="<?= e(img('desk-sunlight.png')) ?>" alt="Bureau de travail avec ordinateur et carnet">
       </div>
-
       <div class="split__item">
-        <h2>Prochaine étape</h2>
-
-        <p>
-          Un premier échange permet de clarifier le besoin, le niveau d’accompagnement nécessaire
-          et la formule la plus adaptée.
-        </p>
-
-        <div>
-          <?php render('btn', [
-            'route' => 'contact',
-            'label' => 'Présenter un projet'
-          ]); ?>
-        </div>
+        <h2>Parlons de ce dont vous avez réellement besoin.</h2>
+        <p>Un site, un catalogue, un suivi client ou un outil de gestion : chaque projet commence par comprendre votre façon de travailler.</p>
+        <?php render('btn', ['route' => 'contact', 'label' => 'Présenter mon projet']); ?>
       </div>
     </div>
   </div>

@@ -20,7 +20,8 @@ return [
   'site-web' => [
     'path' => 'site-web',
     'view' => 'site-web',
-    'title' => 'Site Web',
+    'title' => 'Solutions numériques sur mesure',
+    'description' => 'Solutions numériques modulaires et personnalisées pour présenter votre activité, développer votre clientèle et simplifier votre gestion.',
     'controller' => 'site-web'
   ],
   'pilotage' => [
