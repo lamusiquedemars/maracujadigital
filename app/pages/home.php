@@ -36,7 +36,7 @@ render('hero', [
     </div>
 
     <div class="divider"></div>
-    <p class="section-intro">Aperçus de fonctionnalités déjà réalisées. Les visuels de Marcos Túlio restent à fournir.</p>
+    <p class="section-intro">Découvrez quelques exemples de solutions conçues pour des activités et des usages différents.</p>
     <?php
     $realisations = require app_path('data/showcase.php');
     render('showcase', [
