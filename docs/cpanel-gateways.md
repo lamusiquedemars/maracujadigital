@@ -8,6 +8,8 @@ faire partie de chaque release :
   Incidit située hors de la release Maracuja Digital ;
 - `public/unviolondanslame.fr` charge Un violon dans l'âme au travers de son
   pointeur stable `apps/unviolondanslame/current/public`.
+- `public/site` charge Maracuja Site au travers de son pointeur stable
+  `apps/maracuja-site/current/public`.
 
 Ne pas retirer ces répertoires d'une archive ou d'une synchronisation de
 déploiement. Leurs dossiers doivent être lisibles et traversables par Apache
