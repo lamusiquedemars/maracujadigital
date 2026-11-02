@@ -30,6 +30,7 @@ return [
     // Navigation
     'navigation' => [
         ['label' => 'Solutions sur mesure', 'route' => 'site-web'],
+        ['label' => 'Prestations & tarifs', 'route' => 'offre-site-web'],
         ['label' => 'Contact', 'route' => 'contact'],
     ],
 
