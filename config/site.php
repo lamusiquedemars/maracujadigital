@@ -29,8 +29,7 @@ return [
 
     // Navigation
     'navigation' => [
-        ['label' => 'Site web', 'route' => 'site-web'],
-        ['label' => 'Cadrage & Pilotage', 'route' => 'pilotage'],
+        ['label' => 'Solutions sur mesure', 'route' => 'site-web'],
         ['label' => 'Contact', 'route' => 'contact'],
     ],
 

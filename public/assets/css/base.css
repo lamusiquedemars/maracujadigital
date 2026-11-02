@@ -459,6 +459,13 @@ p {
   margin: 0;
 }
 
+.hero__eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
 /* sous-titre / description */
 .hero__subtitle {
   color: var(--color-muted);

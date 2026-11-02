@@ -1,247 +1,93 @@
 <?php
-$title = "Accueil";
+$title = 'Solutions numériques sur mesure';
 
-/*
-|--------------------------------------------------------------------------
-| HERO
-|--------------------------------------------------------------------------
-| La home doit maintenant vendre le produit principal :
-| création de sites sur mesure avec deux niveaux clairs :
-| Maracuja Site et Maracuja CMS.
-*/
 render('hero', [
-  'title' => 'Des sites web clairs, utiles et pratiques à faire vivre.',
-  'subtitle' => 'Maracuja Digital crée des sites vitrine sur mesure et des sites administrables avec Maracuja CMS, selon les besoins réels de votre activité.',
+  'eyebrow' => 'MARACUJA DIGITAL · SOLUTIONS NUMÉRIQUES SUR MESURE',
+  'title' => 'Bien plus qu’un site web. Un outil pensé pour votre activité.',
+  'subtitle' => 'Votre site, vos clients et votre gestion quotidienne réunis dans un environnement simple, modulaire et adapté à votre métier. Sans fonctionnalités superflues. Sans multiplier les logiciels.',
   'class' => ['hero--home', 'hero--image', 'hero--center', 'hero--full', 'hero--maracuja'],
-  'link' => route('site-web'),
-  'label' => 'Découvrir les solutions'
+  'link' => route('contact'),
+  'label' => 'Parlons de votre projet',
 ]);
 ?>
 
-<!-- PRODUIT PRINCIPAL -->
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Deux façons de construire votre site</h2>
-    <p class="section-intro">
-      Maracuja Digital propose deux niveaux de réalisation : un site vitrine simple quand l’objectif est de présenter clairement une activité, ou un site administrable quand le client doit gérer des contenus, des demandes ou des modules métier.
-    </p>
-    <div class="grid grid--2">
-      <div class="card">
-        <i data-lucide="layout-template" class="card-icon"></i>
-        <h3>Maracuja Site</h3>
-        <p>
-          Pour les sites vitrines simples, rapides et sur mesure.
-        </p>
-        <p>
-          Une structure claire, des pages bien construites, un formulaire de contact,
-          une direction visuelle cohérente et aucune administration inutile.
-        </p>
-      </div>
-      <div class="card">
-        <i data-lucide="panel-top" class="card-icon"></i>
-        <h3>Maracuja CMS</h3>
-        <p>
-          Pour les sites qui doivent vivre dans le temps.
-        </p>
-        <p>
-          Une administration simple pour gérer les contenus utiles :
-          actualités, galerie, catalogue, demandes qualifiées, réservation ou module métier.
-        </p>
-      </div>
-    </div>
-
-    <div>
-      <?php render('btn', [
-        'route' => 'site-web',
-        'label' => 'Découvrir les solutions de site web'
-      ]); ?>
-    </div>
-  </div>
-</section>
-
-<!-- POSITIONNEMENT -->
-<section class="section">
-  <div class="container">
-    <div class="split">
-      <div class="split__item">
-        <h2 class="h2--moderne">Un site construit autour de l’usage</h2>
-
-        <p>
-          Maracuja Digital ne part pas d’une solution standard à paramétrer.
-          Le projet commence par une question simple : que doit permettre le site, concrètement ?
-        </p>
-
-        <p>
-          Si une vitrine claire suffit, le site reste léger. Si le client doit gérer des contenus
-          ou des demandes, Maracuja CMS apporte une administration ciblée, sans tableau de bord généraliste lourd.
-        </p>
-
-        <p>
-          L’objectif est de garder un site propre, compréhensible, maintenable et adapté au quotidien réel du client.
-        </p>
-      </div>
-
-      <div class="split__item">
-        <img
-          src="<?= e(img('desk-process.png')) ?>"
-          alt="Bureau de travail avec schémas, carnet et jus de fruit">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OFFRES -->
-<section class="section">
-  <div class="container">
-    <h2 class="h2--moderne">Trois niveaux de projet</h2>
-    <p class="section-intro">
-      Les offres correspondent à des niveaux de besoin : présence simple, site plus complet ou outil administrable avec module métier.
-    </p>
+    <h2 class="h2--moderne">Une solution qui accompagne votre activité</h2>
     <div class="grid grid--3">
-      <div class="card card--featured">
-        <i data-lucide="leaf" class="card-icon"></i>
-        <h3>Essence</h3>
-        <p>
-          Pour présenter une activité avec un site clair, professionnel et bien structuré.
-        </p>
-        <p>
-          Généralement réalisé avec <strong>Maracuja Site</strong>.
-        </p>
-      </div>
-      <div class="card card--featured">
-        <i data-lucide="star" class="card-icon"></i>
-        <h3>Signature</h3>
-        <p>
-          Pour valoriser un savoir-faire avec plus de contenus, de pages et d’autonomie si utile.
-        </p>
-        <p>
-          Réalisé avec <strong>Maracuja Site enrichi</strong> ou <strong>Maracuja CMS léger</strong>.
-        </p>
-      </div>
-      <div class="card card--featured">
-        <i data-lucide="globe" class="card-icon"></i>
-        <h3>Univers</h3>
-        <p>
-          Pour construire un site plus complet avec catalogue, demandes qualifiées,
-          réservation ou module métier.
-        </p>
-        <p>
-          Généralement réalisé avec <strong>Maracuja CMS</strong>.
-        </p>
-      </div>
+      <article class="card">
+        <i data-lucide="store" class="card-icon"></i>
+        <h3>Faites connaître votre activité</h3>
+        <p>Présentez votre savoir-faire, vos services et vos produits avec un site professionnel, conçu pour votre identité et vos besoins.</p>
+        <p><small>Site vitrine · Catalogue · Référencement · Galeries</small></p>
+      </article>
+      <article class="card">
+        <i data-lucide="users-round" class="card-icon"></i>
+        <h3>Développez votre clientèle</h3>
+        <p>Recevez vos demandes, retrouvez vos échanges et suivez vos contacts. Communiquez avec vos clients et mesurez les résultats de vos actions.</p>
+        <p><small>Suivi clients · Rendez-vous · Google Ads · E-mailing · Assistant IA</small></p>
+      </article>
+      <article class="card">
+        <i data-lucide="folders" class="card-icon"></i>
+        <h3>Simplifiez votre gestion</h3>
+        <p>Préparez vos devis, suivez vos prestations, organisez vos documents et retrouvez vos informations au même endroit.</p>
+        <p><small>Devis · Facturation · Dossiers métier · Stock · Locations</small></p>
+      </article>
     </div>
-    <p class="section-intro">
-      <a href="<?= route('site-web') ?>" class="btn">Comparer les formules</a>
-    </p>
-  </div>
-</section>
 
-<!-- REALISATIONS 
-<section class="section">
-  <div class="container">
+    <div class="divider"></div>
+    <p class="section-intro">Aperçus de fonctionnalités déjà réalisées. Les visuels de Marcos Túlio restent à fournir.</p>
     <?php
     $realisations = require app_path('data/showcase.php');
     render('showcase', [
-      'title' => 'Réalisations',
-      'intro' => 'Quelques exemples de sites, cadrages et livrables réalisés.',
       'layout' => 'carousel',
       'lightbox' => true,
       'items' => $realisations,
     ]);
     ?>
   </div>
-</section>-->
-
-<!-- METHODE -->
-<section class="section">
-  <div class="container">
-    <h2 class="h2--moderne">Une méthode de travail claire</h2>
-    <p class="section-intro">
-      Avant de produire, il faut poser le cadre : comprendre l’activité, organiser les contenus,
-      choisir les bons modules et définir ce que le site doit réellement permettre.
-    </p>
-    <div class="grid grid--4">
-      <div class="card">
-        <i data-lucide="search" class="card-icon"></i>
-        <h3>Cadrer</h3>
-        <p>
-          Clarifier l’objectif, les pages, les contenus, les priorités et les actions attendues.
-        </p>
-      </div>
-      <div class="card">
-        <i data-lucide="list-tree" class="card-icon"></i>
-        <h3>Structurer</h3>
-        <p>
-          Organiser les informations, les parcours et les fonctionnalités utiles.
-        </p>
-      </div>
-      <div class="card">
-        <i data-lucide="code-2" class="card-icon"></i>
-        <h3>Réaliser</h3>
-        <p>
-          Concevoir et développer le site en respectant les choix validés.
-        </p>
-      </div>
-      <div class="card">
-        <i data-lucide="rocket" class="card-icon"></i>
-        <h3>Déployer</h3>
-        <p>
-          Mettre en ligne, tester les points essentiels et accompagner la prise en main.
-        </p>
-      </div>
-    </div>
-    <p class="section-intro">
-      <a href="<?= route('methode') ?>" class="btn btn-ghost">Voir la méthode de travail</a>
-    </p>
-  </div>
 </section>
 
-<!-- PILOTAGE SECONDAIRE -->
 <section class="section">
   <div class="container">
-    <div class="card card--ghost card--maracuja">
-      <h2 class="h2--moderne">Besoin de cadrer un projet digital ?</h2>
-      <p>
-        Le cadrage et le pilotage peuvent aussi être proposés pour structurer une idée,
-        préparer une réalisation ou organiser des fonctionnalités avant développement.
-      </p>
-      <p>
-        Cette compétence nourrit directement la création de sites : elle permet de mieux choisir
-        les pages, les contenus, les modules et les priorités du projet.
-      </p>
-      <p>
-        <a href="<?= route('pilotage') ?>" class="btn btn-ghost">Voir l’accompagnement projet</a>
-      </p>
+    <div class="split">
+      <div class="split__item">
+        <h2 class="h2--moderne">Votre activité ne devrait pas s’adapter à un logiciel. C’est votre outil qui doit s’adapter à votre métier.</h2>
+        <p>Plutôt que d’imposer un logiciel généraliste, Maracuja associe les fonctions réellement nécessaires et les adapte à vos usages.</p>
+        <p>La solution reste modulaire, personnalisable et évolutive, avec un interlocuteur qui conçoit, configure et suit votre projet.</p>
+        <p><a href="<?= e(route('methode')) ?>" class="btn btn-ghost">Découvrir la méthode</a></p>
+      </div>
+      <div class="split__item">
+        <img src="<?= e(img('desk-process.png')) ?>" alt="Bureau de travail avec schémas et carnet">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
+<section class="section">
+  <div class="container">
+    <?php
+    render('showcase', [
+      'title' => 'Des réalisations concrètes',
+      'intro' => 'Chaque solution est conçue à partir d’un métier, de ses habitudes et de ses besoins réels.',
+      'layout' => 'grid',
+      'items' => $realisations,
+    ]);
+    ?>
+  </div>
+</section>
+
 <section class="section home-final-cta">
   <div class="container">
     <div class="split">
       <div class="split__item">
-        <img
-          src="<?= e(img('desk-sunlight.png')) ?>"
-          alt="Bureau de travail avec ordinateur, carnet et jus de fruit">
+        <img src="<?= e(img('desk-sunlight.png')) ?>" alt="Bureau de travail avec ordinateur et carnet">
       </div>
-
       <div class="split__item">
-        <p>Démarrer simplement</p>
-
-        <h2>Un site à créer ou à reprendre&nbsp;?</h2>
-
-        <p>
-          Un premier échange permet de clarifier le besoin, choisir le bon niveau d’outil
-          et définir un périmètre réaliste.
-        </p>
-
-        <div>
-          <?php render('btn', [
-            'route' => 'contact',
-            'label' => 'Parlons de votre projet'
-          ]); ?>
-        </div>
+        <h2>Et si vos outils travaillaient enfin ensemble&nbsp;?</h2>
+        <p>Vous avez un site à créer, des clients à suivre ou une organisation à simplifier&nbsp;?</p>
+        <p>Parlons de votre activité, de vos habitudes et de ce qui vous fait perdre du temps. Nous verrons ensemble comment construire une solution adaptée, sans ajouter de complexité inutile.</p>
+        <?php render('btn', ['route' => 'contact', 'label' => 'Discutons de votre projet']); ?>
       </div>
     </div>
   </div>

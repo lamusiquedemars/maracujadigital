@@ -265,6 +265,10 @@ h2.h2--moderne::before {
   color: rgba(255, 255, 255, 0.85);
 }
 
+.hero--maracuja .hero__eyebrow {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 /* option : bouton plus visible */
 .hero--maracuja .btn {
   border-color: white;
