@@ -35,16 +35,6 @@ render('hero', [
       </article>
     </div>
 
-    <div class="divider"></div>
-    <p class="section-intro">Découvrez quelques exemples de solutions conçues pour des activités et des usages différents.</p>
-    <?php
-    $realisations = require app_path('data/showcase.php');
-    render('showcase', [
-      'layout' => 'carousel',
-      'lightbox' => true,
-      'items' => $realisations,
-    ]);
-    ?>
   </div>
 </section>
 
@@ -67,6 +57,7 @@ render('hero', [
 <section class="section">
   <div class="container">
     <?php
+    $realisations = require app_path('data/showcase.php');
     render('showcase', [
       'title' => 'Des réalisations concrètes',
       'intro' => 'Chaque solution est conçue à partir d’un métier, de ses habitudes et de ses besoins réels.',
