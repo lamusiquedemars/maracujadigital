@@ -62,6 +62,7 @@ render('hero', [
       'title' => 'Des réalisations concrètes',
       'intro' => 'Chaque solution est conçue à partir d’un métier, de ses habitudes et de ses besoins réels.',
       'layout' => 'carousel',
+      'lightbox' => true,
       'items' => $realisations,
     ]);
     ?>
