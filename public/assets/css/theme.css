@@ -356,6 +356,51 @@ h2.h2--moderne::before {
     var(--color-surface);
 }
 
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-list {
+  margin: var(--space-m) 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-border);
+}
+
+.price-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-m);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.92rem;
+}
+
+.price-list strong {
+  flex: 0 0 auto;
+  color: var(--color-accent);
+  text-align: right;
+}
+
+.price-callout {
+  margin-top: var(--space-m);
+  padding-top: var(--space-m);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.price-callout strong,
+.price-callout span {
+  display: block;
+}
+
+.price-callout strong {
+  color: var(--color-accent);
+}
+
 @media (max-width: 768px) {
   .card--maracuja {
     padding-right: var(--space-m);
@@ -363,6 +408,16 @@ h2.h2--moderne::before {
       linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
       url("../images/passiflora-rameau.png") no-repeat right 1rem center / 200px,
       var(--color-surface);
+  }
+
+  .price-list li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .price-list strong {
+    text-align: left;
   }
 }
 /*carousel*/

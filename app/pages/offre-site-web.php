@@ -49,33 +49,54 @@ render('hero', [
 <section class="section">
   <div class="container">
     <h2 class="h2--moderne">Des fonctionnalités choisies pour votre usage</h2>
-    <p class="section-intro">Les fonctions ne sont pas ajoutées par défaut. Certaines sont déjà disponibles, d’autres nécessitent une intégration ou un cadrage spécifique selon le métier et les données à gérer.</p>
+    <p class="section-intro">Les fonctions ne sont pas ajoutées par défaut. Ces repères complètent le site professionnel dès 1&nbsp;000&nbsp;€ : ils permettent de comprendre les ordres de grandeur avant de définir le bon périmètre ensemble.</p>
     <div class="grid grid--2">
-      <article class="card">
+      <article class="card service-card">
         <i data-lucide="panels-top-left" class="card-icon"></i>
         <h3>Présence et contenus</h3>
         <p>Galeries, actualités, contenus administrables, catalogue vitrine et formulaires adaptés.</p>
+        <ul class="price-list" aria-label="Repères de prix présence et contenus">
+          <li><span>Galerie ou réalisations</span><strong>+150 à 700&nbsp;€</strong></li>
+          <li><span>Actualités ou contenus récurrents</span><strong>+400 à 800&nbsp;€</strong></li>
+          <li><span>Catalogue vitrine</span><strong>+700 à 1&nbsp;500&nbsp;€</strong></li>
+        </ul>
         <p><strong>Disponible</strong> pour les fonctions de site et de contenu ; les catalogues métier sont étudiés selon leur source de données.</p>
       </article>
-      <article class="card">
+      <article class="card service-card">
         <i data-lucide="contact-round" class="card-icon"></i>
         <h3>Relation client</h3>
         <p>Demandes, contacts, échanges, rendez-vous et tâches peuvent être reliés à un espace de suivi.</p>
+        <ul class="price-list" aria-label="Repères de prix relation client">
+          <li><span>Formulaire qualifié</span><strong>+300 à 800&nbsp;€</strong></li>
+          <li><span>Prise de rendez-vous simple</span><strong>+300 à 700&nbsp;€</strong></li>
+          <li><span>Suivi client ou CRM connecté</span><strong>Sur devis</strong></li>
+        </ul>
         <p><strong>À intégrer selon le projet</strong> : la gestion de la relation client reste centralisée dans l’outil adapté, sans dupliquer les données.</p>
       </article>
-      <article class="card">
+      <article class="card service-card">
         <i data-lucide="file-cog" class="card-icon"></i>
         <h3>Gestion quotidienne</h3>
         <p>Devis, documents, dossiers métier, stocks, contrats et locations pour les activités qui en ont besoin.</p>
+        <ul class="price-list" aria-label="Repères de prix gestion quotidienne">
+          <li><span>Module métier cadré</span><strong>3&nbsp;000 à 3&nbsp;800&nbsp;€</strong></li>
+          <li><span>Devis, documents ou dossiers métier</span><strong>Sur devis</strong></li>
+          <li><span>Stocks, contrats ou locations</span><strong>Sur devis</strong></li>
+        </ul>
         <p><strong>Disponible selon le métier</strong> : les solutions de gestion avancées sont chiffrées après cadrage du périmètre.</p>
       </article>
-      <article class="card">
+      <article class="card service-card">
         <i data-lucide="megaphone" class="card-icon"></i>
         <h3>Communication et développement</h3>
         <p>Assistant IA, campagnes Google Ads et communication e-mail peuvent compléter votre dispositif.</p>
+        <ul class="price-list" aria-label="Repères de prix communication">
+          <li><span>Collecte e-mail ou newsletter simple</span><strong>+200 à 400&nbsp;€</strong></li>
+          <li><span>Campagne Google Ads</span><strong>Sur devis + budget média</strong></li>
+          <li><span>Assistant IA et parcours de contact</span><strong>Sur devis</strong></li>
+        </ul>
         <p><strong>Prestation accompagnée ou en recette</strong> : chaque intégration est préparée, configurée et validée selon son contexte.</p>
       </article>
     </div>
+    <p class="section-intro text-small">Les repères indiqués concernent des extensions ciblées. Ils ne s’additionnent pas mécaniquement : lorsqu’un besoin devient un véritable outil métier, un chiffrage global est plus juste qu’une accumulation de modules.</p>
   </div>
 </section>
 
@@ -109,6 +130,7 @@ render('hero', [
         <i data-lucide="life-buoy" class="card-icon"></i>
         <h3>Hébergement, maintenance et assistance</h3>
         <p>Les conditions de fonctionnement après la mise en ligne sont distinguées des évolutions et nouveaux développements.</p>
+        <p class="price-callout"><strong>Suivi technique annuel&nbsp;: 500&nbsp;€ / an</strong><span>Sauvegardes, vérifications, petites corrections et assistance simple dans le périmètre précisé au devis.</span></p>
       </article>
       <article class="card">
         <i data-lucide="chart-no-axes-combined" class="card-icon"></i>
