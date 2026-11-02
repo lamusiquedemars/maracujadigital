@@ -12,7 +12,8 @@
         Adresse : 30 chemin de l’Écully, 69660 Collonges-au-Mont-d’Or, France<br>
         Téléphone : <a href="tel:+33786431583">+33 7 86 43 15 83</a><br>
         E-mail : <a href="mailto:contact@maracujadigital.fr">contact@maracujadigital.fr</a><br>
-        Site : <a href="https://maracujadigital.fr">maracujadigital.fr</a>
+        Site : <a href="https://maracujadigital.fr">maracujadigital.fr</a><br>
+        TVA : appliquée lorsque l’entreprise y est assujettie, selon le régime en vigueur à la date de facturation.
       </p>
 
       <h3>2. Hébergeur</h3>
@@ -30,14 +31,18 @@
         sans autorisation écrite préalable.
       </p>
 
-      <h3>4. Données personnelles</h3>
+      <h3>4. Données personnelles et cookies</h3>
       <p>
-        Les données éventuellement collectées via les formulaires (nom, e-mail, téléphone, message)
-        sont utilisées uniquement pour répondre aux demandes et assurer le suivi des échanges.
-        Elles ne sont ni vendues ni transmises à des tiers non autorisés.
+        Le site ne propose ni compte client ni formulaire de contact et n’enregistre pas de données de contact
+        dans une base de données. Aucun outil de mesure d’audience ou de publicité n’est configuré par l’éditeur.
+        Les bibliothèques techniques chargées depuis des fournisseurs tiers peuvent traiter des données de connexion
+        nécessaires à leur fourniture.
         <br><br>
-        Vous pouvez demander l’accès, la modification ou la suppression de vos données en écrivant à
-        contact@maracujadigital.fr
+        Lorsqu’une personne contacte directement Maracuja Digital par e-mail ou téléphone, les informations
+        communiquées sont utilisées uniquement pour répondre à la demande et assurer le suivi précontractuel ou
+        contractuel. Elles ne sont ni vendues ni transmises à des tiers non autorisés. Vous pouvez demander l’accès,
+        la rectification ou l’effacement de vos données en écrivant à
+        <a href="mailto:contact@maracujadigital.fr">contact@maracujadigital.fr</a>.
       </p>
 
       <h3>5. Responsabilité</h3>
