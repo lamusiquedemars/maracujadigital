@@ -343,6 +343,10 @@ h2.h2--moderne::before {
   /* color: var(--color-muted); */
 }
 
+.card--featured > .btn {
+  align-self: flex-start;
+}
+
 .card--featured ul {
   margin: 0;
   padding-left: 1.2rem;
