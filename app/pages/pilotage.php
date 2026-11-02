@@ -1,20 +1,20 @@
 <?php
-$title = "Pilotage de projets digitaux";
+$title = 'Accompagnement de projets numériques';
 ?>
 <!-- HERO -->
 <?php
 render('hero', [
-  'title' => 'Accompagnement de projets digitaux',
-  'subtitle' => 'Clarifier les besoins, structurer les décisions et remettre du cadre dans les projets web ou numériques.',
+  'title' => 'Accompagnement de projets numériques',
+  'subtitle' => 'Clarifier les besoins, structurer les décisions et faire avancer un projet web ou numérique avec un cadre adapté.',
   'class' => ['hero--page', 'hero--center']
 ]);
 ?>
 <section class="section">
   <div class="container">
-    <h2 class="h2--moderne">Les trois offres d’accompagnement</h2>
+    <h2 class="h2--moderne">Trois façons d’accompagner un projet</h2>
     <p class="section-intro">
-      Ces accompagnements s’adressent aux projets qui hésitent encore sur leur direction, leur périmètre ou leur façon d’avancer.
-      Le format exact dépend du contexte, du niveau d’avancement et du nombre d’acteurs impliqués.
+      L’accompagnement s’adapte aux projets qui hésitent encore sur leur direction, leur périmètre ou leur façon d’avancer.
+      Son format dépend du contexte, du niveau d’avancement et du nombre d’acteurs impliqués.
     </p>
     <div class="divider"></div>
     <div class="grid grid--3">
@@ -95,13 +95,13 @@ render('hero', [
 <section class="section">
   <div class="container">
     <div class="card card--ghost card--maracuja">
-      <h2 class="h2--moderne">Pourquoi ces trois accompagnements ?</h2>
+      <h2 class="h2--moderne">Un accompagnement adapté à l’avancement du projet</h2>
       <p>
         Les projets digitaux ne bloquent pas toujours au même endroit.
         Certains ont besoin d’une décision claire, d’autres d’un cadrage initial, d’autres encore d’un pilotage plus stable.
       </p>
       <p>
-        Ces trois formats permettent d’intervenir au bon moment, sans imposer une méthode lourde quand le besoin est simple,
+        Ces approches permettent d’intervenir au bon moment, sans imposer une méthode lourde quand le besoin est simple,
         ni traiter comme une simple réunion un projet qui demande un vrai cadre de suivi.
       </p>
     </div>

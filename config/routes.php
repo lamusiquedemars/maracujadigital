@@ -27,7 +27,8 @@ return [
   'pilotage' => [
     'path' => 'pilotage',
     'view' => 'pilotage',
-    'title' => 'Pilotage',
+    'title' => 'Accompagnement de projets numériques | Maracuja Digital',
+    'description' => 'Clarifier, structurer ou suivre un projet web ou numérique avec un accompagnement adapté à son avancement.',
     'controller' => 'pilotage'
   ],
   'methode' => [
