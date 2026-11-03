@@ -68,13 +68,13 @@ render('hero', [
 
     <div class="divider"></div>
     <?php
-    $realisations = require app_path('data/showcase.php');
+    $apercus = require app_path('data/showcase-solutions.php');
     render('showcase', [
-      'title' => 'Quelques réalisations',
-      'intro' => 'Des captures de projets réels, conçus pour des usages et des métiers différents.',
+      'title' => 'Un aperçu des fonctions',
+      'intro' => 'Quelques écrans issus de solutions conçues pour présenter une activité, suivre les demandes et organiser le quotidien.',
       'layout' => 'carousel',
       'lightbox' => true,
-      'items' => $realisations,
+      'items' => $apercus,
     ]);
     ?>
   </div>

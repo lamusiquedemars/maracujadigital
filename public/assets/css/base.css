@@ -716,12 +716,12 @@ tr:last-child td {
 
 .showcase--carousel .showcase__items {
   display: block;
-  gap: 0;
+  --f-carousel-gap: 8px;
 }
 
 .showcase--carousel .showcase__item {
   width: min(360px, 85vw);
-  margin-right: 2.5rem;
+  margin-right: 0;
 }
 
 .showcase--carousel .f-carousel__slide {
@@ -767,7 +767,7 @@ tr:last-child td {
 
   .showcase--carousel .showcase__item {
     width: 82vw;
-    margin-right: 1.5rem;
+    margin-right: 0;
   }
 }
 
