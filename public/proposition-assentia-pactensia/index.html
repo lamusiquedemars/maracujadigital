@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proposition Assentia &amp; Pactensia — Maracuja Digital</title>
+  <meta name="description" content="Proposition de refonte des sites Assentia et Pactensia.">
+  <link rel="icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../proposta-politeama/document.css" media="screen">
+  <link rel="stylesheet" href="../proposta-politeama/document-print.css" media="print">
+  <style>
+    .document .card-icon { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .brand-grid .card { min-height: 0; }
+    .brand-grid h3, .offer-card h3 { color: var(--color-accent); }
+    .brand-grid ul, .offer-card ul { margin: 0; padding-left: 1.1rem; color: var(--color-muted); }
+    .brand-grid li + li, .offer-card li + li { margin-top: .4rem; }
+    .offer-grid { align-items: stretch; }
+    .offer-card { min-height: 0; }
+    .offer-card--featured { border-color: var(--color-accent); background: var(--color-accent-soft); }
+    .offer-label { margin: 0 0 var(--space-xs); color: var(--color-accent); font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .offer-price { margin: var(--space-m) 0 var(--space-s); color: var(--color-accent); font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; }
+    .offer-price small { display: block; margin-top: .2rem; color: var(--color-muted); font-family: var(--font-main); font-size: .86rem; font-weight: 400; }
+    .comparison { margin-top: var(--space-xl); }
+    .comparison table { margin: 0; font-size: .9rem; }
+    .comparison th:not(:first-child), .comparison td:not(:first-child) { text-align: center; white-space: nowrap; }
+    .comparison td:first-child { width: 54%; }
+    .price-row td { color: var(--color-accent); font-weight: 700; background: var(--color-accent-soft); }
+    .details-list { margin-top: var(--space-m); }
+    .details-list .content-row { padding-block: var(--space-m); }
+    .details-list h3 { margin-bottom: var(--space-xs); color: var(--color-accent); }
+    .technical-note { margin-top: var(--space-xl); }
+    @media print {
+      .brand-grid .card { min-height: 67mm; }
+      .offer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 3.5mm !important; }
+      .offer-card { padding: 4mm !important; }
+      .offer-card h3 { font-size: 12pt; }
+      .offer-card ul { padding-left: 4mm; font-size: 9pt; line-height: 1.35; }
+      .offer-card li + li { margin-top: 1.5mm; }
+      .offer-price { margin: 4mm 0 2mm; font-size: 15pt; }
+      .offer-price small { font-size: 8pt; }
+      .comparison { margin-top: 6mm; }
+      .comparison table { font-size: 8.6pt; }
+      .comparison th, .comparison td { padding: 2.4mm 2.6mm; }
+      .details-list { margin-top: 3mm; }
+      .details-list .content-row { padding-block: 3.4mm; }
+      .details-list h3 { margin-bottom: 1mm; }
+      .technical-note { margin-top: 5mm; }
+    }
+  </style>
+</head>
+<body class="proposal-preview">
+  <header class="site-header proposal-site-header">
+    <div class="container container--wide header-inner">
+      <a href="../" aria-label="Maracuja Digital"><img src="../assets/images/logo.png" alt="Maracuja Digital" class="brand-logo"></a>
+      <nav class="proposal-header-actions" aria-label="Actions de la proposition">
+        <a href="../" class="btn btn-ghost">Site</a>
+        <a href="#" class="btn btn-primary" onclick="window.print(); return false">PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="document container" aria-label="Proposition Assentia et Pactensia">
+    <section class="document-page document-page--cover" aria-labelledby="page-1-title">
+      <img class="page-flower page-flower--cover" src="../assets/images/passiflora-rameau.png" alt="">
+      <header class="cover-header">
+        <img class="cover-logo" src="../assets/images/logo.png" alt="Maracuja Digital">
+        <p class="eyebrow">Assentia &amp; Pactensia</p>
+      </header>
+      <div class="cover-content">
+        <h1 id="page-1-title">Deux marques,<br>deux sites utiles</h1>
+        <p class="lead">Créer deux présences distinctes, cohérentes et administrables, pour rendre chaque expertise immédiatement lisible — recrutement spécialisé d’un côté, emploi inclusif et engagement social de l’autre.</p>
+      </div>
+      <footer class="cover-footer">
+        <p class="brand-name">Maracuja Digital</p>
+        <p>Proposition de refonte web et d’outils métier activables selon vos priorités</p>
+        <p>Lyon · novembre 2026</p>
+      </footer>
+    </section>
+
+    <section class="document-page" aria-labelledby="page-2-title">
+      <header class="page-header">
+        <p class="eyebrow">La proposition</p>
+        <h2 id="page-2-title" class="page-title h2--moderne">Deux sites autonomes, construits pour travailler ensemble</h2>
+        <p class="page-intro">Chaque marque garde son identité, son discours et son parcours de contact. La technologie et, si vous le souhaitez, le traitement des demandes sont mutualisés pour éviter les doubles saisies et les outils superflus.</p>
+      </header>
+      <section class="page-content grid grid--2 brand-grid" aria-label="Périmètre des deux sites">
+        <article class="card">
+          <p class="card-number">ASSENTIA</p>
+          <h3>Recrutement spécialisé</h3>
+          <ul>
+            <li>Présentation claire des expertises : ingénierie, industrie, Data &amp; IA.</li>
+            <li>Pages dédiées à la chasse de profils, l’approche directe, au RPO et au recrutement à temps partagé.</li>
+            <li>Références clients, prise de contact et articles administrables.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <p class="card-number">PACTENSIA</p>
+          <h3>Emploi inclusif &amp; engagements sociaux</h3>
+          <ul>
+            <li>Clauses sociales et insertion, handicap et OETH, talents et handicap, achats responsables.</li>
+            <li>Parcours distincts pour les entreprises et les candidats.</li>
+            <li>Formulaire « Trouver un expert », guides et ressources administrables.</li>
+          </ul>
+        </article>
+      </section>
+      <aside class="callout"><p><strong>Inclus dans toutes les formules :</strong> direction graphique cohérente, responsive mobile et tablette, intégration des contenus fournis, administration éditoriale, SEO technique initial, mise en ligne et redirections utiles depuis le site existant.</p></aside>
+      <footer class="page-footer"><span>Maracuja Digital</span><span>2</span></footer>
+    </section>
+
+    <section class="document-page document-page--dense" aria-labelledby="page-3-title">
+      <header class="page-header">
+        <p class="eyebrow">Trois niveaux d’accompagnement</p>
+        <h2 id="page-3-title" class="page-title h2--moderne">Choisir le bon niveau d’outil, sans figer la suite</h2>
+        <p class="page-intro">Les deux sites sont créés dans chaque formule. Les fonctions métier peuvent être activées dès le départ ou plus tard, sans reconstruire les sites.</p>
+      </header>
+      <section class="page-content grid grid--3 offer-grid" aria-label="Formules proposées">
+        <article class="card offer-card">
+          <p class="offer-label">Essentielle</p>
+          <h3>Présenter et être contacté</h3>
+          <ul>
+            <li>Deux sites professionnels.</li>
+            <li>Pages, médias, articles et formulaires.</li>
+            <li>Réception centralisée des demandes.</li>
+          </ul>
+          <p class="offer-price">1&nbsp;000&nbsp;€<small>Création et mise en service<br>39&nbsp;€ / mois — hébergement &amp; maintenance</small></p>
+        </article>
+        <article class="card offer-card offer-card--featured">
+          <p class="offer-label">Commerciale</p>
+          <h3>Suivre les opportunités</h3>
+          <ul>
+            <li>Tout le périmètre Essentielle.</li>
+            <li>Organisations, contacts et source de la demande.</li>
+            <li>Statuts, actions et historique de suivi partagés.</li>
+          </ul>
+          <p class="offer-price">1&nbsp;600&nbsp;€<small>Création et mise en service<br>49&nbsp;€ / mois — hébergement &amp; maintenance</small></p>
+        </article>
+        <article class="card offer-card">
+          <p class="offer-label">Complète</p>
+          <h3>Gérer candidats &amp; simulation</h3>
+          <ul>
+            <li>Tout le périmètre Commerciale.</li>
+            <li>Dépôt sécurisé de CV et suivi simple des candidatures.</li>
+            <li>Simulateur OETH indicatif, validé avec votre expertise métier.</li>
+          </ul>
+          <p class="offer-price">3&nbsp;900&nbsp;€<small>Création et mise en service<br>49&nbsp;€ / mois — hébergement &amp; maintenance</small></p>
+        </article>
+      </section>
+      <div class="comparison card" aria-label="Comparaison détaillée des formules">
+        <table>
+          <thead><tr><th>Fonctionnalités</th><th>Essentielle</th><th>Commerciale</th><th>Complète</th></tr></thead>
+          <tbody>
+            <tr><td>Deux sites, contenus, SEO et formulaires</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Réception centralisée des demandes</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Suivi des prospects, entreprises et actions</td><td>—</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Dépôt de CV, droits d’accès et suivi candidat</td><td>—</td><td>—</td><td>✓</td></tr>
+            <tr><td>Simulateur OETH indicatif</td><td>—</td><td>—</td><td>✓</td></tr>
+            <tr class="price-row"><td>Création et mise en service — HT</td><td>1&nbsp;000&nbsp;€</td><td>1&nbsp;600&nbsp;€</td><td>3&nbsp;900&nbsp;€</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <footer class="page-footer"><span>Maracuja Digital</span><span>3</span></footer>
+    </section>
+
+    <section class="document-page document-page--dense" aria-labelledby="page-4-title">
+      <img class="page-flower page-flower--closing" src="../assets/images/passiflora-rameau.png" alt="">
+      <header class="page-header">
+        <p class="eyebrow">Précisions de mise en œuvre</p>
+        <h2 id="page-4-title" class="page-title h2--moderne">Une solution maîtrisée, avec des limites explicites</h2>
+        <p class="page-intro">La proposition vise des outils utiles au quotidien, adaptés aux enjeux de recrutement et d’accompagnement — sans promettre une plateforme de recrutement ou un moteur réglementaire hors périmètre.</p>
+      </header>
+      <section class="page-content details-list" aria-label="Cadre des fonctionnalités avancées">
+        <article class="content-row">
+          <svg class="row-icon card-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+          <div><h3>Candidatures : un espace privé, pas un ATS complet</h3><p>La formule Complète permet le dépôt de CV, la consultation, le classement et le suivi simple des candidatures. Les accès et la conservation des documents sont paramétrés avec vous. Le rapprochement automatisé profils/offres, les workflows avancés et une plateforme de recrutement complète ne sont pas inclus.</p></div>
+        </article>
+        <article class="content-row">
+          <svg class="row-icon card-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4M16 2v4M7 10h10M8 15h3M8 18h6"></path></svg>
+          <div><h3>OETH : un outil de qualification indicatif</h3><p>Le simulateur présente les principaux indicateurs et oriente vers Pactensia. Les règles, paramètres et scénarios de référence sont validés avec votre expertise avant publication ; le résultat ne remplace ni la déclaration officielle ni un conseil réglementaire.</p></div>
+        </article>
+        <article class="content-row">
+          <svg class="row-icon card-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+          <div><h3>Administration et évolution</h3><p>Chaque site dispose de son administration éditoriale. Les demandes peuvent être réunies dans un même espace. Les outils Maracuja et Cremona remplacent l’orientation WordPress/Elementor envisagée initialement, avec une interface ciblée sur les usages réellement nécessaires.</p></div>
+        </article>
+      </section>
+      <aside class="closing-callout technical-note"><p><strong>Hébergement &amp; maintenance :</strong> le forfait comprend hébergement, HTTPS, sauvegardes, mises à jour techniques, surveillance et correction des incidents relevant de la plateforme. Les évolutions fonctionnelles, nouvelles rédactions importantes, campagnes et révisions réglementaires OETH restent chiffrées séparément. Les textes, mentions légales, traitements de données et règles métier sont validés par vos responsables concernés.</p></aside>
+      <footer class="page-footer"><span>Maracuja Digital</span><span>4</span></footer>
+    </section>
+  </main>
+
+  <footer class="site-footer proposal-site-footer"><div class="container footer-inner"><div class="footer-brand"><p class="footer-name">© 2026 Maracuja Digital</p><p class="footer-baseline">Des sites qui présentent votre activité. Des outils qui vous aident à la développer.</p></div><nav class="footer-nav small" aria-label="Navigation du pied de page"><a href="../">Site</a><span>•</span><a href="../contact">Contact</a></nav></div></footer>
+</body>
+</html>
