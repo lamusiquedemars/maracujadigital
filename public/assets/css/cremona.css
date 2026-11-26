@@ -1,0 +1,353 @@
+/* Présentation Cremona — styles locaux à la page /cremona.
+   Réutilise les composants, polices, couleurs de base et le carrousel du site. */
+.cremona-page {
+  --cremona-forest: #183c34;
+  --cremona-forest-soft: #eaf1eb;
+  --cremona-ink: #20372f;
+  --cremona-muted: #52665d;
+  --cremona-line: #d7e1da;
+  --cremona-gold: #b6804d;
+  color: var(--cremona-ink);
+}
+
+.cremona-page .container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cremona-eyebrow {
+  margin: 0 0 .75rem;
+  color: var(--cremona-forest);
+  font-size: .79rem;
+  font-weight: 750;
+  letter-spacing: .095em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.cremona-intro {
+  padding: clamp(2.4rem, 5vw, 4.5rem) 0 1.5rem;
+}
+
+.cremona-intro h1 {
+  margin: 0;
+  color: var(--cremona-forest);
+  font-size: clamp(3.9rem, 11vw, 6.8rem);
+  font-weight: 600;
+  letter-spacing: -.025em;
+  line-height: .96;
+}
+
+.cremona-intro__subtitle {
+  margin: .85rem 0 1.3rem;
+  color: var(--cremona-ink);
+  font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+  font-weight: 550;
+  line-height: 1.35;
+}
+
+.cremona-intro__lead {
+  max-width: 790px;
+  margin-bottom: 1.25rem;
+  color: var(--cremona-muted);
+  font-size: clamp(1rem, 1.7vw, 1.13rem);
+  line-height: 1.65;
+}
+
+.cremona-intro__note {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--cremona-gold);
+  border-radius: 0 15px 15px 0;
+  background: var(--cremona-forest-soft);
+  line-height: 1.5;
+}
+.cremona-intro__note strong { color: var(--cremona-forest); }
+.cremona-intro__note span { color: var(--cremona-muted); }
+
+.cremona-jump {
+  display: inline-flex;
+  gap: .6rem;
+  align-items: center;
+  margin-top: 1.15rem;
+  padding: .3rem 0;
+  color: var(--cremona-forest);
+  border-bottom: 1px solid var(--cremona-gold);
+  font-size: .94rem;
+  font-weight: 650;
+}
+.cremona-jump svg { width: 1.1em; height: 1.1em; }
+.cremona-jump:hover { color: #355a4b; }
+.cremona-jump:focus-visible,
+.cremona-page a:focus-visible {
+  outline: 3px solid var(--cremona-gold);
+  outline-offset: 4px;
+}
+
+.cremona-page .cremona-section {
+  padding: 2rem 0 3.1rem;
+}
+.cremona-heading {
+  max-width: 900px;
+  margin: 0 0 .7rem;
+  color: var(--cremona-forest);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.1vw, 2.85rem);
+  font-weight: 600;
+  letter-spacing: -.01em;
+  line-height: 1.08;
+}
+.cremona-section__intro {
+  max-width: 820px;
+  margin: 0 0 1.65rem;
+  color: var(--cremona-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* Cartes métier : une colonne mobile, deux en tablette, trois en desktop. */
+.cremona-features {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+.cremona-feature {
+  position: relative;
+  min-width: 0;
+  padding: 1.3rem 1.35rem 1.45rem;
+  border: 1px solid var(--cremona-line);
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(24, 60, 52, .028);
+}
+.cremona-feature::before {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 0 0 1.4rem;
+  border-radius: 3px;
+  background: var(--cremona-gold);
+  content: '';
+}
+.cremona-feature__head {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin-bottom: .7rem;
+}
+.cremona-feature__icon,
+.cremona-service__icon,
+.cremona-connected__icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--cremona-forest-soft);
+  color: var(--cremona-forest);
+}
+.cremona-feature__icon svg,
+.cremona-service__icon svg,
+.cremona-connected__icon svg {
+  display: block;
+  width: 27px;
+  height: 27px;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+.cremona-feature h3,
+.cremona-service h3,
+.cremona-connected h3 {
+  margin: 0;
+  color: var(--cremona-forest);
+  font-family: var(--font-main);
+  font-size: 1.12rem;
+  font-weight: 720;
+  line-height: 1.3;
+}
+.cremona-feature p,
+.cremona-service p,
+.cremona-connected p {
+  margin: 0;
+  font-size: .94rem;
+  line-height: 1.64;
+}
+
+/* Carousel existant : Fancyapps et lightbox déjà fournis par le layout. */
+.cremona-page .cremona-section--gallery {
+  padding-top: 2.6rem;
+  background: #f0f4f0;
+}
+.cremona-showcase .showcase__header {
+  margin-bottom: 1.3rem;
+}
+.cremona-showcase .showcase__title {
+  margin: 0 0 .55rem;
+  color: var(--cremona-forest);
+  font-size: clamp(2rem, 4.1vw, 2.85rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.cremona-showcase .showcase__intro {
+  color: var(--cremona-muted);
+  line-height: 1.55;
+}
+.cremona-showcase .showcase__items {
+  --f-carousel-gap: 12px;
+}
+.cremona-showcase .showcase__item {
+  width: min(390px, 82vw);
+  overflow: hidden;
+  border: 1px solid var(--cremona-line);
+  border-radius: 14px;
+  background: #fff;
+}
+.cremona-showcase .showcase__media {
+  background: #f7f8f6;
+}
+.cremona-showcase .showcase__media img {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+}
+.cremona-showcase .showcase__content {
+  padding: .95rem 1.15rem 1.3rem;
+}
+.cremona-showcase .showcase__meta {
+  color: var(--cremona-gold);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.cremona-showcase .showcase__item-title {
+  color: var(--cremona-forest);
+  font-family: var(--font-main);
+  font-size: 1.06rem;
+  font-weight: 700;
+}
+.cremona-showcase .showcase__text {
+  color: var(--cremona-muted);
+  font-size: .88rem;
+  line-height: 1.55;
+}
+.cremona-showcase .showcase__media a:focus-visible {
+  outline: 3px solid var(--cremona-gold);
+  outline-offset: -3px;
+}
+
+/* Services spécialisés : pas de deuxième catalogue de modules métier. */
+.cremona-services {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+.cremona-service {
+  min-width: 0;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--cremona-line);
+  border-radius: 15px;
+  background: #fff;
+}
+.cremona-service__heading {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  margin-bottom: .85rem;
+}
+.cremona-service__icon { width: 44px; height: 44px; }
+.cremona-service__icon svg { width: 24px; height: 24px; }
+.cremona-service__meta {
+  margin: 0 0 .15rem !important;
+  color: var(--cremona-muted);
+  font-size: .75rem !important;
+  font-weight: 650;
+  letter-spacing: .055em;
+  line-height: 1.3 !important;
+  text-transform: uppercase;
+}
+.cremona-connected {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin-top: 1.1rem;
+  padding: 1.4rem;
+  border: 1px solid var(--cremona-line);
+  border-radius: 15px;
+  background: var(--cremona-forest-soft);
+}
+.cremona-connected h3 { margin-bottom: .35rem; }
+
+/* Fin volontairement discrète : partager la page plutôt que lancer un produit. */
+.cremona-page .cremona-section--closing {
+  padding-top: 2.6rem;
+  padding-bottom: 3.4rem;
+  background: var(--cremona-forest);
+}
+.cremona-closing {
+  max-width: 790px;
+}
+.cremona-closing .cremona-eyebrow,
+.cremona-closing .cremona-heading {
+  color: #fff;
+}
+.cremona-closing .cremona-heading {
+  margin-bottom: 1rem;
+}
+.cremona-closing > p:not(.cremona-eyebrow) {
+  color: #eef4ed;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.cremona-closing__credit {
+  margin-top: 1.25rem;
+}
+.cremona-closing__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .6rem;
+  border-radius: 7px;
+  text-align: center;
+}
+
+@media (min-width: 680px) {
+  .cremona-features,
+  .cremona-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cremona-intro__note {
+    max-width: 850px;
+  }
+  .cremona-connected {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 1.55rem;
+  }
+}
+@media (min-width: 1080px) {
+  .cremona-features {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .cremona-feature {
+    padding: 1.45rem 1.4rem 1.7rem;
+  }
+  .cremona-page .cremona-section {
+    padding-top: 2.7rem;
+    padding-bottom: 3.7rem;
+  }
+}
+@media (max-width: 420px) {
+  .cremona-feature,
+  .cremona-service {
+    padding-left: 1.05rem;
+    padding-right: 1.05rem;
+  }
+  .cremona-feature h3 { font-size: 1.06rem; }
+  .cremona-feature__icon { width: 43px; height: 43px; }
+  .cremona-showcase .showcase__item { width: 82vw; }
+}
