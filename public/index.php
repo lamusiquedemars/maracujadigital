@@ -21,6 +21,15 @@ require_once ROOT . '/core/router.php';
 $route = resolveRoute(currentPath(), $ROUTES);
 
 /*
+ * Cette présentation peut être consultée juste après sa publication.
+ * Elle ne doit pas réutiliser une réponse 404 mise en cache par le proxy.
+ */
+if (($route['routeName'] ?? '') === 'presentation-cremona') {
+    header('Cache-Control: no-store, max-age=0, must-revalidate');
+    header('Pragma: no-cache');
+}
+
+/*
  * Redirections déclarées dans la configuration des routes.
  */
 if (!empty($route['redirect'])) {
