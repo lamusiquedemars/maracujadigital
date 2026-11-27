@@ -17,6 +17,13 @@ return [
     'title' => 'Accueil',
     'controller' => 'home'
   ],
+  'cremona' => [
+    'path' => 'cremona',
+    'view' => 'cremona',
+    'title' => 'Cremona — Gestion des ateliers de lutherie et d’archèterie',
+    'description' => 'Cremona, une solution de gestion modulaire pour les luthiers et archetiers : instruments, locations, travaux d’atelier, clients, devis et services connectés.',
+    'styles' => ['cremona.css'],
+  ],
   'site-web' => [
     'path' => 'site-web',
     'view' => 'site-web',
