@@ -9,19 +9,25 @@ $apercus = require app_path('data/showcase-cremona.php');
 <div class="cremona-page">
 
   <section class="cremona-intro" aria-labelledby="cremona-title">
-    <div class="container">
-      <p class="cremona-eyebrow">Une solution métier par Maracuja Digital</p>
-      <h1 id="cremona-title">Cremona</h1>
-      <p class="cremona-intro__subtitle">La gestion des ateliers de lutherie et d’archèterie</p>
-      <p class="cremona-intro__lead">Conçu en collaboration avec Giovanni Corazzol, maître luthier, Cremona réunit instruments, locations, travaux d’atelier, clients et gestion commerciale dans un même environnement.</p>
-      <div class="cremona-intro__note">
-        <strong>Pensé pour les pratiques du métier.</strong>
-        <span>Des modules complémentaires et un niveau de suivi ajustable, du plus simple au plus détaillé.</span>
+    <div class="container cremona-intro__grid">
+      <div class="cremona-intro__content">
+        <p class="cremona-eyebrow">Une solution métier par Maracuja Digital</p>
+        <h1 id="cremona-title">Cremona</h1>
+        <p class="cremona-intro__subtitle">La gestion des ateliers de lutherie et d’archèterie</p>
+        <p class="cremona-intro__lead">Conçu en collaboration avec Giovanni Corazzol, maître luthier, Cremona réunit instruments, locations, travaux d’atelier, clients et gestion commerciale dans un même environnement.</p>
+        <div class="cremona-intro__note">
+          <strong>Pensé pour les pratiques du métier.</strong>
+          <span>Des modules complémentaires et un niveau de suivi ajustable, du plus simple au plus détaillé.</span>
+        </div>
+        <a class="cremona-jump" href="#apercus">
+          Voir les écrans de la solution
+          <i data-lucide="arrow-down" aria-hidden="true"></i>
+        </a>
       </div>
-      <a class="cremona-jump" href="#apercus">
-        Voir les écrans de la solution
-        <i data-lucide="arrow-down" aria-hidden="true"></i>
-      </a>
+
+      <div class="cremona-intro__visual" aria-hidden="true">
+        <img src="<?= e(img('scroll-cremona.png')) ?>" alt="" width="1086" height="1448">
+      </div>
     </div>
   </section>
 

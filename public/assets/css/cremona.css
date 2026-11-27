@@ -1,4 +1,4 @@
-/* Présentation Cremona — styles locaux à la page /cremona.
+/* Présentation Cremona — styles locaux à la page /presentation-cremona.
    Réutilise les composants, polices, couleurs de base et le carrousel du site. */
 .cremona-page {
   --cremona-forest: #183c34;
@@ -26,7 +26,27 @@
 }
 
 .cremona-intro {
-  padding: clamp(2.4rem, 5vw, 4.5rem) 0 1.5rem;
+  position: relative;
+  min-height: clamp(35rem, 150vw, 42rem);
+  padding: clamp(2.4rem, 5vw, 4.5rem) 0 1.8rem;
+  overflow: hidden;
+  background-color: #f7dfbd;
+  background-image:
+    linear-gradient(180deg, rgba(255, 244, 225, .94) 0%, rgba(255, 244, 225, .72) 48%, rgba(255, 244, 225, .16) 100%),
+    url('../images/scroll-cremona.png');
+  background-position: center, center 58%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cremona-intro__grid {
+  position: relative;
+  z-index: 1;
+}
+.cremona-intro__content {
+  max-width: 790px;
+}
+.cremona-intro__visual {
+  display: none;
 }
 
 .cremona-intro h1 {
@@ -47,7 +67,7 @@
 }
 
 .cremona-intro__lead {
-  max-width: 790px;
+  max-width: 720px;
   margin-bottom: 1.25rem;
   color: var(--cremona-muted);
   font-size: clamp(1rem, 1.7vw, 1.13rem);
@@ -327,6 +347,29 @@
     align-items: center;
     gap: 1.1rem;
     padding: 1.55rem;
+  }
+}
+@media (min-width: 980px) {
+  .cremona-intro {
+    min-height: 0;
+    padding: clamp(3rem, 5vw, 4.8rem) 0 2.5rem;
+    background-image: none;
+  }
+  .cremona-intro__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, .68fr);
+    gap: clamp(2rem, 6vw, 6rem);
+    align-items: center;
+  }
+  .cremona-intro__visual {
+    display: block;
+    max-width: 430px;
+    margin-left: auto;
+  }
+  .cremona-intro__visual img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 1080px) {
