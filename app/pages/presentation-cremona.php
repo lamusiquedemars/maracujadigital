@@ -13,7 +13,7 @@ $apercus = require app_path('data/showcase-cremona.php');
       <p class="cremona-eyebrow">Une solution métier par Maracuja Digital</p>
       <h1 id="cremona-title">Cremona</h1>
       <p class="cremona-intro__subtitle">La gestion des ateliers de lutherie et d’archèterie</p>
-      <p class="cremona-intro__lead">Conçu en collaboration avec un luthier, Cremona réunit instruments, locations, travaux d’atelier, clients et gestion commerciale dans un même environnement.</p>
+      <p class="cremona-intro__lead">Conçu en collaboration avec Giovanni Corazzol, maître luthier, Cremona réunit instruments, locations, travaux d’atelier, clients et gestion commerciale dans un même environnement.</p>
       <div class="cremona-intro__note">
         <strong>Pensé pour les pratiques du métier.</strong>
         <span>Des modules complémentaires et un niveau de suivi ajustable, du plus simple au plus détaillé.</span>
@@ -165,7 +165,7 @@ $apercus = require app_path('data/showcase-cremona.php');
         <p class="cremona-eyebrow">04 · Une solution qui évolue</p>
         <h2 id="cremona-evolution" class="cremona-heading">Le niveau de détail qui convient à votre atelier</h2>
         <p>Les modules peuvent être combinés, configurés et complétés. Un atelier peut commencer par le suivi de ses instruments et de ses clients, puis approfondir les locations, les interventions ou la communication selon ses pratiques.</p>
-        <p class="cremona-closing__credit">Cremona est développé par Maracuja Digital <strong>en collaboration avec un luthier</strong>, à partir des besoins réels de son atelier.</p>
+        <p class="cremona-closing__credit">Cremona est développé par Maracuja Digital <strong>en collaboration avec Giovanni Corazzol, maître luthier</strong>, à partir des besoins réels de son atelier.</p>
         <a href="<?= e(route('contact')) ?>" class="btn btn-primary cremona-closing__cta">Prendre contact pour en savoir plus</a>
       </div>
     </div>
